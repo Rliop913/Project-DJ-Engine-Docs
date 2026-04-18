@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_dc2a648de163c74d90584e5a606685cb" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include</compoundname>
+    <innerdir refid="dir_71f018784782346a188dd2b701740025">PDJE-Godot-Plugin/Project-DJ-Engine/include/core</innerdir>
+    <innerdir refid="dir_0989a3a6f34586d98295f0278881befe">PDJE-Godot-Plugin/Project-DJ-Engine/include/global</innerdir>
+    <innerdir refid="dir_ad198dc3597d2b830e1de27479854175">PDJE-Godot-Plugin/Project-DJ-Engine/include/input</innerdir>
+    <innerdir refid="dir_c273cd2ef8668e748bb43f582a783f14">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge</innerdir>
+    <innerdir refid="dir_7becd4646a98f64f2c004d13e6a86414">PDJE-Godot-Plugin/Project-DJ-Engine/include/tests</innerdir>
+    <innerdir refid="dir_995e4c66b8966d69097b91d20898ff48">PDJE-Godot-Plugin/Project-DJ-Engine/include/util</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/"/>
+  </compounddef>
+</doxygen>

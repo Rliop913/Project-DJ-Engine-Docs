@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_0d001006126334211071073052003376246131211317047134" kind="namespace" language="C++">
+    <compoundname>@001006126334211071073052003376246131211317047134</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_0d001006126334211071073052003376246131211317047134_1a599e8ca8c092bf9a2ff829cccd214858" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PDJE_LogBackendKindInternal</name>
+        <qualifiedname>@001006126334211071073052003376246131211317047134::PDJE_LogBackendKindInternal</qualifiedname>
+        <enumvalue id="namespace_0d001006126334211071073052003376246131211317047134_1a599e8ca8c092bf9a2ff829cccd214858ac3269a859ee285e2fb5c325bf9758786" prot="public">
+          <name>kInternalSpdlog</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d001006126334211071073052003376246131211317047134_1a599e8ca8c092bf9a2ff829cccd214858a95d24278ab94e2c01f13ae2b406c7e13" prot="public">
+          <name>kHostCallback</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/PDJE_LOG_SETTER.cpp" line="15" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/PDJE_LOG_SETTER.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/PDJE_LOG_SETTER.cpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

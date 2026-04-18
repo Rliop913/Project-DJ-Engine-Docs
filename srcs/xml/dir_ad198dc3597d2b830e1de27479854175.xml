@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_ad198dc3597d2b830e1de27479854175" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input</compoundname>
+    <innerdir refid="dir_4e5c38260d97b911fce4c12f638c949e">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs</innerdir>
+    <innerdir refid="dir_f03efc81289f330976f173ca8764fb0c">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC</innerdir>
+    <innerdir refid="dir_80f9b94380799637c1444d263f788c06">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/midi</innerdir>
+    <innerdir refid="dir_ac85c70943308f76d9d98d55e6ebab14">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/runner</innerdir>
+    <innerfile refid="CPDJE__Input_8cpp">CPDJE_Input.cpp</innerfile>
+    <innerfile refid="CPDJE__Input_8h">CPDJE_Input.h</innerfile>
+    <innerfile refid="PDJE__Input_8cpp">PDJE_Input.cpp</innerfile>
+    <innerfile refid="PDJE__Input_8hpp">PDJE_Input.hpp</innerfile>
+    <innerfile refid="PDJE__Input__Log_8hpp">PDJE_Input_Log.hpp</innerfile>
+    <innerfile refid="PDJE__Input__StateLogic_8hpp">PDJE_Input_StateLogic.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/"/>
+  </compounddef>
+</doxygen>

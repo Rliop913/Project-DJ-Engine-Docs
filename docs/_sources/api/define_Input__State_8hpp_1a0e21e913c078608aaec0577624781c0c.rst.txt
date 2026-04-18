@@ -1,0 +1,14 @@
+.. _exhale_define_Input__State_8hpp_1a0e21e913c078608aaec0577624781c0c:
+
+Define PDJE_MOUSE_YWHEEL
+========================
+
+- Defined in :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_Input_State.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: PDJE_MOUSE_YWHEEL
+   :project: Project_DJ_Engine

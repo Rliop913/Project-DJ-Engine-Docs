@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_0989a3a6f34586d98295f0278881befe" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/global</compoundname>
+    <innerdir refid="dir_b68721689a54f456b0c4acc4ccb9eaf4">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto</innerdir>
+    <innerdir refid="dir_321b5862d2d6822c07e5f19b63fc6aa1">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines</innerdir>
+    <innerdir refid="dir_001b0f19e34842009d462fef2882a9b5">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Highres_Clock</innerdir>
+    <innerfile refid="PDJE__ATOMIC__EVENT_8hpp">PDJE_ATOMIC_EVENT.hpp</innerfile>
+    <innerfile refid="PDJE__Benchmark_8hpp">PDJE_Benchmark.hpp</innerfile>
+    <innerfile refid="PDJE__CAbi__Core__Private_8hpp">PDJE_CAbi_Core_Private.hpp</innerfile>
+    <innerfile refid="PDJE__CAbi__Input__Private_8hpp">PDJE_CAbi_Input_Private.hpp</innerfile>
+    <innerfile refid="PDJE__CAbi__Private_8hpp">PDJE_CAbi_Private.hpp</innerfile>
+    <innerfile refid="PDJE__EXPORT__SETTER_8hpp">PDJE_EXPORT_SETTER.hpp</innerfile>
+    <innerfile refid="PDJE__LOG__RUNTIME__API_8h">PDJE_LOG_RUNTIME_API.h</innerfile>
+    <innerfile refid="PDJE__LOG__SETTER_8cpp">PDJE_LOG_SETTER.cpp</innerfile>
+    <innerfile refid="PDJE__LOG__SETTER_8hpp">PDJE_LOG_SETTER.hpp</innerfile>
+    <innerfile refid="PDJE__OBJ__SETTER_8hpp">PDJE_OBJ_SETTER.hpp</innerfile>
+    <innerfile refid="PDJE__RAII__WRAP_8hpp">PDJE_RAII_WRAP.hpp</innerfile>
+    <innerfile refid="PDJE__SYNC__CORE_8hpp">PDJE_SYNC_CORE.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/"/>
+  </compounddef>
+</doxygen>

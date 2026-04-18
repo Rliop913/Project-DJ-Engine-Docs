@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="WaveformWebpRasterizer_8cpp" kind="file" language="C++">
+    <compoundname>WaveformWebpRasterizer.cpp</compoundname>
+    <includes refid="WaveformWebpRasterizer_8hpp" local="yes">util/function/image/WaveformWebpRasterizer.hpp</includes>
+    <includes refid="WebpWriter_8hpp" local="yes">util/function/image/WebpWriter.hpp</includes>
+    <includes refid="WaveformWebpSupport_8hpp" local="yes">util/function/image/WaveformWebpSupport.hpp</includes>
+    <includes refid="WaveformWebpHighway-inl_8h" local="yes">WaveformWebpHighway-inl.h</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">span</includes>
+    <includes local="no">utility</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>PDJE_Parallel_Runtime_Loader.hpp</label>
+        <link refid="PDJE__Parallel__Runtime__Loader_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Parallel_Args.hpp</label>
+        <link refid="Parallel__Args_8hpp"/>
+      </node>
+      <node id="3">
+        <label>util/common/Result.hpp</label>
+        <link refid="Result_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>util/common/Status.hpp</label>
+        <link refid="Status_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>util/common/StatusCode.hpp</label>
+        <link refid="StatusCode_8hpp"/>
+      </node>
+      <node id="10">
+        <label>util/function/FunctionContext.hpp</label>
+        <link refid="FunctionContext_8hpp"/>
+      </node>
+      <node id="9">
+        <label>util/function/image/WaveformWebp.hpp</label>
+        <link refid="WaveformWebp_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>WaveformWebpHighway-inl.h</label>
+        <link refid="WaveformWebpHighway-inl_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>util/function/image/WaveformWebpInternal.hpp</label>
+        <link refid="WaveformWebpInternal_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp</label>
+        <link refid="WaveformWebpRasterizer_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>util/function/image/WaveformWebpRasterizer.hpp</label>
+        <link refid="WaveformWebpRasterizer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>util/function/image/WaveformWebpSupport.hpp</label>
+        <link refid="WaveformWebpSupport_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>util/function/image/WebpWriter.hpp</label>
+        <link refid="WebpWriter_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>util/function/stft/STFT_Parallel.hpp</label>
+        <link refid="STFT__Parallel_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>STFT_args.hpp</label>
+        <link refid="STFT__args_8hpp"/>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="24">
+        <label>array</label>
+      </node>
+      <node id="22">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>cstddef</label>
+      </node>
+      <node id="18">
+        <label>cstdint</label>
+      </node>
+      <node id="27">
+        <label>cstring</label>
+      </node>
+      <node id="28">
+        <label>filesystem</label>
+      </node>
+      <node id="29">
+        <label>fstream</label>
+      </node>
+      <node id="32">
+        <label>hwy/foreach_target.h</label>
+      </node>
+      <node id="33">
+        <label>hwy/highway.h</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="19">
+        <label>span</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="30">
+        <label>string_view</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+      <node id="26">
+        <label>webp/encode.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacePDJE__UTIL">PDJE_UTIL</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function">PDJE_UTIL::function</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function_1_1image">PDJE_UTIL::function::image</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail">PDJE_UTIL::function::image::detail</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="WaveformWebpRasterizer_8cpp_1ac3180678ac3d8e17a9fb79bb9b7a6785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HWY_EXPORT</definition>
+        <argsstring>(ComputeWaveformColumnExtremaSIMD)</argsstring>
+        <name>HWY_EXPORT</name>
+        <param>
+          <type>ComputeWaveformColumnExtremaSIMD</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp" line="11" column="1" declfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp" declline="11" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpRasterizer_8hpp" kindref="compound">util/function/image/WaveformWebpRasterizer.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WebpWriter_8hpp" kindref="compound">util/function/image/WebpWriter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpSupport_8hpp" kindref="compound">util/function/image/WaveformWebpSupport.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpHighway-inl_8h" kindref="compound">WaveformWebpHighway-inl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="WaveformWebpRasterizer_8cpp_1ac3180678ac3d8e17a9fb79bb9b7a6785" refkind="member"><highlight class="normal"><ref refid="WaveformWebpRasterizer_8cpp_1ac3180678ac3d8e17a9fb79bb9b7a6785" kindref="member">HWY_EXPORT</ref>(ComputeWaveformColumnExtremaSIMD);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail" kindref="compound">PDJE_UTIL::function::image::detail</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1afb39e40230dca13ce7f36ce96ba36a71" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1afb39e40230dca13ce7f36ce96ba36a71" kindref="member">WaveformRasterizer::WaveformRasterizer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref><sp/>&amp;args,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref><sp/><sp/><sp/><sp/>&amp;buffer_sizes,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>(args),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a0a3d6b03c3819759992b7af459110714" kindref="member">buffer_sizes_</ref>(buffer_sizes),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a2baef4291375e3fe0c2597358585b981" kindref="member">options_</ref>(options)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result&lt;void&gt;</ref></highlight></codeline>
+<codeline lineno="23" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a146d90fcaa3d26f7a9df5bd324d3fe1f" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a146d90fcaa3d26f7a9df5bd324d3fe1f" kindref="member">WaveformRasterizer::ComputeExtrema</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref><sp/><sp/><sp/><sp/><sp/>&amp;job,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref><sp/>&amp;context)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="25"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/>expected_sample_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1a595147a0f6be4b342cb56ad2e3c81dac" kindref="member">support::checked_multiply</ref>(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.pcm_per_pixel,<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.x_pixels_per_image,<sp/>expected_sample_count))<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1a06e2b33850680736fc30b4ab0160dd3f" kindref="member">common::Result&lt;void&gt;::failure</ref>(<ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1adf95ca56191d82494e5775ed6cdd5ff0" kindref="member">support::wrap_job_status</ref>(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacePDJE__UTIL_1_1common_1a3025dd440bc92023d950561cff3dfdb4ae55d43eabeefe5a8271b4a3c898bd18f" kindref="member">common::StatusCode::invalid_argument</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Waveform<sp/>chunk<sp/>sample<sp/>count<sp/>overflows<sp/>size_t.&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>job));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(job.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob_1ad7c6c0e00e1af10288498acf1032db81" kindref="member">sample_count</ref><sp/>!=<sp/>expected_sample_count)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1a06e2b33850680736fc30b4ab0160dd3f" kindref="member">common::Result&lt;void&gt;::failure</ref>(<ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1adf95ca56191d82494e5775ed6cdd5ff0" kindref="member">support::wrap_job_status</ref>(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacePDJE__UTIL_1_1common_1a3025dd440bc92023d950561cff3dfdb4ae55d43eabeefe5a8271b4a3c898bd18f" kindref="member">common::StatusCode::invalid_argument</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Waveform<sp/>chunk<sp/>span<sp/>size<sp/>does<sp/>not<sp/>match<sp/>pcm_per_pixel<sp/>*<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;x_pixels_per_image.&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>job));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(context.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a8f00436aae5015ddfd40a3fb36c0e535" kindref="member">column_mins</ref>.size()<sp/>!=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.x_pixels_per_image<sp/>||</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a40da0935abfe25bdfc9e712afe085a01" kindref="member">column_maxs</ref>.size()<sp/>!=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.x_pixels_per_image)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1a06e2b33850680736fc30b4ab0160dd3f" kindref="member">common::Result&lt;void&gt;::failure</ref>(<ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1adf95ca56191d82494e5775ed6cdd5ff0" kindref="member">support::wrap_job_status</ref>(</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacePDJE__UTIL_1_1common_1a3025dd440bc92023d950561cff3dfdb4ae55d43eabeefe5a8271b4a3c898bd18f" kindref="member">common::StatusCode::invalid_argument</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Waveform<sp/>extrema<sp/>buffers<sp/>must<sp/>match<sp/>x_pixels_per_image.&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>job));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>HWY_DYNAMIC_DISPATCH(ComputeWaveformColumnExtremaSIMD)(job.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob_1a55a3be545186a5598b3995c30742eb11" kindref="member">samples</ref>,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.pcm_per_pixel,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.x_pixels_per_image,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a8f00436aae5015ddfd40a3fb36c0e535" kindref="member">column_mins</ref>.data(),</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a40da0935abfe25bdfc9e712afe085a01" kindref="member">column_maxs</ref>.data());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1aaf1289221fee109ad97d48ca53796cb6" kindref="member">common::Result&lt;void&gt;::success</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result&lt;void&gt;</ref></highlight></codeline>
+<codeline lineno="60" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1acc93f2885145fa4cd4e618f89f3715c4" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1acc93f2885145fa4cd4e618f89f3715c4" kindref="member">WaveformRasterizer::Encode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;job,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref><sp/>&amp;context,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a7b998cfb499fad07c17f416c6035ea7f" kindref="member">EncodedWebpBytes</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;output)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>encoded<sp/>=<sp/><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1ad73f20df717bb3b8336c40b1e2c9a3e1" kindref="member">encode_webp</ref>(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.image<sp/>=</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pixels<sp/>=<sp/>context.<ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a55a6d3b7bf86aba31916b2eb40e54603" kindref="member">rgba</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.width<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.x_pixels_per_image,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.height<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.y_pixels,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stride<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a0a3d6b03c3819759992b7af459110714" kindref="member">buffer_sizes_</ref>.row_stride,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pixel_format<sp/>=<sp/><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1ab4c8fbb42e3638e97e48402b4ee04f52aaffcf7617521c42b49e1e2929a725e6a" kindref="member">RasterPixelFormat::rgba8</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.compression_level<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" kindref="member">args_</ref>.compression_level<sp/>},</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a2baef4291375e3fe0c2597358585b981" kindref="member">options_</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!encoded.ok())<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1a06e2b33850680736fc30b4ab0160dd3f" kindref="member">common::Result&lt;void&gt;::failure</ref>(</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1adf95ca56191d82494e5775ed6cdd5ff0" kindref="member">support::wrap_job_status</ref>(encoded.status(),<sp/>job));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>output<sp/>=<sp/>std::move(encoded).value();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1aaf1289221fee109ad97d48ca53796cb6" kindref="member">common::Result&lt;void&gt;::success</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>PDJE_UTIL::function::image::detail</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp"/>
+  </compounddef>
+</doxygen>

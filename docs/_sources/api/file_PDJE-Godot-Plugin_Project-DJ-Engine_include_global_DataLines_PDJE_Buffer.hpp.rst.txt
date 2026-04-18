@@ -1,0 +1,62 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Buffer.hpp:
+
+File PDJE_Buffer.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines/PDJE_Buffer.hpp``)
+---------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Buffer.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Atomic_Double_Buffer.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_Atomic_Double_Buffer.hpp`)
+
+- ``PDJE_EXPORT_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_EXPORT_SETTER.hpp`)
+
+- ``ipc_shared_memory.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory_ipc_shared_memory.hpp`)
+
+- ``memory_resource``
+
+- ``random``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory_linux_Input_Transfer.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory_windows_Input_Transfer.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_midi_PDJE_MIDI.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_runner_SubProcess.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_PDJE_Judge_Loop.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_PDJE_Judge_Loop_Structs.hpp`
+
+
+

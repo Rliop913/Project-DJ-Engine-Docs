@@ -1,0 +1,59 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_Translators_FrameCalc.cpp:
+
+File FrameCalc.cpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_Translators>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators/FrameCalc.cpp``)
+----------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_Translators_FrameCalc.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``FrameCalcCore.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_Translators_FrameCalcCore.hpp`)
+
+- ``PDJE_LOG_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.hpp`)
+
+- ``algorithm``
+
+- ``cmath``
+
+- ``iterator``
+
+- ``string``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_FrameCalc_8cpp_1a9cdb1949d4582c32a77bdd45679bcb7e`
+
+- :ref:`exhale_function_FrameCalc_8cpp_1a4c447701d1106c733e9cb25640baaa06`
+
+- :ref:`exhale_function_FrameCalc_8cpp_1a8d656643f107e8a222b009a37a3459c4`
+

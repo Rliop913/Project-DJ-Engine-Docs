@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_052dfa0e92a87b034f7be7a286f80e41" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/PreProcess</compoundname>
+    <innerfile refid="PDJE__PreProcess_8cpp">PDJE_PreProcess.cpp</innerfile>
+    <innerfile refid="PDJE__PreProcess_8hpp">PDJE_PreProcess.hpp</innerfile>
+    <innerfile refid="PDJE__PreProcess__Work_8cpp">PDJE_PreProcess_Work.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/PreProcess/"/>
+  </compounddef>
+</doxygen>

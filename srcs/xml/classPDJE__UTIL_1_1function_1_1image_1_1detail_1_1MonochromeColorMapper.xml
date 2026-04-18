@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::MonochromeColorMapper</compoundname>
+    <includes refid="WaveformWebpProcessor_8hpp" local="no">WaveformWebpProcessor.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper_1ab536aa5aa356f000b50c9789bf7079b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::MonochromeColorMapper::Prepare</definition>
+        <argsstring>(const WaveformJob &amp;job)</argsstring>
+        <name>Prepare</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::MonochromeColorMapper::Prepare</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="19" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper_1a286714d27fd3db0439b7df14b2265164" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::array&lt; std::uint8_t, 3 &gt;</type>
+        <definition>std::array&lt; std::uint8_t, 3 &gt; PDJE_UTIL::function::image::detail::MonochromeColorMapper::ColorAt</definition>
+        <argsstring>(std::size_t x) const</argsstring>
+        <name>ColorAt</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::MonochromeColorMapper::ColorAt</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="26" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="16" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper_1a286714d27fd3db0439b7df14b2265164" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::MonochromeColorMapper</scope><name>ColorAt</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper_1ab536aa5aa356f000b50c9789bf7079b5" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::MonochromeColorMapper</scope><name>Prepare</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

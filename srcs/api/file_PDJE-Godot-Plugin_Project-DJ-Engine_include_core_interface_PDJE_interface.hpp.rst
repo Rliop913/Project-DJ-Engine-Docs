@@ -1,0 +1,92 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_PDJE_interface.hpp:
+
+File PDJE_interface.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/interface``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/interface/PDJE_interface.hpp``)
+----------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_PDJE_interface.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``NoteTranslator.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_Translators_NoteTranslator_NoteTranslator.hpp`)
+
+- ``PDJE_Core_DataLine.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Core_DataLine.hpp`)
+
+- ``PDJE_EXPORT_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_EXPORT_SETTER.hpp`)
+
+- ``PDJE_LOG_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.hpp`)
+
+- ``audioPlayer.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioPlayer.hpp`)
+
+- ``dbRoot.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_dbRoot.hpp`)
+
+- ``editorObject.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_editorObject_editorObject.hpp`)
+
+- ``musicDB.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_musicDB.hpp`)
+
+- ``trackDB.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_trackDB.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_CPDJE_interface.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_PDJE_interface.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_PDJE_polyglot_wraps.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_JUDGE_TESTS_judgeTest.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_dbTest.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_editorTest.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_gittest.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_interfaceTest.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_music_to_waveform_webp.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classARGSETTER__WRAPPER`
+
+- :ref:`exhale_class_classPDJE`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_PDJE__interface_8hpp_1a69adf2c2084046791b1bd87c68a42e16`
+

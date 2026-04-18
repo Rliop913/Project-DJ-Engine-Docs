@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_f9bcfb43b8a9780888f7524f13a554e8" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/LineVersion</compoundname>
+    <innerfile refid="LineVersion_8cpp">LineVersion.cpp</innerfile>
+    <innerfile refid="LineVersion_8hpp">LineVersion.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/LineVersion/"/>
+  </compounddef>
+</doxygen>

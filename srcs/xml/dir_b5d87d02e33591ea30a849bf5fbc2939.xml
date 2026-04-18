@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_b5d87d02e33591ea30a849bf5fbc2939" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject</compoundname>
+    <innerfile refid="tempDB_8cpp">tempDB.cpp</innerfile>
+    <innerfile refid="tempDB_8hpp">tempDB.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject/"/>
+  </compounddef>
+</doxygen>

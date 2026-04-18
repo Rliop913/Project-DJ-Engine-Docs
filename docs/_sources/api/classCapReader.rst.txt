@@ -1,0 +1,17 @@
+.. _exhale_class_classCapReader:
+
+Template Class CapReader
+========================
+
+- Defined in :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_Capnp_CapnpBinary_CapnpBinary.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: CapReader
+   :project: Project_DJ_Engine
+   :members:
+   :protected-members:
+   :undoc-members:

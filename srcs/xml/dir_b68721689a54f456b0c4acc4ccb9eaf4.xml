@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_b68721689a54f456b0c4acc4ccb9eaf4" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto</compoundname>
+    <innerdir refid="dir_d7dc19aa281b1e933cca8f931c6af7e0">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/Linux</innerdir>
+    <innerdir refid="dir_8624658b1dea412a7b6d43192ccf43db">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/Mac</innerdir>
+    <innerdir refid="dir_36b8435b9d9746d80008e47c2c243206">PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/Windows</innerdir>
+    <innerfile refid="PDJE__Crypto_8hpp">PDJE_Crypto.hpp</innerfile>
+    <innerfile refid="PDJE__Crypto__AEAD_8cpp">PDJE_Crypto_AEAD.cpp</innerfile>
+    <innerfile refid="PDJE__Crypto__Hash_8cpp">PDJE_Crypto_Hash.cpp</innerfile>
+    <innerfile refid="PDJE__Crypto__Token_8cpp">PDJE_Crypto_Token.cpp</innerfile>
+    <innerfile refid="PSKPipe_8hpp">PSKPipe.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/"/>
+  </compounddef>
+</doxygen>

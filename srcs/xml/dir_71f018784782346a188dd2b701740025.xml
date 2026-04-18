@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_71f018784782346a188dd2b701740025" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core</compoundname>
+    <innerdir refid="dir_9ca98fd3cb5300ab0188462226e29dd7">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender</innerdir>
+    <innerdir refid="dir_cb9687e7030a94f71b812e4dd857f2c7">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db</innerdir>
+    <innerdir refid="dir_205b70d8c8e7b71623138876497050bb">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor</innerdir>
+    <innerdir refid="dir_62b527234e5801336d771b636637946d">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/interface</innerdir>
+    <innerdir refid="dir_6b879a960c061667cd803263a5e405b0">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects</innerdir>
+    <innerfile refid="FAKE__CAPNP__ENUMS__FOR__SWIG_8hpp">FAKE_CAPNP_ENUMS_FOR_SWIG.hpp</innerfile>
+    <innerfile refid="SWIG__editor__visitor_8hpp">SWIG_editor_visitor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/"/>
+  </compounddef>
+</doxygen>

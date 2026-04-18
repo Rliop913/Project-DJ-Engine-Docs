@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_995e4c66b8966d69097b91d20898ff48" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/util</compoundname>
+    <innerdir refid="dir_f2a2eb84cc787df31e685ec8369df934">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/ai</innerdir>
+    <innerdir refid="dir_161db93596e66846071fb97033152e29">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common</innerdir>
+    <innerdir refid="dir_b332e2f6fb31c8ec32de331ee41bc969">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db</innerdir>
+    <innerdir refid="dir_72c41e3c16c4f9c1be01dd36399229cf">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function</innerdir>
+    <innerfile refid="PDJE__Util_8hpp">PDJE_Util.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/"/>
+  </compounddef>
+</doxygen>

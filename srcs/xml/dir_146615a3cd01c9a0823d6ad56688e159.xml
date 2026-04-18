@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_146615a3cd01c9a0823d6ad56688e159" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop</compoundname>
+    <innerdir refid="dir_db327dbac0ad819d1539640a7fdfd788">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/Match</innerdir>
+    <innerdir refid="dir_052dfa0e92a87b034f7be7a286f80e41">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/PreProcess</innerdir>
+    <innerfile refid="PDJE__Judge__Loop_8cpp">PDJE_Judge_Loop.cpp</innerfile>
+    <innerfile refid="PDJE__Judge__Loop_8hpp">PDJE_Judge_Loop.hpp</innerfile>
+    <innerfile refid="PDJE__Judge__Loop__Structs_8hpp">PDJE_Judge_Loop_Structs.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/"/>
+  </compounddef>
+</doxygen>

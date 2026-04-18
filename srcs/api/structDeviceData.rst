@@ -1,0 +1,17 @@
+.. _exhale_struct_structDeviceData:
+
+Struct DeviceData
+=================
+
+- Defined in :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Input_Device_Data.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: DeviceData
+   :project: Project_DJ_Engine
+   :members:
+   :protected-members:
+   :undoc-members:

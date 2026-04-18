@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformRasterizer</compoundname>
+    <includes refid="WaveformWebpRasterizer_8hpp" local="no">WaveformWebpRasterizer.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+        <definition>const EncodeWaveformWebpArgs&amp; PDJE_UTIL::function::image::detail::WaveformRasterizer::args_</definition>
+        <argsstring></argsstring>
+        <name>args_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::args_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="59" column="34" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a0a3d6b03c3819759992b7af459110714" prot="private" static="no" mutable="no">
+        <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref></type>
+        <definition>WaveformBufferSizes PDJE_UTIL::function::image::detail::WaveformRasterizer::buffer_sizes_</definition>
+        <argsstring></argsstring>
+        <name>buffer_sizes_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::buffer_sizes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="60" column="35" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a2baef4291375e3fe0c2597358585b981" prot="private" static="no" mutable="no">
+        <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+        <definition>function::EvalOptions PDJE_UTIL::function::image::detail::WaveformRasterizer::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::options_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="61" column="35" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1afb39e40230dca13ce7f36ce96ba36a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformRasterizer::WaveformRasterizer</definition>
+        <argsstring>(const EncodeWaveformWebpArgs &amp;args, const WaveformBufferSizes &amp;buffer_sizes, function::EvalOptions options)</argsstring>
+        <name>WaveformRasterizer</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::WaveformRasterizer</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref> &amp;</type>
+          <declname>buffer_sizes</declname>
+        </param>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="18" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a146d90fcaa3d26f7a9df5bd324d3fe1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::WaveformRasterizer::ComputeExtrema</definition>
+        <argsstring>(const WaveformJob &amp;job, WaveformWorkerContext &amp;context) const</argsstring>
+        <name>ComputeExtrema</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::ComputeExtrema</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="23" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp" bodystart="23" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1ab31143ce39928d456d98c2e9a605e1b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ResolveColorFn</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void PDJE_UTIL::function::image::detail::WaveformRasterizer::Rasterize</definition>
+        <argsstring>(WaveformWorkerContext &amp;context, ResolveColorFn &amp;&amp;resolve_color) const</argsstring>
+        <name>Rasterize</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::Rasterize</qualifiedname>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>ResolveColorFn &amp;&amp;</type>
+          <declname>resolve_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="27" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" bodystart="27" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1acc93f2885145fa4cd4e618f89f3715c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::WaveformRasterizer::Encode</definition>
+        <argsstring>(const WaveformJob &amp;job, const WaveformWorkerContext &amp;context, EncodedWebpBytes &amp;output) const</argsstring>
+        <name>Encode</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformRasterizer::Encode</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a7b998cfb499fad07c17f416c6035ea7f" kindref="member">EncodedWebpBytes</ref> &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="54" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp" bodystart="60" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>PDJE_UTIL::function::CacheContext</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1CacheContext"/>
+      </node>
+      <node id="5">
+        <label>PDJE_UTIL::function::EvalOptions</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1EvalOptions"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pcm</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PDJE_UTIL::function::image::detail::WaveformBufferSizes</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes"/>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::WaveformRasterizer</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>args_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>buffer_sizes_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>options_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::span&lt; const float &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" line="16" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp" bodystart="16" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a40ae1c452f4fc925ea4e58207bcde564" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>args_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a0a3d6b03c3819759992b7af459110714" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>buffer_sizes_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a146d90fcaa3d26f7a9df5bd324d3fe1f" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>ComputeExtrema</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1acc93f2885145fa4cd4e618f89f3715c4" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>Encode</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1a2baef4291375e3fe0c2597358585b981" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>options_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1ab31143ce39928d456d98c2e9a605e1b3" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>Rasterize</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer_1afb39e40230dca13ce7f36ce96ba36a71" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformRasterizer</scope><name>WaveformRasterizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

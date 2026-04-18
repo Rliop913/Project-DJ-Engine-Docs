@@ -1,0 +1,101 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_GitDataPack_GitRAII.hpp:
+
+File GitRAII.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_GitDataPack>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/GitDataPack``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/GitDataPack/GitRAII.hpp``)
+---------------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_GitDataPack_GitRAII.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``PDJE_LOG_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.hpp`)
+
+- ``git2.h``
+
+- ``git2/blob.h``
+
+- ``git2/branch.h``
+
+- ``git2/diff.h``
+
+- ``git2/refs.h``
+
+- ``git2/tree.h``
+
+- ``git2/types.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_DiffMachine_TimeLineDiffMachine.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_EventMarker_EventMarker.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_LineVersion_LineVersion.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_LineVersion_LineVersion.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_TimeLine.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_GIT_RAII`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classGIT__RAII_1_1blob`
+
+- :ref:`exhale_class_classGIT__RAII_1_1branch__itr`
+
+- :ref:`exhale_class_classGIT__RAII_1_1commit`
+
+- :ref:`exhale_class_classGIT__RAII_1_1diff`
+
+- :ref:`exhale_class_classGIT__RAII_1_1patch`
+
+- :ref:`exhale_class_classGIT__RAII_1_1ref`
+
+- :ref:`exhale_class_classGIT__RAII_1_1tree`
+
+- :ref:`exhale_class_classGIT__RAII_1_1tree__entry`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespaceGIT__RAII_1ae9f5018a36b209676af787d453948570`
+

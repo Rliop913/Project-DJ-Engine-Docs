@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_7becd4646a98f64f2c004d13e6a86414" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/tests</compoundname>
+    <innerdir refid="dir_7bf283d4f3e9f189c382faae9d16173b">PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/INPUT_TESTS</innerdir>
+    <innerdir refid="dir_526b04bfa5b2add055a481d1327f643b">PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/JUDGE_TESTS</innerdir>
+    <innerfile refid="audioTest_8cpp">audioTest.cpp</innerfile>
+    <innerfile refid="CapnpTest_8cpp">CapnpTest.cpp</innerfile>
+    <innerfile refid="dbTest_8cpp">dbTest.cpp</innerfile>
+    <innerfile refid="editorTest_8cpp">editorTest.cpp</innerfile>
+    <innerfile refid="gittest_8cpp">gittest.cpp</innerfile>
+    <innerfile refid="highway__Test_8cpp">highway_Test.cpp</innerfile>
+    <innerfile refid="interfaceTest_8cpp">interfaceTest.cpp</innerfile>
+    <innerfile refid="logTest_8cpp">logTest.cpp</innerfile>
+    <innerfile refid="manualAudioTest_8cpp">manualAudioTest.cpp</innerfile>
+    <innerfile refid="music__to__waveform__webp_8cpp">music_to_waveform_webp.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/"/>
+  </compounddef>
+</doxygen>

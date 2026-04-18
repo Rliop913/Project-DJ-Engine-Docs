@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_f03efc81289f330976f173ca8764fb0c" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC</compoundname>
+    <innerdir refid="dir_938677ea1d760fa9e11016087c8ae80d">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/common</innerdir>
+    <innerdir refid="dir_0d3350c54f3a8bcb4d56a04850fc2f60">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/"/>
+  </compounddef>
+</doxygen>

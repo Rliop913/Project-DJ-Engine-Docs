@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_47f1f56eb33545deeb7c47feff479b13" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MiniaudioObjects</compoundname>
+    <innerfile refid="Decoder_8cpp">Decoder.cpp</innerfile>
+    <innerfile refid="Decoder_8hpp">Decoder.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MiniaudioObjects/"/>
+  </compounddef>
+</doxygen>

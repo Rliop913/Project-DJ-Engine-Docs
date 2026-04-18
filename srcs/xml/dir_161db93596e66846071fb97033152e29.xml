@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_161db93596e66846071fb97033152e29" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common</compoundname>
+    <innerdir refid="dir_dd3fe2bc08f5dae5dc229f99d436762d">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader</innerdir>
+    <innerfile refid="Result_8hpp">Result.hpp</innerfile>
+    <innerfile refid="Status_8hpp">Status.hpp</innerfile>
+    <innerfile refid="StatusCode_8hpp">StatusCode.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/"/>
+  </compounddef>
+</doxygen>

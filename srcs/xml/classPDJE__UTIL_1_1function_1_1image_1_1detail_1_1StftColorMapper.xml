@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::StftColorMapper</compoundname>
+    <includes refid="WaveformWebpProcessor_8hpp" local="no">WaveformWebpProcessor.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a1d9ed7360fb7d0795adc9af640e34fc8" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+        <definition>const EncodeWaveformWebpArgs&amp; PDJE_UTIL::function::image::detail::StftColorMapper::args_</definition>
+        <argsstring></argsstring>
+        <name>args_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::args_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="50" column="38" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a31e3c85d92582aeed00fd4f926b88847" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kindref="compound">EncodeWaveformWebpStftArgs</ref> &amp;</type>
+        <definition>const EncodeWaveformWebpStftArgs&amp; PDJE_UTIL::function::image::detail::StftColorMapper::stft_args_</definition>
+        <argsstring></argsstring>
+        <name>stft_args_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::stft_args_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="51" column="38" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1aec48196a3983b4b857594c0af79eac18" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; PDJE_UTIL::function::image::detail::StftColorMapper::stft_pcm_</definition>
+        <argsstring></argsstring>
+        <name>stft_pcm_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::stft_pcm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="52" column="32" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1aa3b54570f2e5230c8e6d5c02b7dc3ae1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::uint8_t &gt;</type>
+        <definition>std::vector&lt;std::uint8_t&gt; PDJE_UTIL::function::image::detail::StftColorMapper::column_rgb_</definition>
+        <argsstring></argsstring>
+        <name>column_rgb_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::column_rgb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="53" column="25" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1ad1a675212767a7e165ab6c99ad206e9a" prot="private" static="no" mutable="no">
+        <type><ref refid="classPDJE__PARALLEL_1_1STFT" kindref="compound">PDJE_PARALLEL::STFT</ref></type>
+        <definition>PDJE_PARALLEL::STFT PDJE_UTIL::function::image::detail::StftColorMapper::stft_</definition>
+        <argsstring></argsstring>
+        <name>stft_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::stft_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="54" column="39" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1abf6975dfa699bc54bccbb2b43ba150ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::StftColorMapper::StftColorMapper</definition>
+        <argsstring>(const EncodeWaveformWebpArgs &amp;args, const EncodeWaveformWebpStftArgs &amp;stft_args, const WaveformBufferSizes &amp;buffer_sizes, std::size_t chunk_sample_count)</argsstring>
+        <name>StftColorMapper</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::StftColorMapper</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kindref="compound">EncodeWaveformWebpStftArgs</ref> &amp;</type>
+          <declname>stft_args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref> &amp;</type>
+          <declname>buffer_sizes</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>chunk_sample_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="35" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.cpp" bodystart="14" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a02f4892ada3e7eaa59b9485f65d15267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::StftColorMapper::Prepare</definition>
+        <argsstring>(const WaveformJob &amp;job)</argsstring>
+        <name>Prepare</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::Prepare</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="41" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.cpp" bodystart="26" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a7707bdd8655a72ecb3a04cdf56fb0364" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::array&lt; std::uint8_t, 3 &gt;</type>
+        <definition>std::array&lt; std::uint8_t, 3 &gt; PDJE_UTIL::function::image::detail::StftColorMapper::ColorAt</definition>
+        <argsstring>(std::size_t x) const</argsstring>
+        <name>ColorAt</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::ColorAt</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="44" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.cpp" bodystart="57" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a418b55c364127879e711217be29ac107" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::StftColorMapper::MapStftRgbToColumns</definition>
+        <argsstring>(std::span&lt; const float &gt; rgb_frames)</argsstring>
+        <name>MapStftRgbToColumns</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::StftColorMapper::MapStftRgbToColumns</qualifiedname>
+        <param>
+          <type>std::span&lt; const float &gt;</type>
+          <declname>rgb_frames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="48" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.cpp" bodystart="68" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>PDJE_PARALLEL::Backend</label>
+        <link refid="classPDJE__PARALLEL_1_1Backend"/>
+      </node>
+      <node id="10">
+        <label>PDJE_PARALLEL::IStftBackend</label>
+        <link refid="classPDJE__PARALLEL_1_1IStftBackend"/>
+      </node>
+      <node id="5">
+        <label>PDJE_PARALLEL::POST_PROCESS</label>
+        <link refid="structPDJE__PARALLEL_1_1POST__PROCESS"/>
+      </node>
+      <node id="8">
+        <label>PDJE_PARALLEL::STFT</label>
+        <link refid="classPDJE__PARALLEL_1_1STFT"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>opencl_backend</edgelabel>
+          <edgelabel>serial_backend</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>backendinfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pcm</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>post_process</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::StftColorMapper</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>args_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stft_args_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>stft_pcm_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>column_rgb_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>stft_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::span&lt; const float &gt;</label>
+      </node>
+      <node id="9">
+        <label>std::unique_ptr&lt; PDJE_PARALLEL::IStftBackend &gt;</label>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::vector&lt; std::uint8_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="33" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="33" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a1d9ed7360fb7d0795adc9af640e34fc8" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>args_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a7707bdd8655a72ecb3a04cdf56fb0364" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>ColorAt</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1aa3b54570f2e5230c8e6d5c02b7dc3ae1" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>column_rgb_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a418b55c364127879e711217be29ac107" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>MapStftRgbToColumns</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a02f4892ada3e7eaa59b9485f65d15267" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>Prepare</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1ad1a675212767a7e165ab6c99ad206e9a" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>stft_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1a31e3c85d92582aeed00fd4f926b88847" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>stft_args_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1aec48196a3983b4b857594c0af79eac18" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>stft_pcm_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper_1abf6975dfa699bc54bccbb2b43ba150ce" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::StftColorMapper</scope><name>StftColorMapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

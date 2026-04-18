@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kind="struct" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</compoundname>
+    <includes refid="WaveformWebp_8hpp" local="no">WaveformWebp.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1a0bfed5e8df37c987649f3f2da6bbe022" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacePDJE__PARALLEL_1a09a7d92b5f20cd3abe1ff3a1c68d6c46" kindref="member">PDJE_PARALLEL::WINDOW_LIST</ref></type>
+        <definition>PDJE_PARALLEL::WINDOW_LIST PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::target_window</definition>
+        <argsstring></argsstring>
+        <name>target_window</name>
+        <qualifiedname>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::target_window</qualifiedname>
+        <initializer>                                      =
+<ref refid="namespacePDJE__PARALLEL_1a09a7d92b5f20cd3abe1ff3a1c68d6c46ae20da0bd120c48c9d21a24cf25940300" kindref="member">PDJE_PARALLEL::WINDOW_LIST::HANNING</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" line="29" column="33" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1a77ad19b3b6e34975e4e548908058d43f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::window_size_exp</definition>
+        <argsstring></argsstring>
+        <name>window_size_exp</name>
+        <qualifiedname>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::window_size_exp</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" line="31" column="33" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1adcc150554fec8e382f2c6504b2c8e458" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::overlap_ratio</definition>
+        <argsstring></argsstring>
+        <name>overlap_ratio</name>
+        <qualifiedname>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::overlap_ratio</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" line="32" column="33" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1ab0fbeacec318ff4c13bc934828ccc493" prot="public" static="no" mutable="no">
+        <type><ref refid="structPDJE__PARALLEL_1_1POST__PROCESS" kindref="compound">PDJE_PARALLEL::POST_PROCESS</ref></type>
+        <definition>PDJE_PARALLEL::POST_PROCESS PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::post_process</definition>
+        <argsstring></argsstring>
+        <name>post_process</name>
+        <qualifiedname>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs::post_process</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" line="33" column="33" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>PDJE_PARALLEL::POST_PROCESS</label>
+        <link refid="structPDJE__PARALLEL_1_1POST__PROCESS"/>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>post_process</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" line="28" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp" bodystart="28" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1adcc150554fec8e382f2c6504b2c8e458" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</scope><name>overlap_ratio</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1ab0fbeacec318ff4c13bc934828ccc493" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</scope><name>post_process</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1a0bfed5e8df37c987649f3f2da6bbe022" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</scope><name>target_window</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs_1a77ad19b3b6e34975e4e548908058d43f" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</scope><name>window_size_exp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

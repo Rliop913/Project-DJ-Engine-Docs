@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_fdeab9bd11516d6eb289c2a30639cdae" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/windows</compoundname>
+    <innerfile refid="windows_2Input__Transfer_8cpp">Input_Transfer.cpp</innerfile>
+    <innerfile refid="windows_2Input__Transfer_8hpp">Input_Transfer.hpp</innerfile>
+    <innerfile refid="windows_2named__event_8cpp">named_event.cpp</innerfile>
+    <innerfile refid="windows_2named__mutex_8cpp">named_mutex.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/windows/"/>
+  </compounddef>
+</doxygen>

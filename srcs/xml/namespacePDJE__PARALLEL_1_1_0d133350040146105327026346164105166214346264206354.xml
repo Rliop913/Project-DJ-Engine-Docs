@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacePDJE__PARALLEL_1_1_0d133350040146105327026346164105166214346264206354" kind="namespace" language="C++">
+    <compoundname>PDJE_PARALLEL::@133350040146105327026346164105166214346264206354</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/OpenclBackend.cpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

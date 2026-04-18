@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="WaveformWebpEncoder_8cpp" kind="file" language="C++">
+    <compoundname>WaveformWebpEncoder.cpp</compoundname>
+    <includes refid="WaveformWebpEncoder_8hpp" local="yes">util/function/image/WaveformWebpEncoder.hpp</includes>
+    <includes refid="WaveformWebpPlanBuilder_8hpp" local="yes">util/function/image/WaveformWebpPlanBuilder.hpp</includes>
+    <includes refid="WaveformWebpProcessor_8hpp" local="yes">util/function/image/WaveformWebpProcessor.hpp</includes>
+    <includes refid="WaveformWebpWorkerRunner_8hpp" local="yes">util/function/image/WaveformWebpWorkerRunner.hpp</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>PDJE_Parallel_Runtime_Loader.hpp</label>
+        <link refid="PDJE__Parallel__Runtime__Loader_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Parallel_Args.hpp</label>
+        <link refid="Parallel__Args_8hpp"/>
+      </node>
+      <node id="4">
+        <label>util/common/Result.hpp</label>
+        <link refid="Result_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>util/common/Status.hpp</label>
+        <link refid="Status_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>util/common/StatusCode.hpp</label>
+        <link refid="StatusCode_8hpp"/>
+      </node>
+      <node id="9">
+        <label>util/function/FunctionContext.hpp</label>
+        <link refid="FunctionContext_8hpp"/>
+      </node>
+      <node id="3">
+        <label>util/function/image/WaveformWebp.hpp</label>
+        <link refid="WaveformWebp_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp</label>
+        <link refid="WaveformWebpEncoder_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>util/function/image/WaveformWebpEncoder.hpp</label>
+        <link refid="WaveformWebpEncoder_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>util/function/image/WaveformWebpInternal.hpp</label>
+        <link refid="WaveformWebpInternal_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>util/function/image/WaveformWebpPlanBuilder.hpp</label>
+        <link refid="WaveformWebpPlanBuilder_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>util/function/image/WaveformWebpProcessor.hpp</label>
+        <link refid="WaveformWebpProcessor_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>util/function/image/WaveformWebpRasterizer.hpp</label>
+        <link refid="WaveformWebpRasterizer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>util/function/image/WaveformWebpSupport.hpp</label>
+        <link refid="WaveformWebpSupport_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>util/function/image/WaveformWebpWorkerRunner.hpp</label>
+        <link refid="WaveformWebpWorkerRunner_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>util/function/stft/STFT_Parallel.hpp</label>
+        <link refid="STFT__Parallel_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>STFT_args.hpp</label>
+        <link refid="STFT__args_8hpp"/>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>array</label>
+      </node>
+      <node id="29">
+        <label>atomic</label>
+      </node>
+      <node id="25">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>cstddef</label>
+      </node>
+      <node id="17">
+        <label>cstdint</label>
+      </node>
+      <node id="30">
+        <label>exception</label>
+      </node>
+      <node id="26">
+        <label>limits</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="31">
+        <label>mutex</label>
+      </node>
+      <node id="18">
+        <label>span</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="32">
+        <label>thread</label>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacePDJE__UTIL">PDJE_UTIL</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function">PDJE_UTIL::function</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function_1_1image">PDJE_UTIL::function::image</innernamespace>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail">PDJE_UTIL::function::image::detail</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpEncoder_8hpp" kindref="compound">util/function/image/WaveformWebpEncoder.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpPlanBuilder_8hpp" kindref="compound">util/function/image/WaveformWebpPlanBuilder.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpProcessor_8hpp" kindref="compound">util/function/image/WaveformWebpProcessor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaveformWebpWorkerRunner_8hpp" kindref="compound">util/function/image/WaveformWebpWorkerRunner.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail" kindref="compound">PDJE_UTIL::function::image::detail</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a0588885dc2340113e27ee65328abb181" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a0588885dc2340113e27ee65328abb181" kindref="member">WaveformWebpEncoder::WaveformWebpEncoder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref><sp/>&amp;args,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>(args),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" kindref="member">options_</ref>(options),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1addc459132337fbac7b1ecc550ff1c5c7" kindref="member">mode_</ref>(<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99" kindref="member">Mode</ref>::Monochrome)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1ad217856c42725815583cbf6dfcc36008" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a0588885dc2340113e27ee65328abb181" kindref="member">WaveformWebpEncoder::WaveformWebpEncoder</ref>(</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref><sp/><sp/><sp/><sp/><sp/>&amp;args,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kindref="compound">EncodeWaveformWebpStftArgs</ref><sp/>&amp;stft_args,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>(args),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" kindref="member">stft_args_</ref>(&amp;stft_args),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" kindref="member">options_</ref>(options),<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1addc459132337fbac7b1ecc550ff1c5c7" kindref="member">mode_</ref>(<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99" kindref="member">Mode</ref>::Stft)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result&lt;WaveformWebpBatch&gt;</ref></highlight></codeline>
+<codeline lineno="24" refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a830c419269ace42d6dab9cf3504b5239" refkind="member"><highlight class="normal"><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a830c419269ace42d6dab9cf3504b5239" kindref="member">WaveformWebpEncoder::Encode</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="25"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>plan<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformPlanBuilder" kindref="compound">WaveformPlanBuilder</ref>(<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>,<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" kindref="member">stft_args_</ref>).<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformPlanBuilder_1a46356fd757ce8fee0cd7128e53fa93e8" kindref="member">Build</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!plan.ok())<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1common_1_1Result_1a06e2b33850680736fc30b4ab0160dd3f" kindref="member">common::Result&lt;WaveformWebpBatch&gt;::failure</ref>(plan.status());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>built_plan<sp/>=<sp/>std::move(plan).value();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>runner<sp/>=<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner" kindref="compound">WaveformWorkerRunner</ref>(<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>.worker_thread_count);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1addc459132337fbac7b1ecc550ff1c5c7" kindref="member">mode_</ref><sp/>==<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99a730197f68899b22fecc64122839124c6" kindref="member">Mode::Stft</ref><sp/>&amp;&amp;<sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" kindref="member">stft_args_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>runner.Run(</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;]()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor" kindref="compound">WaveformJobProcessor&lt;StftColorMapper&gt;</ref>(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan.buffer_sizes,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" kindref="member">options_</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" kindref="member">stft_args_</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan.buffer_sizes,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan.chunk_sample_count);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>runner.Run(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;]()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor" kindref="compound">WaveformJobProcessor&lt;MonochromeColorMapper&gt;</ref>(</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" kindref="member">args_</ref>,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>built_plan.buffer_sizes,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" kindref="member">options_</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>PDJE_UTIL::function::image::detail</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp"/>
+  </compounddef>
+</doxygen>

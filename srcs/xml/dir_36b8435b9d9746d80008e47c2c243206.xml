@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_36b8435b9d9746d80008e47c2c243206" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/Windows</compoundname>
+    <innerfile refid="Windows_2PSKPipe_8cpp">PSKPipe.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/Windows/"/>
+  </compounddef>
+</doxygen>

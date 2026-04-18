@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_72c41e3c16c4f9c1be01dd36399229cf" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function</compoundname>
+    <innerdir refid="dir_53b863393b4120148f8e8a023cd90b85">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image</innerdir>
+    <innerdir refid="dir_0ec2dad1b264737fb38cc9bc5d535b71">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/scalar</innerdir>
+    <innerdir refid="dir_1af8fb78aea2db12c082112d4f2ef054">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft</innerdir>
+    <innerdir refid="dir_ddb45c884f5abfb0740aa33eb22ab429">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/text</innerdir>
+    <innerfile refid="FunctionContext_8hpp">FunctionContext.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_d3be972a1ccae59805a649e1a622af4d" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp</compoundname>
+    <innerdir refid="dir_5669b70ee675d21583cd970bed687c0b">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/CapnpBinary</innerdir>
+    <innerdir refid="dir_f84e1457d2261afc38fd6c6405a72fcf">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/"/>
+  </compounddef>
+</doxygen>

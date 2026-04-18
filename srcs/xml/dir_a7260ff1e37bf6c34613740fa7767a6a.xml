@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_a7260ff1e37bf6c34613740fa7767a6a" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/EventMarker</compoundname>
+    <innerfile refid="EventMarker_8cpp">EventMarker.cpp</innerfile>
+    <innerfile refid="EventMarker_8hpp">EventMarker.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/EventMarker/"/>
+  </compounddef>
+</doxygen>

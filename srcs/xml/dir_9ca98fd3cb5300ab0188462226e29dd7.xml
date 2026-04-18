@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_9ca98fd3cb5300ab0188462226e29dd7" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender</compoundname>
+    <innerdir refid="dir_2b901495c7609fdd350928d63ce8aadb">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix</innerdir>
+    <innerdir refid="dir_de7d5987d5d34b659d9b281c96df7cf9">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine</innerdir>
+    <innerfile refid="audioRender_8cpp">audioRender.cpp</innerfile>
+    <innerfile refid="audioRender_8hpp">audioRender.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/"/>
+  </compounddef>
+</doxygen>

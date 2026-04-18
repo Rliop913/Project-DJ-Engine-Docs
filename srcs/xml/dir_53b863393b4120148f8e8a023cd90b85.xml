@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_53b863393b4120148f8e8a023cd90b85" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image</compoundname>
+    <innerfile refid="WaveformWebp_8cpp">WaveformWebp.cpp</innerfile>
+    <innerfile refid="WaveformWebp_8hpp">WaveformWebp.hpp</innerfile>
+    <innerfile refid="WaveformWebpEncoder_8cpp">WaveformWebpEncoder.cpp</innerfile>
+    <innerfile refid="WaveformWebpEncoder_8hpp">WaveformWebpEncoder.hpp</innerfile>
+    <innerfile refid="WaveformWebpHighway-inl_8h">WaveformWebpHighway-inl.h</innerfile>
+    <innerfile refid="WaveformWebpInternal_8hpp">WaveformWebpInternal.hpp</innerfile>
+    <innerfile refid="WaveformWebpPlanBuilder_8cpp">WaveformWebpPlanBuilder.cpp</innerfile>
+    <innerfile refid="WaveformWebpPlanBuilder_8hpp">WaveformWebpPlanBuilder.hpp</innerfile>
+    <innerfile refid="WaveformWebpProcessor_8cpp">WaveformWebpProcessor.cpp</innerfile>
+    <innerfile refid="WaveformWebpProcessor_8hpp">WaveformWebpProcessor.hpp</innerfile>
+    <innerfile refid="WaveformWebpRasterizer_8cpp">WaveformWebpRasterizer.cpp</innerfile>
+    <innerfile refid="WaveformWebpRasterizer_8hpp">WaveformWebpRasterizer.hpp</innerfile>
+    <innerfile refid="WaveformWebpSupport_8hpp">WaveformWebpSupport.hpp</innerfile>
+    <innerfile refid="WaveformWebpWorkerRunner_8hpp">WaveformWebpWorkerRunner.hpp</innerfile>
+    <innerfile refid="WebpWriter_8hpp">WebpWriter.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_0d341251351253030155044304317176060106320354302336" kind="namespace" language="C++">
+    <compoundname>@341251351253030155044304317176060106320354302336</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/CPDJE_Input.cpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

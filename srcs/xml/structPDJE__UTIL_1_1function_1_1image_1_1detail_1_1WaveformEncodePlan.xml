@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan" kind="struct" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformEncodePlan</compoundname>
+    <includes refid="WaveformWebpInternal_8hpp" local="no">WaveformWebpInternal.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a935ff330d8c7e27c57205efce226ce47" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;float&gt; &gt; PDJE_UTIL::function::image::detail::WaveformEncodePlan::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformEncodePlan::channels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="40" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1af0a6a585258226a1dd5107c0a4f059b4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a781408e2b5312c618656f07675d378f8" kindref="member">WaveformWebpBatch</ref></type>
+        <definition>WaveformWebpBatch PDJE_UTIL::function::image::detail::WaveformEncodePlan::batch</definition>
+        <argsstring></argsstring>
+        <name>batch</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformEncodePlan::batch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="41" column="37" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a39d73ed41694eba5671082aa1f3d57d0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &gt;</type>
+        <definition>std::vector&lt;WaveformJob&gt; PDJE_UTIL::function::image::detail::WaveformEncodePlan::jobs</definition>
+        <argsstring></argsstring>
+        <name>jobs</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformEncodePlan::jobs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="42" column="24" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a9f54264fbcd991655bb9142b13b26e9d" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::WaveformEncodePlan::chunk_sample_count</definition>
+        <argsstring></argsstring>
+        <name>chunk_sample_count</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformEncodePlan::chunk_sample_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="43" column="37" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a997354fa383081716611df7248be9d70" prot="public" static="no" mutable="no">
+        <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref></type>
+        <definition>WaveformBufferSizes PDJE_UTIL::function::image::detail::WaveformEncodePlan::buffer_sizes</definition>
+        <argsstring></argsstring>
+        <name>buffer_sizes</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformEncodePlan::buffer_sizes</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="44" column="37" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>PDJE_UTIL::function::image::detail::WaveformBufferSizes</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes"/>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::WaveformEncodePlan</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>channels</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>batch</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>jobs</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>buffer_sizes</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PDJE_UTIL::function::image::detail::WaveformJob</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>output_slot</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::vector&lt; ChannelWaveformWebps &gt;</label>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; PDJE_UTIL::function::image::detail::WaveformJob &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::vector&lt; std::uint8_t &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::vector&lt; float &gt; &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="39" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="39" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1af0a6a585258226a1dd5107c0a4f059b4" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformEncodePlan</scope><name>batch</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a997354fa383081716611df7248be9d70" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformEncodePlan</scope><name>buffer_sizes</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a935ff330d8c7e27c57205efce226ce47" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformEncodePlan</scope><name>channels</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a9f54264fbcd991655bb9142b13b26e9d" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformEncodePlan</scope><name>chunk_sample_count</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan_1a39d73ed41694eba5671082aa1f3d57d0" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformEncodePlan</scope><name>jobs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

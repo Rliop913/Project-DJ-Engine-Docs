@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_0d264167211313262255250261152133160223166006225016" kind="namespace" language="C++">
+    <compoundname>@264167211313262255250261152133160223166006225016</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/editorObject/getdiff.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_321b5862d2d6822c07e5f19b63fc6aa1" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines</compoundname>
+    <innerfile refid="Atomic__Double__Buffer_8hpp">Atomic_Double_Buffer.hpp</innerfile>
+    <innerfile refid="fileNameSanitizer_8cpp">fileNameSanitizer.cpp</innerfile>
+    <innerfile refid="fileNameSanitizer_8hpp">fileNameSanitizer.hpp</innerfile>
+    <innerfile refid="Input__State_8hpp">Input_State.hpp</innerfile>
+    <innerfile refid="PDJE__Buffer_8hpp">PDJE_Buffer.hpp</innerfile>
+    <innerfile refid="PDJE__Core__DataLine_8hpp">PDJE_Core_DataLine.hpp</innerfile>
+    <innerfile refid="PDJE__Input__DataLine_8hpp">PDJE_Input_DataLine.hpp</innerfile>
+    <innerfile refid="PDJE__Input__Device__Data_8hpp">PDJE_Input_Device_Data.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines/"/>
+  </compounddef>
+</doxygen>

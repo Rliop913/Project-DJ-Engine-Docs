@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_c273cd2ef8668e748bb43f582a783f14" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/judge</compoundname>
+    <innerdir refid="dir_08322292f25b8c7d0d78a8fbe01cd816">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/AxisModel</innerdir>
+    <innerdir refid="dir_f6b2a89afe6e1b643be9cd6bff891c10">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init</innerdir>
+    <innerdir refid="dir_73e9149bd518da7378933e30cf11bdfd">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/InputParser</innerdir>
+    <innerdir refid="dir_146615a3cd01c9a0823d6ad56688e159">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop</innerdir>
+    <innerdir refid="dir_f1c7b4a1a655c3c3e9b6291183e33aa1">PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/NoteOBJ</innerdir>
+    <innerfile refid="CPDJE__Judge_8cpp">CPDJE_Judge.cpp</innerfile>
+    <innerfile refid="CPDJE__Judge_8h">CPDJE_Judge.h</innerfile>
+    <innerfile refid="PDJE__Judge_8cpp">PDJE_Judge.cpp</innerfile>
+    <innerfile refid="PDJE__Judge_8hpp">PDJE_Judge.hpp</innerfile>
+    <innerfile refid="PDJE__RAIL_8cpp">PDJE_RAIL.cpp</innerfile>
+    <innerfile refid="PDJE__RAIL_8hpp">PDJE_RAIL.hpp</innerfile>
+    <innerfile refid="PDJE__Rule_8hpp">PDJE_Rule.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/"/>
+  </compounddef>
+</doxygen>

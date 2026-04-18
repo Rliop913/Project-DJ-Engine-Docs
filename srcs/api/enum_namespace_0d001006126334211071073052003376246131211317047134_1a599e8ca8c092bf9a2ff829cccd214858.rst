@@ -1,0 +1,14 @@
+.. _exhale_enum_namespace_0d001006126334211071073052003376246131211317047134_1a599e8ca8c092bf9a2ff829cccd214858:
+
+Enum PDJE_LogBackendKindInternal
+================================
+
+- Defined in :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.cpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: @001006126334211071073052003376246131211317047134::PDJE_LogBackendKindInternal
+   :project: Project_DJ_Engine

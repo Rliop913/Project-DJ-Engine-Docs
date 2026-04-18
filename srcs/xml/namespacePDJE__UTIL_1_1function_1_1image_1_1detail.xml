@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail" kind="namespace" language="C++">
+    <compoundname>PDJE_UTIL::function::image::detail</compoundname>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder" prot="public">PDJE_UTIL::function::image::detail::WaveformWebpEncoder</innerclass>
+    <innerclass refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" prot="public">PDJE_UTIL::function::image::detail::WaveformJob</innerclass>
+    <innerclass refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" prot="public">PDJE_UTIL::function::image::detail::WaveformBufferSizes</innerclass>
+    <innerclass refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" prot="public">PDJE_UTIL::function::image::detail::WaveformWorkerContext</innerclass>
+    <innerclass refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan" prot="public">PDJE_UTIL::function::image::detail::WaveformEncodePlan</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformPlanBuilder" prot="public">PDJE_UTIL::function::image::detail::WaveformPlanBuilder</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1MonochromeColorMapper" prot="public">PDJE_UTIL::function::image::detail::MonochromeColorMapper</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1StftColorMapper" prot="public">PDJE_UTIL::function::image::detail::StftColorMapper</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor" prot="public">PDJE_UTIL::function::image::detail::WaveformJobProcessor</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer" prot="public">PDJE_UTIL::function::image::detail::WaveformRasterizer</innerclass>
+    <innerclass refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner" prot="public">PDJE_UTIL::function::image::detail::WaveformWorkerRunner</innerclass>
+    <innerclass refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1ImageLayout" prot="public">PDJE_UTIL::function::image::detail::ImageLayout</innerclass>
+    <innernamespace refid="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support">PDJE_UTIL::function::image::detail::support</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1aec0114ba732cee21dc7096f6e8a8436c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PDJE_UTIL::function::image::detail::checked_multiply</definition>
+        <argsstring>(std::size_t lhs, std::size_t rhs, std::size_t &amp;result) noexcept</argsstring>
+        <name>checked_multiply</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::checked_multiply</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" line="50" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1a21d5295505b90a398cb969e0d34e8586" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PDJE_UTIL::function::image::detail::checked_add</definition>
+        <argsstring>(std::size_t lhs, std::size_t rhs, std::size_t &amp;result) noexcept</argsstring>
+        <name>checked_add</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::checked_add</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" line="61" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" bodystart="61" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1a3a31613d496c7314738b0a541aee4ebc" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::bytes_per_pixel</definition>
+        <argsstring>(RasterPixelFormat pixel_format) noexcept</argsstring>
+        <name>bytes_per_pixel</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::bytes_per_pixel</qualifiedname>
+        <param>
+          <type><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1ab4c8fbb42e3638e97e48402b4ee04f52" kindref="member">RasterPixelFormat</ref></type>
+          <declname>pixel_format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" line="72" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" bodystart="72" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1a92f8700e88f1217817e48969e8be1804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1ImageLayout" kindref="compound">ImageLayout</ref> &gt;</type>
+        <definition>common::Result&lt; ImageLayout &gt; PDJE_UTIL::function::image::detail::validate_image</definition>
+        <argsstring>(const RasterImageView &amp;image)</argsstring>
+        <name>validate_image</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::validate_image</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1RasterImageView" kindref="compound">RasterImageView</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" line="89" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" bodystart="89" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1a8e1fd0fe3e2f3ad530383043535f693d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; std::vector&lt; std::uint8_t &gt; &gt;</type>
+        <definition>common::Result&lt; std::vector&lt; std::uint8_t &gt; &gt; PDJE_UTIL::function::image::detail::pack_rgba</definition>
+        <argsstring>(const RasterImageView &amp;image, const ImageLayout &amp;layout)</argsstring>
+        <name>pack_rgba</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::pack_rgba</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1RasterImageView" kindref="compound">RasterImageView</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1ImageLayout" kindref="compound">ImageLayout</ref> &amp;</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" line="151" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WebpWriter.hpp" bodystart="151" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

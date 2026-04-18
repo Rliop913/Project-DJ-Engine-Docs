@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kind="struct" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformBufferSizes</compoundname>
+    <includes refid="WaveformWebpInternal_8hpp" local="no">WaveformWebpInternal.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a142cf3eec4a78b9faba4375ba976c842" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::WaveformBufferSizes::row_stride</definition>
+        <argsstring></argsstring>
+        <name>row_stride</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformBufferSizes::row_stride</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="20" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a1371086c8c8e2bda1abbcabad3067f9d" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::WaveformBufferSizes::image_byte_count</definition>
+        <argsstring></argsstring>
+        <name>image_byte_count</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformBufferSizes::image_byte_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="21" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a4600f77ca6df2044db1d55003174294e" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::WaveformBufferSizes::column_rgb_byte_count</definition>
+        <argsstring></argsstring>
+        <name>column_rgb_byte_count</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformBufferSizes::column_rgb_byte_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="22" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="19" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a4600f77ca6df2044db1d55003174294e" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformBufferSizes</scope><name>column_rgb_byte_count</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a1371086c8c8e2bda1abbcabad3067f9d" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformBufferSizes</scope><name>image_byte_count</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes_1a142cf3eec4a78b9faba4375ba976c842" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformBufferSizes</scope><name>row_stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

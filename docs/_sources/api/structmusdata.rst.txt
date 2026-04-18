@@ -1,0 +1,17 @@
+.. _exhale_struct_structmusdata:
+
+Struct musdata
+==============
+
+- Defined in :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db_musicDB.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: musdata
+   :project: Project_DJ_Engine
+   :members:
+   :protected-members:
+   :undoc-members:

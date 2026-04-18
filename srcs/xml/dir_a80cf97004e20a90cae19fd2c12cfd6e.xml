@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_a80cf97004e20a90cae19fd2c12cfd6e" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/windows</compoundname>
+    <innerdir refid="dir_38e5d1af3457908775dd05a993e1ae5b">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/windows/TXRX</innerdir>
+    <innerfile refid="windows_2DefaultDevs_8cpp">DefaultDevs.cpp</innerfile>
+    <innerfile refid="windows_2DefaultDevs_8hpp">DefaultDevs.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/windows/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_2b901495c7609fdd350928d63ce8aadb" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix</compoundname>
+    <innerdir refid="dir_9a68934d6a4d90b481bef575226e5f8d">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix/ManualFausts</innerdir>
+    <innerdir refid="dir_c843fc08d844189fcf8d39246fad03c0">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix/PreLoadedMusic</innerdir>
+    <innerfile refid="ManualMix_8cpp">ManualMix.cpp</innerfile>
+    <innerfile refid="ManualMix_8hpp">ManualMix.hpp</innerfile>
+    <innerfile refid="MusicControlPanel-inl_8h">MusicControlPanel-inl.h</innerfile>
+    <innerfile refid="MusicControlPanel_8cpp">MusicControlPanel.cpp</innerfile>
+    <innerfile refid="MusicControlPanel_8hpp">MusicControlPanel.hpp</innerfile>
+    <innerfile refid="PredictMusic_8hpp">PredictMusic.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix/"/>
+  </compounddef>
+</doxygen>

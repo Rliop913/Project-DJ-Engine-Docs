@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_7b704b9a45fc33f9cb7b31427a358374" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest</compoundname>
+    <innerfile refid="nearest_2BackendConcept_8hpp">BackendConcept.hpp</innerfile>
+    <innerfile refid="Index_8hpp">Index.hpp</innerfile>
+    <innerfile refid="nearest_2Types_8hpp">Types.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest/"/>
+  </compounddef>
+</doxygen>

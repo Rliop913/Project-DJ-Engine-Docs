@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_8b7332c1d7472fac9ea01d60c4087ade" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_protocols</compoundname>
+    <innerfile refid="xdg-shell-client-protocol_8c">xdg-shell-client-protocol.c</innerfile>
+    <innerfile refid="xdg-shell-client-protocol_8h">xdg-shell-client-protocol.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_protocols/"/>
+  </compounddef>
+</doxygen>

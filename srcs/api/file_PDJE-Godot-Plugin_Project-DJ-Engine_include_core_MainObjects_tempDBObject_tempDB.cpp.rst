@@ -1,0 +1,40 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject_tempDB.cpp:
+
+File tempDB.cpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject/tempDB.cpp``)
+-----------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject_tempDB.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``PDJE_LOG_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.hpp`)
+
+- ``tempDB.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject_tempDB.hpp`)
+
+
+
+
+

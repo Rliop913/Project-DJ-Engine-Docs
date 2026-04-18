@@ -1,0 +1,82 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init_PDJE_Judge_Init.hpp:
+
+File PDJE_Judge_Init.hpp
+========================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init/PDJE_Judge_Init.hpp``)
+-------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init_PDJE_Judge_Init.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``InputParser.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_InputParser_InputParser.hpp`)
+
+- ``PDJE_Core_DataLine.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Core_DataLine.hpp`)
+
+- ``PDJE_EXPORT_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_EXPORT_SETTER.hpp`)
+
+- ``PDJE_Input_DataLine.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Input_DataLine.hpp`)
+
+- ``PDJE_Judge_Init_Structs.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init_PDJE_Judge_Init_Structs.hpp`)
+
+- ``PDJE_Note_OBJ.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_NoteOBJ_PDJE_Note_OBJ.hpp`)
+
+- ``PDJE_RAIL.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_PDJE_RAIL.hpp`)
+
+- ``optional``
+
+- ``unordered_map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init_PDJE_Judge_Init.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_Match_PDJE_Match.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_PDJE_Judge_Loop.cpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_PDJE_Judge_Loop.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop_PreProcess_PDJE_PreProcess.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_PDJE_JUDGE`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classPDJE__JUDGE_1_1Judge__Init`
+

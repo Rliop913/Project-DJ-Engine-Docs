@@ -1,0 +1,61 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioPlayer.cpp:
+
+File audioPlayer.cpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/audioPlayer``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/audioPlayer/audioPlayer.cpp``)
+---------------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioPlayer.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``MusicControlPanel.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_ManualMix_MusicControlPanel.hpp`)
+
+- ``PDJE_LOG_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_LOG_SETTER.hpp`)
+
+- ``atomic``
+
+- ``audioCallbacks.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioCallbacks.hpp`)
+
+- ``audioPlayer.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioPlayer.hpp`)
+
+- ``audio_OS_impls.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audio_OS_impls.hpp`)
+
+- ``stdexcept``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_audioPlayer_8cpp_1ae5e4af00326247af37e277759ed98708`
+
+- :ref:`exhale_function_audioPlayer_8cpp_1a1ed2dfba5eeffc302e4639bd95443901`
+
+- :ref:`exhale_function_audioPlayer_8cpp_1a7d838e56a4484d297c33aa7a2c01ca91`
+

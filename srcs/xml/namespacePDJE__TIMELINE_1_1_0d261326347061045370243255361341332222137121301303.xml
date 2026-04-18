@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacePDJE__TIMELINE_1_1_0d261326347061045370243255361341332222137121301303" kind="namespace" language="C++">
+    <compoundname>PDJE_TIMELINE::@261326347061045370243255361341332222137121301303</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/DiffMachine/TimeLineDiffMachine-NOTE.cpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

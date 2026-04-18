@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformJobProcessor</compoundname>
+    <includes refid="WaveformWebpProcessor_8hpp" local="no">WaveformWebpProcessor.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class ColorMapper</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1ab128ef0e2a3881f1dd8cd1ca05fcf3df" prot="private" static="no" mutable="no">
+        <type><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer" kindref="compound">WaveformRasterizer</ref></type>
+        <definition>WaveformRasterizer PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;::rasterizer_</definition>
+        <argsstring></argsstring>
+        <name>rasterizer_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformJobProcessor::rasterizer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="91" column="27" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1aed4c7a1c8517f94783b7bf3560e2b509" prot="private" static="no" mutable="no">
+        <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kindref="compound">WaveformWorkerContext</ref></type>
+        <definition>WaveformWorkerContext PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;::context_</definition>
+        <argsstring></argsstring>
+        <name>context_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformJobProcessor::context_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="92" column="27" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a5f4ab6780c90ef298479b060ebff1ea2" prot="private" static="no" mutable="no">
+        <type>ColorMapper</type>
+        <definition>ColorMapper PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;::color_mapper_</definition>
+        <argsstring></argsstring>
+        <name>color_mapper_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformJobProcessor::color_mapper_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="93" column="27" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a6dd6ae72ac90872b9b872f76e5e87cd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>MapperArgs</declname>
+            <defname>MapperArgs</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;::WaveformJobProcessor</definition>
+        <argsstring>(const EncodeWaveformWebpArgs &amp;args, const WaveformBufferSizes &amp;buffer_sizes, function::EvalOptions options, MapperArgs &amp;&amp;...mapper_args)</argsstring>
+        <name>WaveformJobProcessor</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformJobProcessor::WaveformJobProcessor</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes" kindref="compound">WaveformBufferSizes</ref> &amp;</type>
+          <declname>buffer_sizes</declname>
+        </param>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>MapperArgs &amp;&amp;...</type>
+          <declname>mapper_args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="60" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a778c861a95d3775ea9ae635900f2de74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; void &gt;</type>
+        <definition>common::Result&lt; void &gt; PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;::Process</definition>
+        <argsstring>(const WaveformJob &amp;job, EncodedWebpBytes &amp;output)</argsstring>
+        <name>Process</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformJobProcessor::Process</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a7b998cfb499fad07c17f416c6035ea7f" kindref="member">EncodedWebpBytes</ref> &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="71" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="71" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>PDJE_UTIL::function::CacheContext</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1CacheContext"/>
+      </node>
+      <node id="6">
+        <label>PDJE_UTIL::function::EvalOptions</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1EvalOptions"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>pcm</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PDJE_UTIL::function::image::detail::WaveformBufferSizes</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformBufferSizes"/>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::WaveformJobProcessor&lt; ColorMapper &gt;</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rasterizer_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PDJE_UTIL::function::image::detail::WaveformRasterizer</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformRasterizer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>args_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>buffer_sizes_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>options_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PDJE_UTIL::function::image::detail::WaveformWorkerContext</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>column_maxs</edgelabel>
+          <edgelabel>column_mins</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>rgba</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::span&lt; const float &gt;</label>
+      </node>
+      <node id="9">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="10">
+        <label>std::vector&lt; std::uint8_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" line="57" column="12" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp" bodystart="57" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a5f4ab6780c90ef298479b060ebff1ea2" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformJobProcessor</scope><name>color_mapper_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1aed4c7a1c8517f94783b7bf3560e2b509" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformJobProcessor</scope><name>context_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a778c861a95d3775ea9ae635900f2de74" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformJobProcessor</scope><name>Process</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1ab128ef0e2a3881f1dd8cd1ca05fcf3df" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformJobProcessor</scope><name>rasterizer_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJobProcessor_1a6dd6ae72ac90872b9b872f76e5e87cd1" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformJobProcessor</scope><name>WaveformJobProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

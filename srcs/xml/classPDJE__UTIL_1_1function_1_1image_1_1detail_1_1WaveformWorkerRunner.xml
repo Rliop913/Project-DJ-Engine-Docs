@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformWorkerRunner</compoundname>
+    <includes refid="WaveformWebpWorkerRunner_8hpp" local="no">WaveformWebpWorkerRunner.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a2b663c6af81d57720575b10d11e0904c" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::WaveformWorkerRunner::requested_worker_count_</definition>
+        <argsstring></argsstring>
+        <name>requested_worker_count_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerRunner::requested_worker_count_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" line="145" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a1a41c41e05e058ee0d04213b50e7d1d3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformWorkerRunner::WaveformWorkerRunner</definition>
+        <argsstring>(std::size_t requested_worker_count)</argsstring>
+        <name>WaveformWorkerRunner</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerRunner::WaveformWorkerRunner</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>requested_worker_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" line="21" column="14" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a21dd9acfd12d20c0c4bcf096a273d671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ProcessorFactory</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; <ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a781408e2b5312c618656f07675d378f8" kindref="member">WaveformWebpBatch</ref> &gt;</type>
+        <definition>common::Result&lt; WaveformWebpBatch &gt; PDJE_UTIL::function::image::detail::WaveformWorkerRunner::Run</definition>
+        <argsstring>(WaveformEncodePlan &amp;plan, ProcessorFactory &amp;&amp;create_processor) const</argsstring>
+        <name>Run</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerRunner::Run</qualifiedname>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformEncodePlan" kindref="compound">WaveformEncodePlan</ref> &amp;</type>
+          <declname>plan</declname>
+        </param>
+        <param>
+          <type>ProcessorFactory &amp;&amp;</type>
+          <declname>create_processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" line="28" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" bodystart="28" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a441a330bb6e3f4d5df76abf91adfb2a0" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t PDJE_UTIL::function::image::detail::WaveformWorkerRunner::ResolveWorkerThreadCount</definition>
+        <argsstring>(std::size_t requested, std::size_t job_count) noexcept</argsstring>
+        <name>ResolveWorkerThreadCount</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerRunner::ResolveWorkerThreadCount</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>requested</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>job_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" line="125" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" bodystart="125" bodyend="143"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" line="19" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp" bodystart="19" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a2b663c6af81d57720575b10d11e0904c" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerRunner</scope><name>requested_worker_count_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a441a330bb6e3f4d5df76abf91adfb2a0" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerRunner</scope><name>ResolveWorkerThreadCount</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a21dd9acfd12d20c0c4bcf096a273d671" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerRunner</scope><name>Run</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerRunner_1a1a41c41e05e058ee0d04213b50e7d1d3" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerRunner</scope><name>WaveformWorkerRunner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

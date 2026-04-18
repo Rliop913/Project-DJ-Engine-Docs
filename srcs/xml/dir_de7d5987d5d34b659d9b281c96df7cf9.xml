@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_de7d5987d5d34b659d9b281c96df7cf9" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine</compoundname>
+    <innerdir refid="dir_53291e69f619100cffa5a3c0ed334394">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/EFFECT</innerdir>
+    <innerdir refid="dir_715cf5efc636333c8ce154a5c3bc0ec0">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/FAUST_VALS</innerdir>
+    <innerdir refid="dir_47f1f56eb33545deeb7c47feff479b13">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MiniaudioObjects</innerdir>
+    <innerdir refid="dir_73fdf306ab28137e313e7269b0242996">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MixTypes</innerdir>
+    <innerdir refid="dir_e210c4e9b140e8e56f14ce4add932011">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MUSIC_CTR</innerdir>
+    <innerfile refid="DeckData_8hpp">DeckData.hpp</innerfile>
+    <innerfile refid="MixMachine-inl_8h">MixMachine-inl.h</innerfile>
+    <innerfile refid="MixMachine_8cpp">MixMachine.cpp</innerfile>
+    <innerfile refid="MixMachine_8hpp">MixMachine.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/"/>
+  </compounddef>
+</doxygen>

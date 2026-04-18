@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_6b879a960c061667cd803263a5e405b0" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects</compoundname>
+    <innerdir refid="dir_8f3b35ead1f554d3dbf3a02d21eb1a45">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/audioPlayer</innerdir>
+    <innerdir refid="dir_3c6192f4ac41d362d67bae17f44267a9">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/editorObject</innerdir>
+    <innerdir refid="dir_b5d87d02e33591ea30a849bf5fbc2939">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="Parallel__Args_8hpp" kind="file" language="C++">
+    <compoundname>Parallel_Args.hpp</compoundname>
+    <includedby refid="PDJE__Parallel__Runtime__Loader_8hpp" local="yes">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/PDJE_Parallel_Runtime_Loader.hpp</includedby>
+    <includedby refid="BackendLess_8cpp" local="yes">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.cpp</includedby>
+    <includedby refid="STFT__Parallel_8hpp" local="yes">PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/STFT_Parallel.hpp</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/music_to_waveform_webp.cpp</label>
+        <link refid="music__to__waveform__webp_8cpp"/>
+      </node>
+      <node id="3">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/PDJE_Parallel_Runtime_Loader.cpp</label>
+        <link refid="PDJE__Parallel__Runtime__Loader_8cpp"/>
+      </node>
+      <node id="2">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/PDJE_Parallel_Runtime_Loader.hpp</label>
+        <link refid="PDJE__Parallel__Runtime__Loader_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/Parallel_Args.hpp</label>
+        <link refid="Parallel__Args_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.cpp</label>
+        <link refid="WaveformWebp_8cpp"/>
+      </node>
+      <node id="5">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp</label>
+        <link refid="WaveformWebp_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp</label>
+        <link refid="WaveformWebpEncoder_8cpp"/>
+      </node>
+      <node id="8">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp</label>
+        <link refid="WaveformWebpEncoder_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp</label>
+        <link refid="WaveformWebpInternal_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpPlanBuilder.cpp</label>
+        <link refid="WaveformWebpPlanBuilder_8cpp"/>
+      </node>
+      <node id="11">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpPlanBuilder.hpp</label>
+        <link refid="WaveformWebpPlanBuilder_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.cpp</label>
+        <link refid="WaveformWebpProcessor_8cpp"/>
+      </node>
+      <node id="13">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpProcessor.hpp</label>
+        <link refid="WaveformWebpProcessor_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp</label>
+        <link refid="WaveformWebpRasterizer_8cpp"/>
+      </node>
+      <node id="15">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.hpp</label>
+        <link refid="WaveformWebpRasterizer_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp</label>
+        <link refid="WaveformWebpSupport_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpWorkerRunner.hpp</label>
+        <link refid="WaveformWebpWorkerRunner_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.cpp</label>
+        <link refid="BackendLess_8cpp"/>
+      </node>
+      <node id="20">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/OpenclBackend.cpp</label>
+        <link refid="OpenclBackend_8cpp"/>
+      </node>
+      <node id="21">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/OpenclBackend.hpp</label>
+        <link refid="OpenclBackend_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/STFT_Parallel.cpp</label>
+        <link refid="STFT__Parallel_8cpp"/>
+      </node>
+      <node id="4">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/STFT_Parallel.hpp</label>
+        <link refid="STFT__Parallel_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/SerialBackend.cpp</label>
+        <link refid="SerialBackend_8cpp"/>
+      </node>
+      <node id="23">
+        <label>PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/SerialBackend.hpp</label>
+        <link refid="SerialBackend_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacePDJE__PARALLEL">PDJE_PARALLEL</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePDJE__PARALLEL" kindref="compound">PDJE_PARALLEL</ref><sp/>{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespacePDJE__PARALLEL_1a44ecf37f16838a705092d2e3d9ab7a75" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacePDJE__PARALLEL_1a44ecf37f16838a705092d2e3d9ab7a75" kindref="member">BACKEND_T</ref><sp/>{<sp/><ref refid="namespacePDJE__PARALLEL_1a44ecf37f16838a705092d2e3d9ab7a75a542f952490e2db695a1d544338a70cda" kindref="member">OPENCL</ref>,<sp/><ref refid="namespacePDJE__PARALLEL_1a44ecf37f16838a705092d2e3d9ab7a75a74108a89672c573afee1fae6de8e4e0b" kindref="member">METAL</ref>,<sp/><ref refid="namespacePDJE__PARALLEL_1a44ecf37f16838a705092d2e3d9ab7a75a7b804a28d6154ab8007287532037f1d0" kindref="member">SERIAL</ref><sp/>};</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/Parallel_Args.hpp"/>
+  </compounddef>
+</doxygen>

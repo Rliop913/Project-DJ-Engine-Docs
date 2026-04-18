@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_205b70d8c8e7b71623138876497050bb" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor</compoundname>
+    <innerdir refid="dir_89c21ddc5c8f630c708a739b72bf5f8b">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/pdjeLinter</innerdir>
+    <innerdir refid="dir_673a6ced8cfcae2f71646bdd47a253fb">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine</innerdir>
+    <innerfile refid="editor_8cpp">editor.cpp</innerfile>
+    <innerfile refid="editor_8hpp">editor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/"/>
+  </compounddef>
+</doxygen>

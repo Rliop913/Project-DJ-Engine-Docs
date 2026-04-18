@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_0d216105053367113225237334130227056103276250370022" kind="namespace" language="C++">
+    <compoundname>@216105053367113225237334130227056103276250370022</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_things/WaylandOwnedWindow.cpp" line="17" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_edb57f53703ed4fe1727cbe4a623dd19" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/JSONWrap</compoundname>
+    <innerfile refid="EditorArgs_8hpp">EditorArgs.hpp</innerfile>
+    <innerfile refid="JsonDiffFriendlyIO_8hpp">JsonDiffFriendlyIO.hpp</innerfile>
+    <innerfile refid="jsonWrapper_8hpp">jsonWrapper.hpp</innerfile>
+    <innerfile refid="KVJson_8cpp">KVJson.cpp</innerfile>
+    <innerfile refid="MixJson_8cpp">MixJson.cpp</innerfile>
+    <innerfile refid="MusicJson_8cpp">MusicJson.cpp</innerfile>
+    <innerfile refid="MusicJsonHelper_8hpp">MusicJsonHelper.hpp</innerfile>
+    <innerfile refid="NoteJson_8cpp">NoteJson.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/JSONWrap/"/>
+  </compounddef>
+</doxygen>

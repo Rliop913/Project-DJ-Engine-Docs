@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_673a6ced8cfcae2f71646bdd47a253fb" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine</compoundname>
+    <innerdir refid="dir_15a514e45cffd344c467f834e3948c88">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/DiffMachine</innerdir>
+    <innerdir refid="dir_a7260ff1e37bf6c34613740fa7767a6a">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/EventMarker</innerdir>
+    <innerdir refid="dir_63673cb38e367c64aa243114d103e50b">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/GitDataPack</innerdir>
+    <innerdir refid="dir_edb57f53703ed4fe1727cbe4a623dd19">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/JSONWrap</innerdir>
+    <innerdir refid="dir_f9bcfb43b8a9780888f7524f13a554e8">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/LineVersion</innerdir>
+    <innerfile refid="TimeLine_8cpp">TimeLine.cpp</innerfile>
+    <innerfile refid="TimeLine_8hpp">TimeLine.hpp</innerfile>
+    <innerfile refid="TimeLineDiffTypes_8hpp">TimeLineDiffTypes.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/"/>
+  </compounddef>
+</doxygen>

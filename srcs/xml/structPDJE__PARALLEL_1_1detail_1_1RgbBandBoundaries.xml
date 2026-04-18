@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries" kind="struct" language="C++" prot="public">
+    <compoundname>PDJE_PARALLEL::detail::RgbBandBoundaries</compoundname>
+    <includes refid="BackendLess_8hpp" local="no">BackendLess.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a0998e3001d9da99a99bc1b6ec9bffd8b" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::low_begin</definition>
+        <argsstring></argsstring>
+        <name>low_begin</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::low_begin</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="27" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a806caa3b13803daf967dcc2d5869e794" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::low_end</definition>
+        <argsstring></argsstring>
+        <name>low_end</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::low_end</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="28" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a12db4184baa5ec87a40c96ad21c3ed68" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::mid_begin</definition>
+        <argsstring></argsstring>
+        <name>mid_begin</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::mid_begin</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="29" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a5a236318320131ba3448c0604095b9fc" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::mid_end</definition>
+        <argsstring></argsstring>
+        <name>mid_end</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::mid_end</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="30" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a75e9003d0fb27310f8cfb2265f12c2c0" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::high_begin</definition>
+        <argsstring></argsstring>
+        <name>high_begin</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::high_begin</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="31" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a9930a61261b7e76ba673cdec8652e7be" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_PARALLEL::detail::RgbBandBoundaries::high_end</definition>
+        <argsstring></argsstring>
+        <name>high_end</name>
+        <qualifiedname>PDJE_PARALLEL::detail::RgbBandBoundaries::high_end</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="32" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" line="26" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.hpp" bodystart="26" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a75e9003d0fb27310f8cfb2265f12c2c0" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>high_begin</name></member>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a9930a61261b7e76ba673cdec8652e7be" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>high_end</name></member>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a0998e3001d9da99a99bc1b6ec9bffd8b" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>low_begin</name></member>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a806caa3b13803daf967dcc2d5869e794" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>low_end</name></member>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a12db4184baa5ec87a40c96ad21c3ed68" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>mid_begin</name></member>
+      <member refid="structPDJE__PARALLEL_1_1detail_1_1RgbBandBoundaries_1a5a236318320131ba3448c0604095b9fc" prot="public" virt="non-virtual"><scope>PDJE_PARALLEL::detail::RgbBandBoundaries</scope><name>mid_end</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_0d3350c54f3a8bcb4d56a04850fc2f60" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory</compoundname>
+    <innerdir refid="dir_fc097a8228fe3b70398bdaeb991c30ce">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/linux</innerdir>
+    <innerdir refid="dir_fdeab9bd11516d6eb289c2a30639cdae">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/windows</innerdir>
+    <innerfile refid="ipc__named__event_8hpp">ipc_named_event.hpp</innerfile>
+    <innerfile refid="ipc__named__mutex_8hpp">ipc_named_mutex.hpp</innerfile>
+    <innerfile refid="ipc__shared__memory_8hpp">ipc_shared_memory.hpp</innerfile>
+    <innerfile refid="Secured__IPC__TX__RX_8cpp">Secured_IPC_TX_RX.cpp</innerfile>
+    <innerfile refid="Secured__IPC__TX__RX_8hpp">Secured_IPC_TX_RX.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/"/>
+  </compounddef>
+</doxygen>

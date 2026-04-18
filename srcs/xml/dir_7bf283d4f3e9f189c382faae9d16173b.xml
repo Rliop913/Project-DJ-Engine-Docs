@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_7bf283d4f3e9f189c382faae9d16173b" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/INPUT_TESTS</compoundname>
+    <innerfile refid="evdevtest_8cpp">evdevtest.cpp</innerfile>
+    <innerfile refid="linux__input__group__add__test_8cpp">linux_input_group_add_test.cpp</innerfile>
+    <innerfile refid="miditest_8cpp">miditest.cpp</innerfile>
+    <innerfile refid="pdjeInputTest_8cpp">pdjeInputTest.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/INPUT_TESTS/"/>
+  </compounddef>
+</doxygen>

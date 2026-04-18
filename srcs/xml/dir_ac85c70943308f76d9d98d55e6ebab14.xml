@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_ac85c70943308f76d9d98d55e6ebab14" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/runner</compoundname>
+    <innerdir refid="dir_8e582a621eca3ca514da1885aa0477de">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/runner/windows</innerdir>
+    <innerfile refid="SetTXRXFeatures_8cpp">SetTXRXFeatures.cpp</innerfile>
+    <innerfile refid="SubProcess_8hpp">SubProcess.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/runner/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_8f3b35ead1f554d3dbf3a02d21eb1a45" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/audioPlayer</compoundname>
+    <innerfile refid="audio__OS__impls_8hpp">audio_OS_impls.hpp</innerfile>
+    <innerfile refid="audioCallbacks_8cpp">audioCallbacks.cpp</innerfile>
+    <innerfile refid="audioCallbacks_8hpp">audioCallbacks.hpp</innerfile>
+    <innerfile refid="audioPlayer_8cpp">audioPlayer.cpp</innerfile>
+    <innerfile refid="audioPlayer_8hpp">audioPlayer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/audioPlayer/"/>
+  </compounddef>
+</doxygen>

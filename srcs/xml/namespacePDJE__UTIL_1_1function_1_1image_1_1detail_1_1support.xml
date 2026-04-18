@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support" kind="namespace" language="C++">
+    <compoundname>PDJE_UTIL::function::image::detail::support</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1a595147a0f6be4b342cb56ad2e3c81dac" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PDJE_UTIL::function::image::detail::support::checked_multiply</definition>
+        <argsstring>(std::size_t lhs, std::size_t rhs, std::size_t &amp;result) noexcept</argsstring>
+        <name>checked_multiply</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::checked_multiply</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="16" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1ac9ad85fb450079bea774292baac0099e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PDJE_UTIL::function::image::detail::support::checked_add</definition>
+        <argsstring>(std::size_t lhs, std::size_t rhs, std::size_t &amp;result) noexcept</argsstring>
+        <name>checked_add</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::checked_add</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="27" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1adf95ca56191d82494e5775ed6cdd5ff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structPDJE__UTIL_1_1common_1_1Status" kindref="compound">common::Status</ref></type>
+        <definition>common::Status PDJE_UTIL::function::image::detail::support::wrap_job_status</definition>
+        <argsstring>(const common::Status &amp;status, const WaveformJob &amp;job)</argsstring>
+        <name>wrap_job_status</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::wrap_job_status</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1common_1_1Status" kindref="compound">common::Status</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformJob" kindref="compound">WaveformJob</ref> &amp;</type>
+          <declname>job</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="38" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1a86b7075b73a50f82154a7a7adcebd31c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PDJE_UTIL::function::image::detail::support::clamp_pcm_sample</definition>
+        <argsstring>(float value) noexcept</argsstring>
+        <name>clamp_pcm_sample</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::clamp_pcm_sample</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="47" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1ab958c929e40deb30ff7aba9982e44bb8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PDJE_UTIL::function::image::detail::support::clamp_unit_float</definition>
+        <argsstring>(float value) noexcept</argsstring>
+        <name>clamp_unit_float</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::clamp_unit_float</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="53" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1ae186f6786a5879c47489ef91f5bffc05" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::uint8_t</type>
+        <definition>std::uint8_t PDJE_UTIL::function::image::detail::support::unit_float_to_byte</definition>
+        <argsstring>(float value) noexcept</argsstring>
+        <name>unit_float_to_byte</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::unit_float_to_byte</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="63" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1ac4448b09055569bfd30231026ab0aa38" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::support::map_sample_to_row_floor</definition>
+        <argsstring>(float value, std::size_t y_pixels) noexcept</argsstring>
+        <name>map_sample_to_row_floor</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::map_sample_to_row_floor</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="71" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1afeed046c1140b8bdd85cf326092a031f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::support::map_sample_to_row_ceil</definition>
+        <argsstring>(float value, std::size_t y_pixels) noexcept</argsstring>
+        <name>map_sample_to_row_ceil</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::map_sample_to_row_ceil</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y_pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="85" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacePDJE__UTIL_1_1function_1_1image_1_1detail_1_1support_1a3518a569d42d92f9c06321cbad351dd6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t PDJE_UTIL::function::image::detail::support::map_column_to_stft_frame</definition>
+        <argsstring>(const std::size_t x, const std::size_t frame_count, const std::size_t x_pixels_per_image) noexcept</argsstring>
+        <name>map_column_to_stft_frame</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::support::map_column_to_stft_frame</qualifiedname>
+        <param>
+          <type>const std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>frame_count</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>x_pixels_per_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="99" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" bodystart="99" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

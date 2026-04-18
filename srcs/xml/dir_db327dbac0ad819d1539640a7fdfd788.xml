@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_db327dbac0ad819d1539640a7fdfd788" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/Match</compoundname>
+    <innerfile refid="Keyboard_8cpp">Keyboard.cpp</innerfile>
+    <innerfile refid="MIDI_8cpp">MIDI.cpp</innerfile>
+    <innerfile refid="Mouse_8cpp">Mouse.cpp</innerfile>
+    <innerfile refid="PDJE__Match_8cpp">PDJE_Match.cpp</innerfile>
+    <innerfile refid="PDJE__Match_8hpp">PDJE_Match.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/Match/"/>
+  </compounddef>
+</doxygen>

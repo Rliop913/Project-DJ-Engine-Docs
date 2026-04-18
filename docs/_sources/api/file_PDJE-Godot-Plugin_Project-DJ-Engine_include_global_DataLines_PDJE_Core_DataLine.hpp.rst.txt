@@ -1,0 +1,61 @@
+
+.. _file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Core_DataLine.hpp:
+
+File PDJE_Core_DataLine.hpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines/PDJE_Core_DataLine.hpp``)
+----------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines_PDJE_Core_DataLine.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``PDJE_EXPORT_SETTER.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_EXPORT_SETTER.hpp`)
+
+- ``PDJE_SYNC_CORE.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_PDJE_SYNC_CORE.hpp`)
+
+- ``atomic``
+
+- ``cstdint``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_audioPlayer_audioPlayer.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_interface_PDJE_interface.hpp`
+
+- :ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init_PDJE_Judge_Init.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structPDJE__CORE__DATA__LINE`
+

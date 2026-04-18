@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext" kind="struct" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformWorkerContext</compoundname>
+    <includes refid="WaveformWebpInternal_8hpp" local="no">WaveformWebpInternal.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a8f00436aae5015ddfd40a3fb36c0e535" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; PDJE_UTIL::function::image::detail::WaveformWorkerContext::column_mins</definition>
+        <argsstring></argsstring>
+        <name>column_mins</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerContext::column_mins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="26" column="24" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a40da0935abfe25bdfc9e712afe085a01" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; PDJE_UTIL::function::image::detail::WaveformWorkerContext::column_maxs</definition>
+        <argsstring></argsstring>
+        <name>column_maxs</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerContext::column_maxs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="27" column="24" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a55a6d3b7bf86aba31916b2eb40e54603" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::uint8_t &gt;</type>
+        <definition>std::vector&lt;std::uint8_t&gt; PDJE_UTIL::function::image::detail::WaveformWorkerContext::rgba</definition>
+        <argsstring></argsstring>
+        <name>rgba</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerContext::rgba</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="28" column="17" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1ad314439e12dc9f5f7ef1cdb39269a60a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformWorkerContext::WaveformWorkerContext</definition>
+        <argsstring>(std::size_t x_pixels_per_image, std::size_t image_byte_count)</argsstring>
+        <name>WaveformWorkerContext</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWorkerContext::WaveformWorkerContext</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>x_pixels_per_image</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>image_byte_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="30" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="30" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::WaveformWorkerContext</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>column_maxs</edgelabel>
+          <edgelabel>column_mins</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rgba</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; std::uint8_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" line="25" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpInternal.hpp" bodystart="25" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a40da0935abfe25bdfc9e712afe085a01" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerContext</scope><name>column_maxs</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a8f00436aae5015ddfd40a3fb36c0e535" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerContext</scope><name>column_mins</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1a55a6d3b7bf86aba31916b2eb40e54603" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerContext</scope><name>rgba</name></member>
+      <member refid="structPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWorkerContext_1ad314439e12dc9f5f7ef1cdb39269a60a" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWorkerContext</scope><name>WaveformWorkerContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

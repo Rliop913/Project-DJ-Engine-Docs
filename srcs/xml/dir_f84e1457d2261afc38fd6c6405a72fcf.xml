@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_f84e1457d2261afc38fd6c6405a72fcf" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators</compoundname>
+    <innerdir refid="dir_81f1fd58247c75b44506727fe7a23bdf">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators/MixTranslator</innerdir>
+    <innerdir refid="dir_47d363583afb306af6d0a7e28733f53a">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators/MusicTranslator</innerdir>
+    <innerdir refid="dir_8792a6ae3ec325eeb3dd4ab9fbeeaaa3">PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators/NoteTranslator</innerdir>
+    <innerfile refid="FrameCalc_8cpp">FrameCalc.cpp</innerfile>
+    <innerfile refid="FrameCalc_8hpp">FrameCalc.hpp</innerfile>
+    <innerfile refid="FrameCalcCore_8hpp">FrameCalcCore.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/Capnp/Translators/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_f6b2a89afe6e1b643be9cd6bff891c10" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init</compoundname>
+    <innerfile refid="PDJE__Judge__Init_8cpp">PDJE_Judge_Init.cpp</innerfile>
+    <innerfile refid="PDJE__Judge__Init_8hpp">PDJE_Judge_Init.hpp</innerfile>
+    <innerfile refid="PDJE__Judge__Init__Structs_8hpp">PDJE_Judge_Init_Structs.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init/"/>
+  </compounddef>
+</doxygen>

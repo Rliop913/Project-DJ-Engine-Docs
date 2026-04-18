@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_2ab36065a0862cd7162ef2158082fc68" kind="dir">
+    <compoundname>PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux</compoundname>
+    <innerdir refid="dir_448fea3def88722eecf7dc42b6b9897e">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/evdev_things</innerdir>
+    <innerdir refid="dir_8b7332c1d7472fac9ea01d60c4087ade">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_protocols</innerdir>
+    <innerdir refid="dir_e4b9af7929ded5619a485a4420b5596d">PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_things</innerdir>
+    <innerfile refid="linux_2DefaultDevs_8cpp">DefaultDevs.cpp</innerfile>
+    <innerfile refid="linux_2DefaultDevs_8hpp">DefaultDevs.hpp</innerfile>
+    <innerfile refid="InputCore_8cpp">InputCore.cpp</innerfile>
+    <innerfile refid="InputCore_8hpp">InputCore.hpp</innerfile>
+    <innerfile refid="LinuxInputContracts_8hpp">LinuxInputContracts.hpp</innerfile>
+    <innerfile refid="LinuxMouseButtonMapping_8hpp">LinuxMouseButtonMapping.hpp</innerfile>
+    <innerfile refid="ParseKeyboard_8cpp">ParseKeyboard.cpp</innerfile>
+    <innerfile refid="ParseMouse_8cpp">ParseMouse.cpp</innerfile>
+    <innerfile refid="rtkitcodes_8hpp">rtkitcodes.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/"/>
+  </compounddef>
+</doxygen>

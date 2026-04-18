@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder" kind="class" language="C++" prot="public">
+    <compoundname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</compoundname>
+    <includes refid="WaveformWebpEncoder_8hpp" local="no">WaveformWebpEncoder.hpp</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>Mode</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::Mode</qualifiedname>
+        <enumvalue id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99a7d51f2b8ce7130e9f9d023ad7f887589" prot="private">
+          <name>Monochrome</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99a730197f68899b22fecc64122839124c6" prot="private">
+          <name>Stft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="19" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+        <definition>const EncodeWaveformWebpArgs&amp; PDJE_UTIL::function::image::detail::WaveformWebpEncoder::args_</definition>
+        <argsstring></argsstring>
+        <name>args_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::args_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="21" column="38" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kindref="compound">EncodeWaveformWebpStftArgs</ref> *</type>
+        <definition>const EncodeWaveformWebpStftArgs* PDJE_UTIL::function::image::detail::WaveformWebpEncoder::stft_args_</definition>
+        <argsstring></argsstring>
+        <name>stft_args_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::stft_args_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="22" column="38" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" prot="private" static="no" mutable="no">
+        <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+        <definition>function::EvalOptions PDJE_UTIL::function::image::detail::WaveformWebpEncoder::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::options_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="23" column="39" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1addc459132337fbac7b1ecc550ff1c5c7" prot="private" static="no" mutable="no">
+        <type><ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99" kindref="member">Mode</ref></type>
+        <definition>Mode PDJE_UTIL::function::image::detail::WaveformWebpEncoder::mode_</definition>
+        <argsstring></argsstring>
+        <name>mode_</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::mode_</qualifiedname>
+        <initializer>= <ref refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99a7d51f2b8ce7130e9f9d023ad7f887589" kindref="member">Mode::Monochrome</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="24" column="39" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a0588885dc2340113e27ee65328abb181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::WaveformWebpEncoder</definition>
+        <argsstring>(const EncodeWaveformWebpArgs &amp;args, function::EvalOptions options)</argsstring>
+        <name>WaveformWebpEncoder</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::WaveformWebpEncoder</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="9" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1ad217856c42725815583cbf6dfcc36008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::WaveformWebpEncoder</definition>
+        <argsstring>(const EncodeWaveformWebpArgs &amp;args, const EncodeWaveformWebpStftArgs &amp;stft_args, function::EvalOptions options)</argsstring>
+        <name>WaveformWebpEncoder</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::WaveformWebpEncoder</qualifiedname>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs" kindref="compound">EncodeWaveformWebpArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs" kindref="compound">EncodeWaveformWebpStftArgs</ref> &amp;</type>
+          <declname>stft_args</declname>
+        </param>
+        <param>
+          <type><ref refid="structPDJE__UTIL_1_1function_1_1EvalOptions" kindref="compound">function::EvalOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="11" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a830c419269ace42d6dab9cf3504b5239" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPDJE__UTIL_1_1common_1_1Result" kindref="compound">common::Result</ref>&lt; <ref refid="namespacePDJE__UTIL_1_1function_1_1image_1a781408e2b5312c618656f07675d378f8" kindref="member">WaveformWebpBatch</ref> &gt;</type>
+        <definition>common::Result&lt; WaveformWebpBatch &gt; PDJE_UTIL::function::image::detail::WaveformWebpEncoder::Encode</definition>
+        <argsstring>() const</argsstring>
+        <name>Encode</name>
+        <qualifiedname>PDJE_UTIL::function::image::detail::WaveformWebpEncoder::Encode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="16" column="5" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.cpp" bodystart="24" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>PDJE_PARALLEL::POST_PROCESS</label>
+        <link refid="structPDJE__PARALLEL_1_1POST__PROCESS"/>
+      </node>
+      <node id="7">
+        <label>PDJE_UTIL::function::CacheContext</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1CacheContext"/>
+      </node>
+      <node id="6">
+        <label>PDJE_UTIL::function::EvalOptions</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1EvalOptions"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>cache</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpArgs"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pcm</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PDJE_UTIL::function::image::EncodeWaveformWebpStftArgs</label>
+        <link refid="structPDJE__UTIL_1_1function_1_1image_1_1EncodeWaveformWebpStftArgs"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>post_process</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</label>
+        <link refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>args_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stft_args_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>options_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::span&lt; const float &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" line="7" column="1" bodyfile="PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpEncoder.hpp" bodystart="7" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a6fb41d561e4bb123e728f1989a3a4a18" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>args_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a830c419269ace42d6dab9cf3504b5239" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>Encode</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a220809cde91248dc6e6f955192941b99" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>Mode</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1addc459132337fbac7b1ecc550ff1c5c7" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>mode_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1abaf058f66b6a9fb4ea49a1725e06c7c8" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>options_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1aeae34d8db8647d77d58e725d2d567c2d" prot="private" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>stft_args_</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1a0588885dc2340113e27ee65328abb181" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>WaveformWebpEncoder</name></member>
+      <member refid="classPDJE__UTIL_1_1function_1_1image_1_1detail_1_1WaveformWebpEncoder_1ad217856c42725815583cbf6dfcc36008" prot="public" virt="non-virtual"><scope>PDJE_UTIL::function::image::detail::WaveformWebpEncoder</scope><name>WaveformWebpEncoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
