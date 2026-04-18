@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "wrapper": {
+    "path": "PDJE-Godot-Plugin",
+    "branch": "master",
+    "documented_commit": "8b715dceaf75f6f8ebe97747e925d993488251d7"
+  },
+  "core": {
+    "path": "PDJE-Godot-Plugin/Project-DJ-Engine",
+    "branch": "main",
+    "documented_commit": "3f01c66d415ffe572fd17acff12e382fae4d99d1"
+  }
+}

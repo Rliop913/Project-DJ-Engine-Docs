@@ -1,12 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "project-dj-engine-docs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Documentation sources and harness metadata for Project-DJ-Engine"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "breathe>=4.35.0",
     "exhale>=0.3.7",
     "sphinx-design>=0.7.0",
     "sphinx-rtd-theme>=3.1.0",
     "sphinxcontrib-mermaid>=2.0.1",
 ]
+
+[project.scripts]
+docs-harness = "tools.docs_harness:main"
+
+[tool.setuptools]
+packages = ["tools"]

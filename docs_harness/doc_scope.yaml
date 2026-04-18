@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "editable_globs": [
+    "srcs/*.rst"
+  ],
+  "readonly_globs": [
+    "srcs/api/**",
+    "srcs/xml/**",
+    "docs/**",
+    "PDJE-Godot-Plugin/Project-DJ-Engine/document_sources/**"
+  ],
+  "repos": {
+    "wrapper": {
+      "rules": [
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Wrapper_Includes/**",
+            "PDJE-Godot-Plugin/**/swig*",
+            "PDJE-Godot-Plugin/extension_api.json"
+          ],
+          "docs": [
+            "srcs/Getting Started.rst",
+            "srcs/Core_Engine.rst",
+            "srcs/Input_Engine.rst",
+            "srcs/Judge_Engine.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
+        }
+      ]
+    },
+    "core": {
+      "rules": [
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Project-DJ-Engine/include/core/**"
+          ],
+          "docs": [
+            "srcs/Core_Engine.rst",
+            "srcs/Editor_Workflows.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
+        },
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Project-DJ-Engine/include/input/**"
+          ],
+          "docs": [
+            "srcs/Input_Engine.rst",
+            "srcs/Data_Lines.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
+        },
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/**"
+          ],
+          "docs": [
+            "srcs/Judge_Engine.rst",
+            "srcs/Data_Lines.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
+        },
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Project-DJ-Engine/include/util/**"
+          ],
+          "docs": [
+            "srcs/Util_Engine.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
+        },
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Project-DJ-Engine/BuildInitwithConan.*",
+            "PDJE-Godot-Plugin/Project-DJ-Engine/cmakes/**",
+            "PDJE-Godot-Plugin/Project-DJ-Engine/.github/workflows/**"
+          ],
+          "docs": [
+            "srcs/index.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/Getting Started.rst"
+          ]
+        }
+      ]
+    }
+  }
+}
