@@ -1,0 +1,6 @@
+*/.venv
+.venv/
+.venv/*
+PDJE-Godot-Plugin/
+PDJE-Godot-Plugin/*
+uv.lock
