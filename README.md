@@ -112,6 +112,16 @@ For new developers or integrators:
 - **Godot Plugin**: https://github.com/Rliop913/PDJE-Godot-Plugin
 - **Plugin Prebuilt**: https://github.com/Rliop913/Project_DJ_Godot
 
+## Changelog
+
+### 2026-04-19 — Documentation update
+
+- **README.md**: 프로젝트 개요, 문서 구조 맵, 빌드 방법, 독서 순서, 관련 저장소 링크 대폭 추가
+- **srcs/index.rst**: `Util_Engine`을 toctree에 추가 (SRCS_DOC_GENERATION_SPEC 필수 링크에 명시되어 있었으나 누락), CI/CD Call Graph의 주석 처리된 mermaid 설정 라인 제거
+- **srcs/conf.py**: 저작권 연도 `2025` → `2025-2026` 업데이트
+- **docs_harness/SRCS_DOC_GENERATION_SPEC.md**: `index.rst` 계약에 Required toctree entries 필드 추가, `Util_Engine.rst` 계약에 Required links 필드 추가
+- **docs_harness/HARNESS.md**: Documentation Map 섹션 추가 (12개 가이드 페이지 역할 요약)
+
 ## License
 
 LGPL v2.1
