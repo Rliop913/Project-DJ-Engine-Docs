@@ -160,8 +160,6 @@ Additional Resources
 CI/CD Call Graph
 -------------------
 
-  .. :config: {"theme":"forest","themeVariables":{"fontSize":"25px"}}
-
 .. mermaid::
 
   %%{init: {'flowchart': {'curve': 'stepAfter'}}}%%
@@ -204,4 +202,5 @@ CI/CD Call Graph
 
   Getting Started
   api/api_root
+  Util_Engine
   Editor_Format

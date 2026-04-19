@@ -321,6 +321,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Util_Engine.html">Util_Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Editor_Format.html">Editor_Format</a></li>
 </ul>
 
@@ -398,7 +399,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4N21xdg_toplevel_listener15wm_capabilitiesE">
 <span id="_CPPv3N21xdg_toplevel_listener15wm_capabilitiesE"></span><span id="_CPPv2N21xdg_toplevel_listener15wm_capabilitiesE"></span><span class="target" id="structxdg__toplevel__listener_1a0a5d85c3d4dad3c5ec5ffb2d45ad5183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">wm_capabilities</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">xdg_toplevel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">xdg_toplevel</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">wl_array</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">capabilities</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N21xdg_toplevel_listener15wm_capabilitiesE" title="Link to this definition"></a><br /></dt>
 <dd><p>compositor capabilities</p>
-<p>This event advertises the capabilities supported by the compositor. If a capability isn’t supported, clients should hide or disable the <a class="reference internal" href="class_u_i.html#classUI"><span class="std std-ref">UI</span></a> elements that expose this functionality. For instance, if the compositor doesn’t advertise support for minimized toplevels, a button triggering the set_minimized request should not be displayed.</p>
+<p>This event advertises the capabilities supported by the compositor. If a capability isn’t supported, clients should hide or disable the <a class="reference internal" href="classUI.html#classUI"><span class="std std-ref">UI</span></a> elements that expose this functionality. For instance, if the compositor doesn’t advertise support for minimized toplevels, a button triggering the set_minimized request should not be displayed.</p>
 <p>The compositor will ignore requests it doesn’t support. For instance, a compositor which doesn’t advertise support for minimized will ignore set_minimized requests.</p>
 <p>Compositors must send this event once before the first xdg_surface.configure event. When the capabilities change, compositors must send this event again and then send an xdg_surface.configure event.</p>
 <p>The configured state should not be applied immediately. See xdg_surface.configure for details.</p>
@@ -431,7 +432,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, RLIOP913.</p>
+    <p>&#169; Copyright 2025-2026, RLIOP913.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

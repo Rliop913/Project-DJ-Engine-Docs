@@ -76,6 +76,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api/api_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Util_Engine.html">Util_Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Editor_Format.html">Editor_Format</a></li>
 </ul>
 
@@ -145,9 +146,9 @@ and preview playback.</p></li>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv44PDJE">
 <span id="_CPPv34PDJE"></span><span id="_CPPv24PDJE"></span><span id="PDJE"></span><span class="target" id="classPDJE"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PDJE</span></span></span><a class="headerlink" href="#_CPPv44PDJE" title="Link to this definition"></a><br /></dt>
-<dd><p>the main Interface of this Engine <a class="reference internal" href="api/class_p_d_j_e.html#classPDJE"><span class="std std-ref">PDJE</span></a> gets music data and track data from database. from that datas, you can activate music player and you can get a music player handler. with this player handler, you can control music’s mixing in real time. </p>
+<dd><p>the main Interface of this Engine <a class="reference internal" href="api/classPDJE.html#classPDJE"><span class="std std-ref">PDJE</span></a> gets music data and track data from database. from that datas, you can activate music player and you can get a music player handler. with this player handler, you can control music’s mixing in real time. </p>
 <p>to-use<ol class="loweralpha simple">
-<li><p>make <a class="reference internal" href="api/class_p_d_j_e.html#classPDJE"><span class="std std-ref">PDJE</span></a> object</p></li>
+<li><p>make <a class="reference internal" href="api/classPDJE.html#classPDJE"><span class="std std-ref">PDJE</span></a> object</p></li>
 <li><p>call SearchTrack</p></li>
 <li><p>call InitPlayer</p></li>
 <li><p>use player. this is handler.</p></li>
@@ -204,7 +205,7 @@ track into the player constructor.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="api/typedef_db_root_8hpp_1a3f1b13e99715292c40c6aa3f77c558e0.html#dbRoot_8hpp_1a3f1b13e99715292c40c6aa3f77c558e0"><span class="std std-ref">MUS_VEC</span></a></p>
+<dd class="field-even"><p><a class="reference internal" href="api/typedef_dbRoot_8hpp_1a3f1b13e99715292c40c6aa3f77c558e0.html#dbRoot_8hpp_1a3f1b13e99715292c40c6aa3f77c558e0"><span class="std std-ref">MUS_VEC</span></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -218,7 +219,7 @@ track into the player constructor.</p></li>
 <dd class="field-odd"><p><strong>Title</strong> – the title of the track. send “” to skip filter </p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="api/typedef_db_root_8hpp_1a5e5f6eb44078b1ddbcbb421faec83470.html#dbRoot_8hpp_1a5e5f6eb44078b1ddbcbb421faec83470"><span class="std std-ref">TRACK_VEC</span></a> the array of the track_data. find what you want </p>
+<dd class="field-even"><p><a class="reference internal" href="api/typedef_dbRoot_8hpp_1a5e5f6eb44078b1ddbcbb421faec83470.html#dbRoot_8hpp_1a5e5f6eb44078b1ddbcbb421faec83470"><span class="std std-ref">TRACK_VEC</span></a> the array of the track_data. find what you want </p>
 </dd>
 </dl>
 </dd></dl>
@@ -231,7 +232,7 @@ track into the player constructor.</p></li>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mode</strong> – the play modes. you can choose “FULL_PRE_RENDER”, “HYBRID_RENDER”, “FULL_MANUAL_RENDER” </p></li>
-<li><p><strong>td</strong> – the track data. you can get this from <a class="reference internal" href="api/class_p_d_j_e.html#classPDJE_1a322160409e9c02e4700e966623bfd4d7"><span class="std std-ref">SearchTrack()</span></a></p></li>
+<li><p><strong>td</strong> – the track data. you can get this from <a class="reference internal" href="api/classPDJE.html#classPDJE_1a322160409e9c02e4700e966623bfd4d7"><span class="std std-ref">SearchTrack()</span></a></p></li>
 <li><p><strong>FrameBufferSize</strong> – the buffersize. in this project, it uses 48000 samplerate. if you use 48 as a value, in theory, it calls mixing function 1000 times per second. </p></li>
 </ul>
 </dd>
@@ -555,7 +556,7 @@ method names <cite>GetFXControlPannel()</cite> / <cite>GetMusicControlPannel()</
 <dd class="field-odd"><p><strong>fx</strong> – the fx type </p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="api/typedef__deck_data_8hpp_1a678187c26c21fa39643ad237d950bf15.html#DeckData_8hpp_1a678187c26c21fa39643ad237d950bf15"><span class="std std-ref">ARGSETTER</span></a> the FX arg handler </p>
+<dd class="field-even"><p><a class="reference internal" href="api/typedef_DeckData_8hpp_1a678187c26c21fa39643ad237d950bf15.html#DeckData_8hpp_1a678187c26c21fa39643ad237d950bf15"><span class="std std-ref">ARGSETTER</span></a> the FX arg handler </p>
 </dd>
 </dl>
 </dd></dl>
@@ -669,7 +670,7 @@ method names <cite>GetFXControlPannel()</cite> / <cite>GetMusicControlPannel()</
 <dd><p>get music list on the deck </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="api/typedef__music_control_pannel_8hpp_1ade6cd1e55ebee7c7fbbe63cd3590d1d8.html#MusicControlPanel_8hpp_1ade6cd1e55ebee7c7fbbe63cd3590d1d8"><span class="std std-ref">LOADED_LIST</span></a></p>
+<dd class="field-odd"><p><a class="reference internal" href="api/typedef_MusicControlPanel_8hpp_1ade6cd1e55ebee7c7fbbe63cd3590d1d8.html#MusicControlPanel_8hpp_1ade6cd1e55ebee7c7fbbe63cd3590d1d8"><span class="std std-ref">LOADED_LIST</span></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -760,7 +761,7 @@ there is now grouped by operation family:</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N12editorObject4OpenERKN2fs4pathERK13DONT_SANITIZERK13DONT_SANITIZE">
 <span id="_CPPv3N12editorObject4OpenERKN2fs4pathERK13DONT_SANITIZERK13DONT_SANITIZE"></span><span id="_CPPv2N12editorObject4OpenERKN2fs4pathERK13DONT_SANITIZERK13DONT_SANITIZE"></span><span id="editorObject::Open__fs::pathCR.DONT_SANITIZECR.DONT_SANITIZECR"></span><span class="target" id="classeditorObject_1aa921e7a13cc65917ae9efe90646878c1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="api/classeditorObject.html#_CPPv412editorObject" title="editorObject"><span class="n"><span class="pre">editorObject</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">fs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">projectPath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="api/typedef_fileNameSanitizer_8hpp_1a2ec6d785f45dccabee178706d40c0d7d.html#_CPPv413DONT_SANITIZE" title="DONT_SANITIZE"><span class="n"><span class="pre">DONT_SANITIZE</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">auth_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="api/typedef_fileNameSanitizer_8hpp_1a2ec6d785f45dccabee178706d40c0d7d.html#_CPPv413DONT_SANITIZE" title="DONT_SANITIZE"><span class="n"><span class="pre">DONT_SANITIZE</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">auth_email</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12editorObject4OpenERKN2fs4pathERK13DONT_SANITIZERK13DONT_SANITIZE" title="Link to this definition"></a><br /></dt>
-<dd><p>Opens an existing editor project. if <a class="reference internal" href="api/class_p_d_j_e.html#classPDJE"><span class="std std-ref">PDJE</span></a> called InitEditor, you don’t need to call this again. </p>
+<dd><p>Opens an existing editor project. if <a class="reference internal" href="api/classPDJE.html#classPDJE"><span class="std std-ref">PDJE</span></a> called InitEditor, you don’t need to call this again. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>projectPath</strong> – The path to the project. </p>
@@ -821,7 +822,7 @@ there is now grouped by operation family:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, RLIOP913.</p>
+    <p>&#169; Copyright 2025-2026, RLIOP913.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
