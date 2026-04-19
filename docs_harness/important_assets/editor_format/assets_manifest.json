@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "page": "srcs/Editor_Format.rst",
+  "assets": [
+    {
+      "asset_id": "track_data_format",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Root Database Payloads",
+      "title": "Track Data Format",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#track_data_format",
+      "must_link_from_section": "Root Database Payloads",
+      "required_mentions": [
+        "Describe the root-database column layout for track payloads.",
+        "Keep the explanation that trackdata stores trackTitle, mixBinary, noteBinary, and cachedMixList."
+      ],
+      "required_claims": [
+        "The binary fields are produced by the editor translation layer and are not intended to be edited by hand."
+      ]
+    },
+    {
+      "asset_id": "music_metadata_format",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Root Database Payloads",
+      "title": "Music Meta Data Format",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#music_metadata_format",
+      "must_link_from_section": "Root Database Payloads",
+      "required_mentions": [
+        "Describe the root-database column layout for music metadata.",
+        "Keep the explanation that musdata stores title, composer, musicPath, bpmBinary, bpm, and firstBeat."
+      ],
+      "required_claims": [
+        "firstBeat is used as the PCM-frame offset where the first musical beat begins for that audio asset."
+      ]
+    },
+    {
+      "asset_id": "mix_data_format",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Editor Argument Shapes",
+      "title": "Mix Data Format",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#mix_data_format",
+      "must_link_from_section": "Editor Argument Shapes",
+      "required_mentions": [
+        "Keep the compact field table for MixArgs because it remains useful when authoring or reviewing raw data rows."
+      ],
+      "required_claims": []
+    },
+    {
+      "asset_id": "mix_data_table",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Editor Argument Shapes",
+      "title": "Mix Data Table",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#mix_data_table",
+      "must_link_from_section": "Editor Argument Shapes",
+      "required_mentions": [
+        "Explain how first, second, and third are interpreted for each mix type.",
+        "Preserve the note that the table keeps older author-facing labels because they are still useful."
+      ],
+      "required_claims": [
+        "Current source names such as BPM_CONTROL and OSC_FILTER map to the older bpmControl and OCS_Filter spellings shown in the table."
+      ]
+    },
+    {
+      "asset_id": "note_data_format",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Editor Argument Shapes",
+      "title": "Note Data Format",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#note_data_format",
+      "must_link_from_section": "Editor Argument Shapes",
+      "required_mentions": [
+        "Keep the note-format field table as the compact reference for NoteArgs rows."
+      ],
+      "required_claims": []
+    },
+    {
+      "asset_id": "interpolation_keywords",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Interpolation And `EightPointValues`",
+      "title": "Interpolation Keywords",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#interpolation_keywords",
+      "must_link_from_section": "Interpolation And `EightPointValues`",
+      "required_mentions": [
+        "Keep the explanation that MixArgs.first often carries the interpolation selector.",
+        "Keep the explanation that MixArgs.second often carries the comma-separated control values."
+      ],
+      "required_claims": [
+        "Older docs referred to these control values as 8PointValues, and the term remains useful for understanding the current runtime parser."
+      ]
+    },
+    {
+      "asset_id": "mix_json_keys",
+      "kind": "table",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Mix JSON Keys",
+      "title": "Mix JSON Keys",
+      "storage_path": "docs_harness/important_assets/editor_format/tables.json#mix_json_keys",
+      "must_link_from_section": "Mix JSON Keys",
+      "required_mentions": [
+        "Keep the table that explains the meaning of each mix JSON key.",
+        "Do not reduce this section to a plain key list without meanings."
+      ],
+      "required_claims": []
+    },
+    {
+      "asset_id": "eight_point_example",
+      "kind": "image",
+      "source_doc": "srcs/Editor_Format.rst",
+      "source_section": "Interpolation And `EightPointValues`",
+      "title": "EightPointValues Example",
+      "storage_path": "docs_harness/important_assets/editor_format/eightPoint_example.png",
+      "must_link_from_section": "Interpolation And `EightPointValues`",
+      "required_mentions": [
+        "Explain that the image should be read as eight control points stretched across the event span from the start beat tuple to the end beat tuple."
+      ],
+      "required_claims": [
+        "This is the older model used to explain automated filter, EQ, volume, and other FX changes, and it still matches the current runtime parser.",
+        "With ITPL_FLAT, older single-value examples still match the flat interpolator concept in the current tree."
+      ]
+    }
+  ]
+}

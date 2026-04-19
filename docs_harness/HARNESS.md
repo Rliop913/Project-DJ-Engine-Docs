@@ -32,6 +32,10 @@ baseline and scope data needed to update the hand-written documentation safely.
   `srcs/*.rst` pages that may need updates.
 - The file is JSON-formatted so it stays readable without introducing a YAML
   parser dependency, while remaining valid YAML 1.2.
+- `docs_harness/SRCS_DOC_GENERATION_SPEC.md` is the canonical generation guide
+  for the hand-written `srcs` pages.
+- `docs_harness/important_assets/editor_format/` stores the asset-backed tables
+  and image that must remain recoverable and explained in `Editor_Format.rst`.
 
 ## Official CLI
 
@@ -81,7 +85,9 @@ and the build passes.
 2. Run `uv run docs-harness record-source-heads`.
 3. Run `uv run docs-harness status --json`.
 4. Run `uv run docs-harness diff-context --json`.
-5. Update only the impacted `srcs/*.rst` pages.
-6. Validate with `./DOCUMENT_GENERATOR.sh` or
+5. Read `SRCS_DOC_GENERATION_SPEC.md` and any required `important_assets`
+   snapshots for the impacted pages.
+6. Update only the impacted `srcs/*.rst` pages.
+7. Validate with `./DOCUMENT_GENERATOR.sh` or
    `uv run sphinx-build -b html ./srcs docs`.
-7. Advance the baseline with `uv run docs-harness stamp-baseline`.
+8. Advance the baseline with `uv run docs-harness stamp-baseline`.

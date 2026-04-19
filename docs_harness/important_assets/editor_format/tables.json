@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "page": "srcs/Editor_Format.rst",
+  "tables": {
+    "track_data_format": {
+      "kind": "list-table",
+      "title": "Track Data Format",
+      "header": [
+        "`TrackTitle`",
+        "`MixBinary`",
+        "`NoteBinary`",
+        "`CachedMixList`"
+      ],
+      "rows": [
+        [
+          "Text",
+          "Binary (Cap'n Proto)",
+          "Binary (Cap'n Proto)",
+          "Text (CSV)"
+        ]
+      ]
+    },
+    "music_metadata_format": {
+      "kind": "list-table",
+      "title": "Music Meta Data Format",
+      "header": [
+        "`Title`",
+        "`Composer`",
+        "`MusicPath`",
+        "`Bpm`",
+        "`BpmBinary`",
+        "`FirstBeat`"
+      ],
+      "rows": [
+        [
+          "Text",
+          "Text",
+          "Text",
+          "Double",
+          "Binary (Cap'n Proto)",
+          "TEXT"
+        ]
+      ]
+    },
+    "mix_data_format": {
+      "kind": "list-table",
+      "title": "Mix Data Format",
+      "header": [
+        "`type`",
+        "`details`",
+        "`ID`",
+        "`first`",
+        "`second`",
+        "`third`",
+        "`beat`",
+        "`subBeat`",
+        "`separate`",
+        "`Ebeat`",
+        "`EsubBeat`",
+        "`Eseparate`"
+      ],
+      "rows": [
+        [
+          "`TYPE_ENUM`",
+          "`DETAIL_ENUM`",
+          "int",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "long",
+          "long",
+          "long",
+          "long",
+          "long",
+          "long"
+        ]
+      ]
+    },
+    "mix_data_table": {
+      "kind": "csv-table",
+      "title": "Mix Data Table",
+      "header": [
+        "type",
+        "ID",
+        "details",
+        "first",
+        "second",
+        "third",
+        "Interpolated Value"
+      ],
+      "rows": [
+        ["FILTER(0)", "ID", "HIGH(0)/LOW(2)", "ITPL", "8PointValues", "NONE", "filter Frequency"],
+        ["EQ(1)", "ID", "HIGH(0)/MID(1)/LOW(2)", "ITPL", "8PointValues", "NONE", "eq value"],
+        ["DISTORTION(2)", "ID", "0", "ITPL", "8PointValues", "NONE", "drive value"],
+        ["CONTROL(3)", "ID", "PAUSE(3)/CUE(4)", "approx_loc", "X", "NONE", "NONE"],
+        ["VOL(4)", "ID", "TRIM(5)/FADER(6)", "ITPL", "8PointValues", "NONE", "volume"],
+        ["LOAD(5)", "ID", "0", "title", "composer", "bpm", "NONE"],
+        ["UNLOAD(6)", "ID", "0", "X", "X", "NONE", "NONE"],
+        ["bpmControl(7)", "ID", "timeStretch(7)", "BPM(double)", "NONE", "NONE", "NONE"],
+        ["ECHO(8)", "ID", "0", "ITPL", "8PointValues", "BPM, feedback", "Wet amount"],
+        ["OCS_Filter(9)", "ID", "HIGH(0)/LOW(2)", "ITPL", "8PointValues", "BPM, MiddleFreq, RangeHalfFreq", "Wet amount"],
+        ["FLANGER(10)", "ID", "0", "ITPL", "8PointValues", "BPM", "Wet amount"],
+        ["PHASER(11)", "ID", "0", "ITPL", "8PointValues", "BPM", "Wet amount"],
+        ["TRANCE(12)", "ID", "0", "ITPL", "8PointValues", "BPM, GAIN", "Wet amount"],
+        ["PANNER(13)", "ID", "0", "ITPL", "8PointValues", "BPM, GAIN", "Wet amount"],
+        ["BATTLE_DJ(14)", "ID", "SPIN(8)/PITCH(9)/REV(10)", "SPEED", "NONE", "NONE", "NONE"],
+        ["BATTLE_DJ(14)", "ID", "SCRATCH(11)", "StartPosition", "SPEED", "NONE", "NONE"],
+        ["ROLL(15)", "ID", "0", "ITPL", "8PointValues", "BPM", "Wet amount"],
+        ["COMPRESSOR(16)", "ID", "0", "Strength", "Thresh, Knee", "ATT, REL", "NONE"],
+        ["ROBOT(17)", "ID", "0", "ITPL", "8PointValues", "ocsFreq", "Wet amount"]
+      ]
+    },
+    "note_data_format": {
+      "kind": "list-table",
+      "title": "Note Data Format",
+      "header": [
+        "`Note_Type`",
+        "`Note_Detail`",
+        "`first`",
+        "`second`",
+        "`third`",
+        "`beat`",
+        "`subBeat`",
+        "`separate`",
+        "`Ebeat`",
+        "`EsubBeat`",
+        "`Eseparate`",
+        "`RailID`"
+      ],
+      "rows": [
+        [
+          "TEXT",
+          "uint16",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "long",
+          "long",
+          "long",
+          "long",
+          "long",
+          "long",
+          "uint64"
+        ]
+      ]
+    },
+    "interpolation_keywords": {
+      "kind": "list-table",
+      "title": "Interpolation Keywords",
+      "header": [
+        "Keyword",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "`ITPL`",
+          "Choose the interpolator type (`linear`, `cosine`, `cubic`, or `flat`)"
+        ],
+        [
+          "`8PointValues`",
+          "Eight data points that define the waveform used by the interpolator"
+        ]
+      ]
+    },
+    "mix_json_keys": {
+      "kind": "list-table",
+      "title": "Mix JSON Keys",
+      "header": [
+        "Key",
+        "Meaning"
+      ],
+      "rows": [
+        ["`type`", "integer `TypeEnum` value"],
+        ["`details`", "integer `DetailEnum` value"],
+        ["`id`", "logical target ID"],
+        ["`first`", "first free-form argument"],
+        ["`second`", "second free-form argument"],
+        ["`third`", "third free-form argument"],
+        ["`beat`", "start beat"],
+        ["`sub_beat`", "start subdivision index"],
+        ["`separate`", "start subdivision denominator"],
+        ["`e_beat`", "end beat"],
+        ["`e_subBeat`", "end subdivision index"],
+        ["`e_separate`", "end subdivision denominator"]
+      ]
+    }
+  }
+}

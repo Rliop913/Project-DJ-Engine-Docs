@@ -23,3 +23,7 @@ are intentionally ignored by this repository.
 
 `stamp-baseline` advances the recorded source baseline only after documentation
 updates have been reviewed and validated.
+
+The canonical generation reference for the hand-written docs lives in
+`docs_harness/SRCS_DOC_GENERATION_SPEC.md`. `Editor_Format` also has a dedicated
+asset snapshot under `docs_harness/important_assets/editor_format/`.
