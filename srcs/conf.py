@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Project_DJ_Engine'
-copyright = '2025, RLIOP913'
+copyright = '2025-2026, RLIOP913'
 author = 'RLIOP913'
 
 # -- General configuration ---------------------------------------------------

@@ -148,6 +148,8 @@ Rules for policy pages:
   opening, and current final toctree entries.
 - Required links:
   `:doc:\`Getting Started\``, `:doc:\`Util_Engine\``.
+- Required toctree entries:
+  `Getting Started`, `api/api_root`, `Util_Engine`, `Editor_Format`.
 - Sources:
   top-level build flow, module overview, repository automation context.
 - Doxygen directives: none required.
@@ -253,6 +255,8 @@ Rules for policy pages:
   `Common Status And Result Types`, `Database Wrappers`,
   `Function Helpers`, `Scalar And Text`, `Image Helpers`,
   `Signal / STFT Helpers`, `AI Namespace`.
+- Required links:
+  `/api/api_root`.
 - Sources:
   `include/util/`, `tests/unit/util/`, util cmake files.
 - Doxygen directives:

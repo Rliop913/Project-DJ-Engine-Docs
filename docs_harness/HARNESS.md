@@ -5,6 +5,23 @@ harness such as Codex or Claude Code. The external harness owns planning,
 reasoning, and editing. This repository exposes only the machine-readable
 baseline and scope data needed to update the hand-written documentation safely.
 
+## Documentation Map
+
+The hand-written guide set lives under `srcs/*.rst` and follows this hierarchy:
+
+- `index.rst` — landing page, quick start, system architecture, milestones
+- `Getting Started.rst` — guide hub, documentation map, reading order
+- `Developer_Onboarding.rst` — integration-first mental model for contributors
+- `Core_Engine.rst` — playback facade, player control, editor entry points
+- `Editor_Workflows.rst` — authoring, mutation, history, render/push, preview
+- `Input_Engine.rst` — low-latency keyboard, mouse, and MIDI ingestion
+- `Judge_Engine.rst` — timing model, note matching, callback pipeline
+- `Util_Engine.rst` — utility surface, status/result types, DB wrappers, STFT
+- `Data_Lines.rst` — zero-copy live-state bridge structs and lifetime rules
+- `Editor_Format.rst` — on-disk data shapes, JSON keys, translation layer
+- `FX_ARGS.rst` — case-sensitive FX argument key catalog
+- `PDJE_For_AI_Agents.rst` — anti-hallucination guide for AI systems
+
 ## Canonical Targets
 
 - Canonical editable documents live under `srcs/*.rst`.

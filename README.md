@@ -4,6 +4,79 @@ This repository contains the hand-written Sphinx sources, generated API
 artifacts, and external-harness metadata used to keep the PDJE documentation in
 sync with the cloned wrapper and core repositories.
 
+## Project Overview
+
+**Project-DJ-Engine (PDJE)** is a soft real-time C++ engine that combines
+rhythm game logic, DJ performance workflows, and DAW-style editing APIs. The
+documentation in this repository covers all four major integration surfaces:
+
+- **Core Engine (`PDJE`)** — playback control, editor access, and the core data line
+- **Input Engine (`PDJE_Input`)** — low-latency keyboard, mouse, and MIDI
+  ingestion
+- **Judge Engine (`PDJE_JUDGE::JUDGE`)** — microsecond-precision note matching
+- **Utility Engine (`PDJE_UTIL`)** — status/result types, DB wrappers, image
+  helpers, and STFT utilities
+
+## Documentation Structure
+
+```
+.
+├── srcs/                        # Hand-written RST sources (canonical edit targets)
+│   ├── index.rst                # Landing page, quick start, architecture
+│   ├── Getting Started.rst      # Guide hub, reading order, binding notes
+│   ├── Developer_Onboarding.rst # Integration-first mental model
+│   ├── Core_Engine.rst          # Playback facade and player control
+│   ├── Editor_Workflows.rst     # Authoring, mutation, history, persistence
+│   ├── Input_Engine.rst         # Low-latency input runtime
+│   ├── Judge_Engine.rst         # Timing and judgment pipeline
+│   ├── Util_Engine.rst          # Utility surface and consumption boundaries
+│   ├── Data_Lines.rst           # Zero-copy live-state bridge structs
+│   ├── Editor_Format.rst        # Editor data shapes and JSON keys
+│   ├── FX_ARGS.rst              # Case-sensitive FX argument key catalog
+│   ├── PDJE_For_AI_Agents.rst   # Anti-hallucination guide for AI systems
+│   ├── api/                     # Generated API reference (read-only)
+│   ├── xml/                     # Doxygen XML output (read-only)
+│   └── conf.py                  # Sphinx configuration
+├── docs/                        # Built HTML output (read-only)
+├── docs_harness/                # Documentation harness metadata
+│   ├── SRCS_DOC_GENERATION_SPEC.md  # Canonical generation specification
+│   ├── HARNESS.md                   # Harness contract and CLI reference
+│   ├── doc_scope.yaml               # File-to-page mapping rules
+│   ├── source_baseline.lock.json     # Last documented commit hashes
+│   ├── source_heads.lock.json        # Current observed commit hashes
+│   └── important_assets/            # Asset-backed tables and images
+├── tools/                       # Python CLI implementation
+├── tests/                       # Harness and asset tests
+├── PDJE-Godot-Plugin/          # Cloned wrapper repo (gitignored)
+│   └── Project-DJ-Engine/      # Cloned core repo (submodule)
+├── Doxyfile                     # Doxygen configuration
+├── DOCUMENT_GENERATOR.sh        # One-command build script
+└── README.md                    # This file
+```
+
+## Building the Documentation
+
+Prerequisites:
+
+- Python 3.12+ with `uv`
+- Doxygen
+- Graphviz
+
+Build the full documentation set:
+
+```bash
+./DOCUMENT_GENERATOR.sh
+```
+
+Or build manually:
+
+```bash
+doxygen ./Doxyfile
+uv run sphinx-build -b html ./srcs docs
+```
+
+The output lands in `docs/`. Open `docs/index.html` to browse.
+
 ## Docs Harness
 
 Use `docs-harness` to inspect the recorded documentation baseline and the source
@@ -24,6 +97,21 @@ are intentionally ignored by this repository.
 `stamp-baseline` advances the recorded source baseline only after documentation
 updates have been reviewed and validated.
 
-The canonical generation reference for the hand-written docs lives in
-`docs_harness/SRCS_DOC_GENERATION_SPEC.md`. `Editor_Format` also has a dedicated
-asset snapshot under `docs_harness/important_assets/editor_format/`.
+## Reading Order
+
+For new developers or integrators:
+
+1. Start with the [landing page](srcs/index.rst) for the project overview
+2. Read [Getting Started](srcs/Getting%20Started.rst) for the guide map
+3. Read [Developer_Onboarding](srcs/Developer_Onboarding.rst) for the mental model
+4. Then follow the topic guides relevant to your use case
+
+## Related Repositories
+
+- **Core Engine**: https://github.com/Rliop913/Project-DJ-Engine
+- **Godot Plugin**: https://github.com/Rliop913/PDJE-Godot-Plugin
+- **Plugin Prebuilt**: https://github.com/Rliop913/Project_DJ_Godot
+
+## License
+
+LGPL v2.1
