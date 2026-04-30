@@ -4,7 +4,7 @@
 File PDJE_Crypto_Token.cpp
 ==========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_Crypto>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_Crypto>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\Crypto``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Crypto_Token.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/Crypto/PDJE_Crypto_Token.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\Crypto\PDJE_Crypto_Token.cpp``)
 ------------------------------------------------------------------------------------------------
 
 

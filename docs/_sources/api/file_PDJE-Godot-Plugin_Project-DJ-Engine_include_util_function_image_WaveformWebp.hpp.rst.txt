@@ -4,7 +4,7 @@
 File WaveformWebp.hpp
 =====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaveformWebp.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image\WaveformWebp.hpp``)
 -------------------------------------------------------------------------------------------------
 
 
@@ -36,11 +36,11 @@ Includes
 
 - ``span``
 
-- ``util/common/Result.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Result.hpp`)
+- ``util/common/Result.hpp``
 
-- ``util/function/FunctionContext.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_FunctionContext.hpp`)
+- ``util/function/FunctionContext.hpp``
 
-- ``util/function/stft/STFT_Parallel.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_stft_STFT_Parallel.hpp`)
+- ``util/function/stft/STFT_Parallel.hpp``
 
 - ``vector``
 

@@ -4,7 +4,7 @@
 File StatusCode.hpp
 ===================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\common``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File StatusCode.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/StatusCode.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\common\StatusCode.hpp``)
 ---------------------------------------------------------------------------------------
 
 

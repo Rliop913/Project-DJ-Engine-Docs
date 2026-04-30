@@ -78,9 +78,9 @@ Functions
 
 - :ref:`exhale_function_namespacePDJE__JUDGE_1a42d881ccc0ab5e41dffcf1173ba87c0b`
 
-- :ref:`exhale_function_namespacePDJE__JUDGE_1aa614512ba31f8521b7f0d2f648c52415`
-
 - :ref:`exhale_function_namespacePDJE__JUDGE_1a1e9928aafb8a97a2cd5dde1c2179e218`
+
+- :ref:`exhale_function_namespacePDJE__JUDGE_1aa614512ba31f8521b7f0d2f648c52415`
 
 
 Typedefs

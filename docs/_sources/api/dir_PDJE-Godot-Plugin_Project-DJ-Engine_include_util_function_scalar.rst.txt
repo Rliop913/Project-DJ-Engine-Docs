@@ -5,12 +5,12 @@ Directory scalar
 ================
 
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-*Directory path:* ``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/scalar``
+*Directory path:* ``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\scalar``
 
 
 Files

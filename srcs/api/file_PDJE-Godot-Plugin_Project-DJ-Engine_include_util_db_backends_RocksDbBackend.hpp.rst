@@ -4,7 +4,7 @@
 File RocksDbBackend.hpp
 =======================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_backends>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/backends``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_backends>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\backends``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File RocksDbBackend.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/backends/RocksDbBackend.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\backends\RocksDbBackend.hpp``)
 ------------------------------------------------------------------------------------------------
 
 
@@ -40,9 +40,9 @@ Includes
 
 - ``string_view``
 
-- ``util/common/Result.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Result.hpp`)
+- ``util/common/Result.hpp``
 
-- ``util/db/DbTypes.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_DbTypes.hpp`)
+- ``util/db/DbTypes.hpp``
 
 - ``vector``
 

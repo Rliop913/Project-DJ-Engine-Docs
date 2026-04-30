@@ -258,12 +258,28 @@ Rules for policy pages:
 - Required links:
   `/api/api_root`.
 - Sources:
-  `include/util/`, `tests/unit/util/`, util cmake files.
+  `include/util/`, `include/util/ai/**`, `tests/unit/util/`,
+  `tests/unit/util/ai_beat_this.test.cpp`,
+  `tests/unit/onnxruntime/onnxruntime_smoke.cpp`, util cmake files, and wrapper
+  util files under `PDJE-Godot-Plugin/Wrapper_Includes/util/db/**`,
+  `PDJE-Godot-Plugin/Wrapper_Includes/util/MIR/**`, and
+  `PDJE-Godot-Plugin/Wrapper_Includes/util/AI/**`.
 - Doxygen directives:
   current shared status/result file anchors plus selected file anchors where
   already present.
 - Required claim:
   the utility layer is active code, not roadmap-only.
+- Example rule:
+  each major util family documented on this page must keep at least one
+  source-backed short example. Native C++ examples must show the relevant
+  `Result<T>`, `Result<void>`, or direct-return status boundary when one exists.
+  Godot wrapper examples must use the wrapper class and method names from the
+  binding source and remain separate from native C++ examples.
+- AI rule:
+  `AI Namespace` must describe the current `PDJE_UTIL::ai` ONNX Runtime facade,
+  Beat This native detector, and Godot Beat This wrapper surface. Do not leave
+  this section as a placeholder, and do not claim generic ONNX sessions/tensors
+  are directly exposed to Godot unless the wrapper source proves it.
 
 ### `Data_Lines.rst`
 

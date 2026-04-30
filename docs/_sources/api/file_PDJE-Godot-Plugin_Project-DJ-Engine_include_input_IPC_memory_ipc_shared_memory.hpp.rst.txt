@@ -4,7 +4,7 @@
 File ipc_shared_memory.hpp
 ==========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\IPC\memory``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File ipc_shared_memory.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/ipc_shared_memory.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\IPC\memory\ipc_shared_memory.hpp``)
 ---------------------------------------------------------------------------------------------------
 
 

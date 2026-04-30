@@ -10,7 +10,7 @@ Directory Project-DJ-Engine
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-*Directory path:* ``PDJE-Godot-Plugin/Project-DJ-Engine``
+*Directory path:* ``PDJE-Godot-Plugin\Project-DJ-Engine``
 
 Subdirectories
 --------------

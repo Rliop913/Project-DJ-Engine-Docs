@@ -4,7 +4,7 @@
 File MixMachine-inl.h
 =====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\MixMachine``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -18,7 +18,7 @@ SIMD-optimized implementation for integrating PCM frames into a final mix.
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MixMachine-inl.h``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\MixMachine\MixMachine-inl.h``)
 ---------------------------------------------------------------------------------------------------------
 
 

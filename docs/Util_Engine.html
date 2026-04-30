@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists\css\tree_view.css?v=a885cde7" />
       <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
 
   
@@ -19,8 +19,8 @@
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=fd6eb6e6"></script>
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+      <script src="_static/collapsible-lists\js\CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists\js\apply-collapsible-lists.js?v=660e4f45"></script>
       <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -100,7 +100,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#signal-stft-helpers">Signal / STFT Helpers</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#ai-namespace">AI Namespace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ai-namespace">AI Namespace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#beat-this-detection">Beat This Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#godot-wrapper-surface">Godot Wrapper Surface</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Editor_Format.html">Editor_Format</a></li>
@@ -143,6 +147,15 @@ tree in this repository. For this module, the hand-written source of truth is:</
 <p>Generated API pages under <a class="reference internal" href="api/api_root.html"><span class="doc">API Reference</span></a> remain useful for symbol lookup,
 but this guide is the recommended starting point for the maintained utility
 surface and the intended consumption boundaries.</p>
+<p>How to read the examples:</p>
+<ul class="simple">
+<li><p>C++ snippets show the core call shape and the expected <cite>Result&lt;T&gt;</cite> or
+<cite>Status</cite> checks; they are not full standalone sample projects.</p></li>
+<li><p>Godot snippets use the wrapper class and method names exactly as bound by the
+extension layer.</p></li>
+<li><p>Paths, model files, PCM buffers, and cache directories are placeholders that
+must be replaced with checkout- or application-specific values.</p></li>
+</ul>
 <section id="public-consumption-units">
 <h2>Public Consumption Units<a class="headerlink" href="#public-consumption-units" title="Link to this heading"></a></h2>
 <p>The current CMake targets split the utility layer into four consumer-facing
@@ -150,7 +163,7 @@ units:</p>
 <ul class="simple">
 <li><p><cite>PDJE_UTIL</cite>
 base interface target for the utility include tree and the umbrella header
-path</p></li>
+path, including the maintained AI/ONNX Runtime utility implementation</p></li>
 <li><p><cite>PDJE_UTIL_DB</cite>
 aggregate database target that wires the SQLite, RocksDB, and Annoy utility
 backends</p></li>
@@ -184,6 +197,8 @@ umbrella header:</p>
 <li><p><cite>util/function/image/WebpWriter.hpp</cite></p></li>
 <li><p><cite>util/function/image/WaveformWebp.hpp</cite></p></li>
 <li><p><cite>util/function/stft/STFT_Parallel.hpp</cite></p></li>
+<li><p><cite>util/ai/AI.hpp</cite></p></li>
+<li><p><cite>util/ai/beat_this/BeatThis.hpp</cite></p></li>
 <li><p><cite>util/common/BackendLoader/OpenCL_Loader.hpp</cite></p></li>
 <li><p><cite>util/common/BackendLoader/PDJE_Parallel_Runtime_Loader.hpp</cite></p></li>
 </ul>
@@ -463,7 +478,7 @@ as:</p>
 <li><p><cite>out_of_range</cite></p></li>
 <li><p><cite>internal_error</cite></p></li>
 </ul>
-<p>Typical usage looks like this:</p>
+<p>Typical usage checks the status before consuming the value:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/PDJE_Util.hpp&quot;</span>
 
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">PDJE_UTIL</span><span class="p">;</span>
@@ -476,6 +491,19 @@ as:</p>
 <span class="p">}</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">clamped</span><span class="p">.</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The same status pattern applies to <cite>Result&lt;void&gt;</cite>:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/PDJE_Util.hpp&quot;</span>
+
+<span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">Result</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="w"> </span><span class="n">stored</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">Result</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;::</span><span class="n">success</span><span class="p">();</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">stored</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stored</span><span class="p">.</span><span class="n">status</span><span class="p">();</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;utility operation failed: &quot;</span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -549,14 +577,22 @@ invalid embedding dimension handling</p></li>
 
 <span class="k">auto</span><span class="w"> </span><span class="n">opened</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Db</span><span class="o">::</span><span class="n">open</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">opened</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">opened</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">auto</span><span class="w"> </span><span class="n">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">opened</span><span class="p">.</span><span class="n">value</span><span class="p">());</span>
-<span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">db</span><span class="p">.</span><span class="n">put_text</span><span class="p">(</span><span class="s">&quot;artist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RLIOP913&quot;</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">stored</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="n">put_text</span><span class="p">(</span><span class="s">&quot;artist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RLIOP913&quot;</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">stored</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stored</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
 <span class="k">auto</span><span class="w"> </span><span class="n">artist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="n">get_text</span><span class="p">(</span><span class="s">&quot;artist&quot;</span><span class="p">);</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">artist</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">artist</span><span class="p">.</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">artist</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -574,6 +610,7 @@ invalid embedding dimension handling</p></li>
 
 <span class="k">auto</span><span class="w"> </span><span class="n">opened</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Db</span><span class="o">::</span><span class="n">open</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">opened</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">opened</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -586,11 +623,86 @@ invalid embedding dimension handling</p></li>
 <span class="w">                 </span><span class="p">{</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">relational</span><span class="o">::</span><span class="n">Value</span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
 <span class="w">                   </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">relational</span><span class="o">::</span><span class="n">Value</span><span class="p">{</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">Text</span><span class="p">{</span><span class="s">&quot;left&quot;</span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">});</span>
 <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">db</span><span class="p">.</span><span class="n">commit</span><span class="p">();</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="n">query</span><span class="p">(</span><span class="s">&quot;SELECT lane FROM notes WHERE id = ?1;&quot;</span><span class="p">,</span>
+<span class="w">                     </span><span class="p">{</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">relational</span><span class="o">::</span><span class="n">Value</span><span class="p">{</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">int64_t</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">});</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rows</span><span class="p">.</span><span class="n">ok</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">rows</span><span class="p">.</span><span class="n">value</span><span class="p">().</span><span class="n">rows</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">lane</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rows</span><span class="p">.</span><span class="n">value</span><span class="p">().</span><span class="n">rows</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;lane&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lane</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">Text</span><span class="o">&gt;</span><span class="p">(</span><span class="n">lane</span><span class="o">-&gt;</span><span class="n">storage</span><span class="p">)</span>
+<span class="w">                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Annoy nearest-neighbor follows the same open/use/close shape, but its payloads
 are <cite>db::nearest::Item</cite>, <cite>SearchHit</cite>, and <cite>SearchOptions</cite> rather than text or
 SQL values.</p>
+<p>Annoy nearest-neighbor example:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/db/backends/AnnoyBackend.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/db/nearest/Index.hpp&quot;</span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">nearest</span><span class="o">::</span><span class="n">NearestNeighborIndex</span><span class="o">&lt;</span>
+<span class="w">    </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">backends</span><span class="o">::</span><span class="n">AnnoyBackend</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">backends</span><span class="o">::</span><span class="n">AnnoyConfig</span><span class="w"> </span><span class="n">cfg</span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">root_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tmp/example-annoy&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">open_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">create_if_missing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">.</span><span class="n">dimension</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">trees</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
+<span class="p">};</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">opened</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Index</span><span class="o">::</span><span class="n">open</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">opened</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">opened</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">opened</span><span class="p">.</span><span class="n">value</span><span class="p">());</span>
+<span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">index</span><span class="p">.</span><span class="n">upsert_item</span><span class="p">(</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;track-a&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="p">.</span><span class="n">embedding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">0.9f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0f</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">.</span><span class="n">text_payload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">db</span><span class="o">::</span><span class="n">Text</span><span class="p">{</span><span class="w"> </span><span class="s">&quot;high-energy intro&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">});</span>
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">query</span><span class="p">{</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0f</span><span class="w"> </span><span class="p">};</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">hits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">limit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">search_k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="p">});</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hits</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">hit</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">hits</span><span class="p">.</span><span class="n">value</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">hit</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; distance=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">hit</span><span class="p">.</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Godot DB wrapper examples:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">kv</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_KeyValueDB</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">if</span><span class="w"> </span><span class="n">kv</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="s2">&quot;user://pdje-cache/kv&quot;</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">):</span>
+<span class="w">    </span><span class="n">kv</span><span class="o">.</span><span class="n">PutText</span><span class="p">(</span><span class="s2">&quot;artist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;RLIOP913&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">kv</span><span class="o">.</span><span class="n">GetText</span><span class="p">(</span><span class="s2">&quot;artist&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="n">kv</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_RelationalDB</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">if</span><span class="w"> </span><span class="n">sql</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="s2">&quot;user://pdje-cache/library.sqlite3&quot;</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">):</span>
+<span class="w">    </span><span class="n">sql</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS notes(id INTEGER, lane TEXT)&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">sql</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO notes(id, lane) VALUES(?1, ?2)&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">])</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">sql</span><span class="o">.</span><span class="n">Query</span><span class="p">(</span><span class="s2">&quot;SELECT lane FROM notes WHERE id = ?1&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="w">    </span><span class="n">sql</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">vectors</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_VectorDB</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">if</span><span class="w"> </span><span class="n">vectors</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="s2">&quot;user://pdje-cache/vectors&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">):</span>
+<span class="w">    </span><span class="k">var</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_VectorItem</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="w">    </span><span class="n">item</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;track-a&quot;</span>
+<span class="w">    </span><span class="n">item</span><span class="o">.</span><span class="n">embedding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">PackedFloat32Array</span><span class="p">([</span><span class="mf">0.9</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">])</span>
+<span class="w">    </span><span class="n">item</span><span class="o">.</span><span class="n">text_payload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;high-energy intro&quot;</span>
+<span class="w">    </span><span class="n">vectors</span><span class="o">.</span><span class="n">UpsertItem</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">hit</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">vectors</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span><span class="nb nb-Type">PackedFloat32Array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">]),</span><span class="w"> </span><span class="mi">3</span><span class="p">):</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="n">hit</span><span class="o">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hit</span><span class="o">.</span><span class="n">distance</span><span class="p">)</span>
+<span class="w">    </span><span class="n">vectors</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 <section id="function-helpers">
 <h2>Function Helpers<a class="headerlink" href="#function-helpers" title="Link to this heading"></a></h2>
@@ -609,13 +721,25 @@ slug and rejects alphanumeric separators</p></li>
 <li><p><cite>CacheContext</cite> exists as a lightweight movable handle; the shipped inline
 helpers shown here do not require a populated cache context</p></li>
 </ul>
-<p>Example:</p>
+<p>Clamp and slug examples:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/PDJE_Util.hpp&quot;</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">gain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">clamp</span><span class="p">(</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.35</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">min_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">max_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="p">});</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gain</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;normalized gain: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">gain</span><span class="p">.</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 
 <span class="k">auto</span><span class="w"> </span><span class="n">slug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">slugify</span><span class="p">(</span>
 <span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Project DJ Engine&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">separator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;-&#39;</span><span class="w"> </span><span class="p">});</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">slug</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">slug</span><span class="p">.</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// &quot;project-dj-engine&quot;</span>
+<span class="p">}</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">invalid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">slugify</span><span class="p">(</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Project DJ Engine&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">separator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;x&#39;</span><span class="w"> </span><span class="p">});</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">invalid</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">invalid</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -645,7 +769,7 @@ generator path.</p>
 <li><p>writes encoded bytes to disk with <cite>write_webp(…)</cite></p></li>
 <li><p>validates <cite>compression_level</cite> in the <cite>[-1, 9]</cite> range before encoding</p></li>
 </ul>
-<p>Minimal example:</p>
+<p>Encode and write example:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/function/image/WebpWriter.hpp&quot;</span>
 
 <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rgba</span><span class="p">{</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="w"> </span><span class="p">};</span>
@@ -659,6 +783,26 @@ generator path.</p>
 <span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <span class="w">              </span><span class="p">.</span><span class="n">pixel_format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">image</span><span class="o">::</span><span class="n">RasterPixelFormat</span><span class="o">::</span><span class="n">rgba8</span><span class="p">,</span>
 <span class="w">          </span><span class="p">}</span><span class="w"> </span><span class="p">});</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">encoded</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">encoded</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">written</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">image</span><span class="o">::</span><span class="n">write_webp</span><span class="p">(</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">image</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">pixels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rgba</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">pixel_format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">function</span><span class="o">::</span><span class="n">image</span><span class="o">::</span><span class="n">RasterPixelFormat</span><span class="o">::</span><span class="n">rgba8</span><span class="p">,</span>
+<span class="w">          </span><span class="p">},</span>
+<span class="w">      </span><span class="p">.</span><span class="n">output_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tmp/red-pixel.webp&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="p">.</span><span class="n">compression_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">});</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">written</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">written</span><span class="p">.</span><span class="n">status</span><span class="p">().</span><span class="n">message</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Waveform WebP generation:</p>
@@ -706,6 +850,14 @@ runs</p></li>
 
 <span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">batch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waveform</span><span class="p">.</span><span class="n">value</span><span class="p">();</span>
 <span class="c1">// batch[channel][image] -&gt; encoded WebP bytes</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">batch</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">channel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">batch</span><span class="p">[</span><span class="n">channel</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">image</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;channel &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">channel</span>
+<span class="w">                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, image &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">image</span>
+<span class="w">                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, bytes &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">batch</span><span class="p">[</span><span class="n">channel</span><span class="p">][</span><span class="n">image</span><span class="p">].</span><span class="n">size</span><span class="p">()</span>
+<span class="w">                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -776,6 +928,48 @@ implementation:</p>
 <span class="w">    </span><span class="mi">10</span><span class="p">,</span>
 <span class="w">    </span><span class="mf">0.5f</span><span class="p">,</span>
 <span class="w">    </span><span class="k">post</span><span class="p">);</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">real_out</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;first bin: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">real_out</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Godot MIR wrapper examples:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">mir</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_MIR</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">pcm</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">PackedFloat32Array</span><span class="p">()</span>
+<span class="n">pcm</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">stft_frames</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">mir</span><span class="o">.</span><span class="n">STFT_PCM_DATA</span><span class="p">(</span>
+<span class="w">    </span><span class="n">pcm</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">PDJE_MIR</span><span class="o">.</span><span class="n">HANNING</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">0.5</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">,</span>
+<span class="w">    </span><span class="bp">true</span><span class="p">)</span>
+<span class="k">for</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">stft_frames</span><span class="p">:</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">real</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">frame</span><span class="o">.</span><span class="n">imag</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">mir</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_MIR</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">cache_db</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_KeyValueDB</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">cache_db</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="s2">&quot;user://pdje-cache/waveforms&quot;</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">images</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">mir</span><span class="o">.</span><span class="n">SoundToWaveform</span><span class="p">(</span>
+<span class="w">    </span><span class="o">$</span><span class="n">PDJE_Wrapper</span><span class="p">,</span>
+<span class="w">    </span><span class="n">cache_db</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;music-title&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;composer&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">128.0</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">256</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">4096</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">256</span><span class="p">)</span>
+<span class="k">for</span><span class="w"> </span><span class="n">webp_bytes</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">images</span><span class="p">:</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">webp_bytes</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
 </pre></div>
 </div>
 <p>If you need to probe runtime availability directly, the loader entrypoint lives
@@ -791,8 +985,156 @@ in:</p>
 </section>
 <section id="ai-namespace">
 <h2>AI Namespace<a class="headerlink" href="#ai-namespace" title="Link to this heading"></a></h2>
-<p><cite>PDJE_UTIL::ai</cite> currently exists as a placeholder namespace only. The current
-header set does not define public AI utility functions inside it.</p>
+<p><cite>PDJE_UTIL::ai</cite> is an active utility surface in the current source tree. It
+owns a small generic ONNX Runtime facade and the Beat This beat/downbeat
+detection pipeline used by the wrapper layer.</p>
+<p>The stable public headers are direct includes:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/ai/AI.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/ai/beat_this/BeatThis.hpp&quot;</span>
+</pre></div>
+</div>
+<p>The generic ONNX Runtime facade is intentionally small:</p>
+<ul class="simple">
+<li><p><cite>OnnxSessionOptions</cite>
+controls thread counts and graph optimization level.</p></li>
+<li><p><cite>FloatTensor</cite>
+carries a dense float tensor as <cite>shape</cite> plus flattened <cite>values</cite>.</p></li>
+<li><p><cite>NamedFloatTensor</cite>
+pairs a model input or output name with a <cite>FloatTensor</cite>.</p></li>
+<li><p><cite>OnnxSession</cite>
+owns an ONNX Runtime session, exposes model input/output names, and runs
+named float tensors through the loaded model.</p></li>
+</ul>
+<p>This generic tensor/session API is a native utility surface. It is not exposed
+directly as the current Godot-facing API.</p>
+<p>Native ONNX session shape:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;array&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/ai/AI.hpp&quot;</span>
+
+<span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">ai</span><span class="o">::</span><span class="n">OnnxSession</span><span class="w"> </span><span class="n">session</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;path/to/model.onnx&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">intra_op_num_threads</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="p">.</span><span class="n">inter_op_num_threads</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="p">.</span><span class="n">optimization_level</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">ai</span><span class="o">::</span><span class="n">OnnxOptimizationLevel</span><span class="o">::</span><span class="n">EXTENDED</span><span class="w"> </span><span class="p">});</span>
+
+<span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">ai</span><span class="o">::</span><span class="n">NamedFloatTensor</span><span class="w"> </span><span class="n">input</span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="p">.</span><span class="n">input_name</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">tensor</span><span class="w"> </span><span class="o">=</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="p">.</span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.25f</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="p">};</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">ai</span><span class="o">::</span><span class="n">NamedFloatTensor</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inputs</span><span class="p">{</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="p">};</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">outputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">inputs</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">outputs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">output</span><span class="p">.</span><span class="n">name</span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; values=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">output</span><span class="p">.</span><span class="n">tensor</span><span class="p">.</span><span class="n">values</span><span class="p">.</span><span class="n">size</span><span class="p">()</span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="beat-this-detection">
+<h3>Beat This Detection<a class="headerlink" href="#beat-this-detection" title="Link to this heading"></a></h3>
+<p>Beat This is exposed through the native convenience type
+<cite>PDJE_UTIL::ai::BeatThisDetector</cite>.</p>
+<p>Current public types:</p>
+<ul class="simple">
+<li><p><cite>BeatThisFrontendConfig</cite>
+configures the frontend sample rate, FFT size, hop length, mel-bin count,
+padding, mel range, mel formula, normalization, and window function.</p></li>
+<li><p><cite>BeatDetectionResult</cite>
+returns sorted beat and downbeat timestamps in seconds.</p></li>
+<li><p><cite>BeatThisDetector</cite>
+owns the configured model/session/frontend pipeline and runs detection from
+mono PCM.</p></li>
+</ul>
+<p>The source-backed flow is:</p>
+<ol class="arabic simple">
+<li><p>accept mono PCM samples plus the input sample rate</p></li>
+<li><p>resample and prepare the waveform for the Beat This frontend</p></li>
+<li><p>compute a log-mel spectrogram with the PDJE STFT/mel helpers</p></li>
+<li><p>run ONNX inference against the Beat This model</p></li>
+<li><p>post-process logits into beat and downbeat timestamps</p></li>
+</ol>
+<p>Minimal native shape:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;util/ai/beat_this/BeatThis.hpp&quot;</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mono_pcm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="cm">/* mono samples */</span><span class="p">;</span>
+<span class="n">PDJE_UTIL</span><span class="o">::</span><span class="n">ai</span><span class="o">::</span><span class="n">BeatThisDetector</span><span class="w"> </span><span class="n">detector</span><span class="p">(</span><span class="s">&quot;path/to/model.onnx&quot;</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">detector</span><span class="p">.</span><span class="n">detect</span><span class="p">(</span><span class="n">mono_pcm</span><span class="p">,</span><span class="w"> </span><span class="mi">44100</span><span class="p">);</span>
+
+<span class="c1">// result.beats and result.downbeats are timestamps in seconds.</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">beat_seconds</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">result</span><span class="p">.</span><span class="n">beats</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">beat_seconds</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The default native detector constructor uses the build-configured Beat This
+model path when one is available. Do not describe model packaging or runtime
+deployment as universal; verify the current checkout and build configuration
+before making distribution claims.</p>
+</section>
+<section id="godot-wrapper-surface">
+<h3>Godot Wrapper Surface<a class="headerlink" href="#godot-wrapper-surface" title="Link to this heading"></a></h3>
+<p>The Godot wrapper exposes Beat This through wrapper-owned Godot classes:</p>
+<ul class="simple">
+<li><p><cite>PDJE_AI</cite>
+a <cite>Node</cite> facade with <cite>CreateBeatThisDetector(model_path)</cite>.</p></li>
+<li><p><cite>PDJE_BeatThisDetector</cite>
+a <cite>RefCounted</cite> handle that owns a native
+<cite>PDJE_UTIL::ai::BeatThisDetector</cite>.</p></li>
+<li><p><cite>PDJE_BeatThisResult</cite>
+a <cite>RefCounted</cite> result object with <cite>beats</cite> and <cite>downbeats</cite>
+<cite>PackedFloat64Array</cite> properties.</p></li>
+</ul>
+<p>Wrapper initialization validates that the model path is non-empty, exists,
+points to a regular file, and has the <cite>.onnx</cite> extension before constructing the
+native detector.</p>
+<p><cite>PDJE_BeatThisDetector.DetectPCM(pcm, channel_count, sample_rate)</cite> accepts
+interleaved <cite>PackedFloat32Array</cite> audio, validates the channel count, sample
+rate, and frame alignment, downmixes the input to mono, and returns beat and
+downbeat timestamps in seconds.</p>
+<p><cite>PDJE_BeatThisDetector.DetectMusic(core_api, music_title, composer, bpm)</cite> follows
+the existing MIR-style wrapper route: it requires an initialized
+<cite>PDJE_Wrapper</cite>, searches music through the core engine, requests mono PCM from
+the matched music data, and runs Beat This against the core decoder sample
+rate.</p>
+<p>The wrapper reports failures with null <cite>Ref&lt;PDJE_BeatThisResult&gt;</cite> values plus
+method-level diagnostic errors. It does not expose raw ONNX Runtime sessions,
+tensors, or model IO to Godot scripts.</p>
+<p>Godot AI wrapper examples:</p>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">ai</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_AI</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">detector</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">ai</span><span class="o">.</span><span class="n">CreateBeatThisDetector</span><span class="p">(</span><span class="s2">&quot;res://models/beat_this.onnx&quot;</span><span class="p">)</span>
+<span class="k">if</span><span class="w"> </span><span class="n">detector</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">:</span>
+<span class="w">    </span><span class="k">return</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">interleaved_pcm</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="nb nb-Type">PackedFloat32Array</span><span class="p">()</span>
+<span class="n">interleaved_pcm</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">44100</span><span class="p">)</span>
+<span class="k">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">detector</span><span class="o">.</span><span class="n">DetectPCM</span><span class="p">(</span><span class="n">interleaved_pcm</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">44100</span><span class="p">)</span>
+<span class="k">if</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">:</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">beats</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">downbeats</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-gdscript notranslate"><div class="highlight"><pre><span></span><span class="k">var</span><span class="w"> </span><span class="n">ai</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">PDJE_AI</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="k">var</span><span class="w"> </span><span class="n">detector</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">ai</span><span class="o">.</span><span class="n">CreateBeatThisDetector</span><span class="p">(</span><span class="s2">&quot;res://models/beat_this.onnx&quot;</span><span class="p">)</span>
+<span class="k">if</span><span class="w"> </span><span class="n">detector</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">:</span>
+<span class="w">    </span><span class="k">return</span>
+
+<span class="k">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">detector</span><span class="o">.</span><span class="n">DetectMusic</span><span class="p">(</span>
+<span class="w">    </span><span class="o">$</span><span class="n">PDJE_Wrapper</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;music-title&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;composer&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mf">128.0</span><span class="p">)</span>
+<span class="k">if</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb nb-Type">null</span><span class="p">:</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">downbeat</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">result</span><span class="o">.</span><span class="n">downbeats</span><span class="p">:</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="n">downbeat</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 

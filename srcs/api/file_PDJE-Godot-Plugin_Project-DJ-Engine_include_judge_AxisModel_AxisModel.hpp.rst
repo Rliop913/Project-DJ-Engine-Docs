@@ -4,7 +4,7 @@
 File AxisModel.hpp
 ==================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_AxisModel>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/AxisModel``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_AxisModel>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\AxisModel``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File AxisModel.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/AxisModel/AxisModel.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\AxisModel\AxisModel.hpp``)
 ------------------------------------------------------------------------------------------
 
 

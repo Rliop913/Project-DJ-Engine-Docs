@@ -4,7 +4,7 @@
 File PDJE_Input_Device_Data.hpp
 ===============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\DataLines``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Input_Device_Data.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines/PDJE_Input_Device_Data.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\DataLines\PDJE_Input_Device_Data.hpp``)
 --------------------------------------------------------------------------------------------------------
 
 

@@ -4,7 +4,7 @@
 File Types.hpp
 ==============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\nearest``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Types.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest/Types.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\nearest\Types.hpp``)
 --------------------------------------------------------------------------------------
 
 
@@ -32,7 +32,7 @@ Includes
 
 - ``optional``
 
-- ``util/db/DbTypes.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_DbTypes.hpp`)
+- ``util/db/DbTypes.hpp``
 
 - ``vector``
 

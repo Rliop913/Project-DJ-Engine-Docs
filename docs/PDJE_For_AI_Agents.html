@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists\css\tree_view.css?v=a885cde7" />
       <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
 
   
@@ -19,8 +19,8 @@
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=fd6eb6e6"></script>
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+      <script src="_static/collapsible-lists\js\CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists\js\apply-collapsible-lists.js?v=660e4f45"></script>
       <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -133,6 +133,8 @@ project.</p>
 <li><p>a repo-editing workflow guide</p></li>
 <li><p>a guide for using an AI feature inside PDJE</p></li>
 </ul>
+<p>Here, “AI agent” means an external assistant reading and explaining the project.
+It is separate from PDJE’s own <cite>PDJE_UTIL::ai</cite> feature surface.</p>
 </section>
 <section id="project-facts-safe-to-state">
 <h2>Project Facts Safe To State<a class="headerlink" href="#project-facts-safe-to-state" title="Link to this heading"></a></h2>
@@ -157,6 +159,11 @@ and repository automation context in addition to the guide hub.</p></li>
 <li><p>SWIG bindings exist in-tree for the core/editor-oriented surface.</p></li>
 <li><p>The current tree documents Linux and Windows input paths; macOS input is not
 implemented in-tree.</p></li>
+<li><p>The current tree contains a maintained <cite>PDJE_UTIL::ai</cite> surface with a generic
+ONNX Runtime facade and Beat This beat/downbeat detection.</p></li>
+<li><p>The Godot wrapper exposes Beat This through <cite>PDJE_AI</cite>,
+<cite>PDJE_BeatThisDetector</cite>, and <cite>PDJE_BeatThisResult</cite>; it does not expose the
+generic ONNX session/tensor API directly to Godot scripts.</p></li>
 </ul>
 </section>
 <section id="claims-that-must-be-qualified-or-verified">
@@ -171,6 +178,8 @@ implemented in-tree.</p></li>
 <li><p>exact semantics of overload-heavy editor history APIs beyond what the current
 hand-written docs state</p></li>
 <li><p>platform support claims not directly backed by the current tree</p></li>
+<li><p>Beat This model availability, exact model packaging paths, and ONNX Runtime
+deployment status outside the current checkout/build configuration</p></li>
 </ul>
 <p>When uncertain, use wording such as:</p>
 <ul class="simple">
@@ -220,6 +229,12 @@ refers to the in-tree Python and C# wrapper outputs.</p></li>
 <li><p><cite>Godot wrapper</cite>
 refers to the older Godot-facing wrapper path and naming style such as
 <cite>PDJE_Wrapper</cite>, <cite>PDJE_Input_Module</cite>, and <cite>PDJE_Judge_Module</cite>.</p></li>
+<li><p><cite>PDJE_UTIL::ai</cite>
+refers to PDJE’s native utility AI namespace, not to this AI-agent guidance
+page.</p></li>
+<li><p><cite>Beat This</cite>
+refers to the beat/downbeat detection pipeline exposed through
+<cite>PDJE_UTIL::ai::BeatThisDetector</cite> and wrapper Beat This classes.</p></li>
 </ul>
 </section>
 <section id="architecture-cheat-sheet">
@@ -248,6 +263,11 @@ doc <a class="reference internal" href="Util_Engine.html"><span class="doc">Util
 entrypoint <cite>include/util/PDJE_Util.hpp</cite>
 direct headers <cite>include/util/function/image/</cite> and
 <cite>include/util/function/stft/</cite> for non-umbrella APIs</p></li>
+<li><p>User wants Beat This or ONNX Runtime helper APIs:
+module <cite>PDJE_UTIL::ai</cite>
+doc <a class="reference internal" href="Util_Engine.html"><span class="doc">Util_Engine</span></a>
+entrypoints <cite>include/util/ai/AI.hpp</cite> and
+<cite>include/util/ai/beat_this/BeatThis.hpp</cite></p></li>
 <li><p>User wants editor data format details:
 doc <a class="reference internal" href="Editor_Format.html"><span class="doc">Editor_Format</span></a></p></li>
 <li><p>User wants live shared state details:
@@ -342,6 +362,20 @@ tuples, <cite>firstBeat</cite>, and <cite>EightPointValues</cite>.</p></li>
 file shapes, route back to <a class="reference internal" href="Editor_Workflows.html"><span class="doc">Editor_Workflows</span></a>.</p></li>
 </ul>
 </section>
+<section id="how-do-i-use-beat-this-or-pdje-ai-utilities">
+<h3>How do I use Beat This or PDJE AI utilities?<a class="headerlink" href="#how-do-i-use-beat-this-or-pdje-ai-utilities" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Route to <a class="reference internal" href="Util_Engine.html"><span class="doc">Util_Engine</span></a>.</p></li>
+<li><p>For native C++, describe <cite>PDJE_UTIL::ai::OnnxSession</cite> as the generic ONNX
+facade and <cite>PDJE_UTIL::ai::BeatThisDetector</cite> as the Beat This convenience
+detector.</p></li>
+<li><p>For Godot, describe <cite>PDJE_AI.CreateBeatThisDetector()</cite>,
+<cite>PDJE_BeatThisDetector.DetectPCM()</cite>, <cite>DetectMusic()</cite>, and
+<cite>PDJE_BeatThisResult</cite> beat/downbeat arrays.</p></li>
+<li><p>Qualify model path and runtime deployment details unless verified in the
+current checkout and build.</p></li>
+</ul>
+</section>
 </section>
 <section id="anti-hallucination-rules">
 <h2>Anti-Hallucination Rules<a class="headerlink" href="#anti-hallucination-rules" title="Link to this heading"></a></h2>
@@ -349,6 +383,11 @@ file shapes, route back to <a class="reference internal" href="Editor_Workflows.
 <li><p>Do not invent SWIG wrapper coverage for <cite>PDJE_Input</cite> or <cite>PDJE_JUDGE::JUDGE</cite>.</p></li>
 <li><p>Do not describe the utility layer as roadmap-only; the current tree contains
 active <cite>PDJE_UTIL</cite> code and CMake targets.</p></li>
+<li><p>Do not describe <cite>PDJE_UTIL::ai</cite> as placeholder-only; the current tree
+contains ONNX Runtime and Beat This utility code.</p></li>
+<li><p>Do not conflate this AI-agent guide with PDJE’s own AI utility namespace.</p></li>
+<li><p>Do not claim the Godot wrapper exposes arbitrary ONNX Runtime sessions or
+tensors; the current wrapper exposes Beat This detection.</p></li>
 <li><p>Do not treat a local <cite>bind_tempdir</cite> checkout as if it were managed by this
 repository or guaranteed to match the current in-repo utility headers.</p></li>
 <li><p>Do not describe editor as only <cite>InitEditor()</cite> plus <cite>render()</cite>. The public
@@ -392,6 +431,9 @@ is not headers-only in this repository; it also contains many implementations.</
 include tests and legacy symbols because Doxygen scans broadly.</p></li>
 <li><p>external or older built docs
 may preserve examples that no longer match current recommended workflow.</p></li>
+<li><p><cite>AI agent</cite> vs <cite>PDJE_UTIL::ai</cite>
+the former is an external assistant role; the latter is PDJE’s native utility
+AI namespace.</p></li>
 </ul>
 </section>
 <section id="answer-skeletons">
@@ -407,6 +449,13 @@ build flow in the top-level docs, then choose <cite>PDJE_DEVELOP_INPUT</cite> an
 <li><p>“PDJE currently has in-tree SWIG outputs for Python and C# on the
 core/editor-oriented surface. The older docs also reference a Godot-facing
 wrapper path, which is a separate integration style.”</p></li>
+</ul>
+<p>Beat This question:</p>
+<ul class="simple">
+<li><p>“Based on the current source tree, Beat This lives under <cite>PDJE_UTIL::ai</cite>.
+Native callers use <cite>BeatThisDetector</cite> with mono PCM and an input sample rate;
+Godot callers use <cite>PDJE_AI</cite> and <cite>PDJE_BeatThisDetector</cite>. Verify model path
+and runtime deployment details in the current checkout.”</p></li>
 </ul>
 <p>macOS input question:</p>
 <ul class="simple">
@@ -446,6 +495,8 @@ on to generated API pages.”</p></li>
 <li><p>a user asks about history or time-travel semantics</p></li>
 <li><p>a user asks about overload-specific editor behavior</p></li>
 <li><p>a user asks what stays project-local versus what is pushed to the root DB</p></li>
+<li><p>a user asks where the Beat This model is packaged or how ONNX Runtime is
+deployed in a release/prebuilt</p></li>
 </ul>
 <p>Prefer routing users to these sources:</p>
 <ul class="simple">
@@ -457,6 +508,7 @@ on to generated API pages.”</p></li>
 <li><p><a class="reference internal" href="Data_Lines.html"><span class="doc">Data_Lines</span></a></p></li>
 <li><p><a class="reference internal" href="Editor_Format.html"><span class="doc">Editor_Format</span></a></p></li>
 <li><p><a class="reference internal" href="FX_ARGS.html"><span class="doc">FX_ARGS</span></a></p></li>
+<li><p><a class="reference internal" href="Util_Engine.html"><span class="doc">Util_Engine</span></a></p></li>
 <li><p><a class="reference internal" href="api/api_root.html"><span class="doc">API Reference</span></a></p></li>
 </ul>
 <p>When necessary, point to source entrypoints directly:</p>
@@ -466,6 +518,8 @@ on to generated API pages.”</p></li>
 <li><p><cite>include/input/PDJE_Input.hpp</cite></p></li>
 <li><p><cite>include/judge/PDJE_Judge.hpp</cite></p></li>
 <li><p><cite>include/util/PDJE_Util.hpp</cite></p></li>
+<li><p><cite>include/util/ai/AI.hpp</cite></p></li>
+<li><p><cite>include/util/ai/beat_this/BeatThis.hpp</cite></p></li>
 </ul>
 </section>
 </section>

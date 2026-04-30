@@ -4,7 +4,7 @@
 File Types.hpp
 ==============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/relational``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\relational``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Types.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/relational/Types.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\relational\Types.hpp``)
 -----------------------------------------------------------------------------------------
 
 
@@ -40,7 +40,7 @@ Includes
 
 - ``string_view``
 
-- ``util/db/DbTypes.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_DbTypes.hpp`)
+- ``util/db/DbTypes.hpp``
 
 - ``variant``
 

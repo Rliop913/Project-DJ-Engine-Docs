@@ -5,12 +5,12 @@ Directory interface
 ===================
 
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-*Directory path:* ``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/interface``
+*Directory path:* ``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\interface``
 
 
 Files

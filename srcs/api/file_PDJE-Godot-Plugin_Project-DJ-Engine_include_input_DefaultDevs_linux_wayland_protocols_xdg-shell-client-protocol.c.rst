@@ -4,7 +4,7 @@
 File xdg-shell-client-protocol.c
 ================================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux_wayland_protocols>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_protocols``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux_wayland_protocols>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux\wayland_protocols``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File xdg-shell-client-protocol.c
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_protocols/xdg-shell-client-protocol.c``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux\wayland_protocols\xdg-shell-client-protocol.c``)
 ----------------------------------------------------------------------------------------------------------------------------------
 
 

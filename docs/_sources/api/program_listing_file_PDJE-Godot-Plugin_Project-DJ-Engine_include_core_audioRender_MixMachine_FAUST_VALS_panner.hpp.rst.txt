@@ -4,7 +4,7 @@
 Program Listing for File panner.hpp
 ===================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine_FAUST_VALS_panner.hpp>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/FAUST_VALS/panner.hpp``)
+|exhale_lsh| :ref:`Return to documentation for file <file_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine_FAUST_VALS_panner.hpp>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\MixMachine\FAUST_VALS\panner.hpp``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

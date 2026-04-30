@@ -4,7 +4,7 @@
 File MusicControlPanel-inl.h
 ============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_ManualMix>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_ManualMix>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\ManualMix``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -18,7 +18,7 @@ SIMD-optimized implementation for mixing PCM frames from multiple sources.
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/ManualMix/MusicControlPanel-inl.h``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\ManualMix\MusicControlPanel-inl.h``)
 ---------------------------------------------------------------------------------------------------------------
 
 

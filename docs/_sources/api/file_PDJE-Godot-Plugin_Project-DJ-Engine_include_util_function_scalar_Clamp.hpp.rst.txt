@@ -4,7 +4,7 @@
 File Clamp.hpp
 ==============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_scalar>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/scalar``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_scalar>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\scalar``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Clamp.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/scalar/Clamp.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\scalar\Clamp.hpp``)
 -------------------------------------------------------------------------------------------
 
 
@@ -32,7 +32,7 @@ Includes
 
 - ``algorithm``
 
-- ``util/common/Result.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Result.hpp`)
+- ``util/common/Result.hpp``
 
 
 

@@ -4,7 +4,7 @@
 File tempDB.cpp
 ===============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\tempDBObject``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File tempDB.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject/tempDB.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\tempDBObject\tempDB.cpp``)
 -----------------------------------------------------------------------------------------------------
 
 

@@ -4,7 +4,7 @@
 File WaveformWebpPlanBuilder.cpp
 ================================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaveformWebpPlanBuilder.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpPlanBuilder.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image\WaveformWebpPlanBuilder.cpp``)
 ------------------------------------------------------------------------------------------------------------
 
 
@@ -32,9 +32,9 @@ Includes
 
 - ``cstddef``
 
-- ``util/function/image/WaveformWebpPlanBuilder.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpPlanBuilder.hpp`)
+- ``util/function/image/WaveformWebpPlanBuilder.hpp``
 
-- ``util/function/image/WaveformWebpSupport.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpSupport.hpp`)
+- ``util/function/image/WaveformWebpSupport.hpp``
 
 - ``utility``
 

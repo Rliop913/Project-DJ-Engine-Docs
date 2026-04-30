@@ -4,7 +4,7 @@
 File Input_Transfer.cpp
 =======================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory_linux>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/linux``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_IPC_memory_linux>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\IPC\memory\linux``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Input_Transfer.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/IPC/memory/linux/Input_Transfer.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\IPC\memory\linux\Input_Transfer.cpp``)
 ------------------------------------------------------------------------------------------------------
 
 

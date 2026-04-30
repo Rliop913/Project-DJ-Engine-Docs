@@ -4,7 +4,7 @@
 File editor.hpp
 ===============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -18,7 +18,7 @@ High level editor interface for :ref:`exhale_class_classPDJE` projects.
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/editor.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor\editor.hpp``)
 -----------------------------------------------------------------------------------
 
 

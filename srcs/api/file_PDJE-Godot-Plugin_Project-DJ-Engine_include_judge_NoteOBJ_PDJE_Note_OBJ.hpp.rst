@@ -4,7 +4,7 @@
 File PDJE_Note_OBJ.hpp
 ======================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_NoteOBJ>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/NoteOBJ``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_NoteOBJ>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\NoteOBJ``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Note_OBJ.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/NoteOBJ/PDJE_Note_OBJ.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\NoteOBJ\PDJE_Note_OBJ.hpp``)
 --------------------------------------------------------------------------------------------
 
 

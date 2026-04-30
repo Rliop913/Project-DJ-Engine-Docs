@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists\css\tree_view.css?v=a885cde7" />
       <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
 
   
@@ -19,8 +19,8 @@
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=fd6eb6e6"></script>
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+      <script src="_static/collapsible-lists\js\CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists\js\apply-collapsible-lists.js?v=660e4f45"></script>
       <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -119,7 +119,8 @@ push behavior, preview playback, and history-oriented editor operations.</p></li
 <li><p><a class="reference internal" href="Judge_Engine.html"><span class="doc">Judge_Engine</span></a> covers <cite>PDJE_JUDGE::JUDGE</cite>, <cite>Judge_Init</cite>, and the
 note-matching pipeline.</p></li>
 <li><p><a class="reference internal" href="Util_Engine.html"><span class="doc">Util_Engine</span></a> covers the current <cite>PDJE_UTIL</cite> surface, including status
-types, DB wrappers, image/WebP helpers, and STFT/backend-loader utilities.</p></li>
+types, DB wrappers, image/WebP helpers, STFT/backend-loader utilities, and
+AI helpers for ONNX Runtime plus Beat This beat/downbeat detection.</p></li>
 <li><p><a class="reference internal" href="Data_Lines.html"><span class="doc">Data_Lines</span></a> explains the zero-copy data-line structs shared between
 modules.</p></li>
 <li><p><a class="reference internal" href="Editor_Format.html"><span class="doc">Editor_Format</span></a> describes the editor-facing JSON and binary data shapes.</p></li>
@@ -158,6 +159,9 @@ modules as first-class bindings.</p></li>
 <li><p><cite>Data_Lines</cite> explains which live structs are directly readable in native C++
 and which wrapper paths only expose opaque handles or higher-level helper
 objects.</p></li>
+<li><p><cite>Util_Engine</cite> explains the native <cite>PDJE_UTIL::ai</cite> surface and the Godot
+wrapper classes for Beat This. Use that page before assuming generic ONNX
+sessions are exposed directly to Godot.</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>

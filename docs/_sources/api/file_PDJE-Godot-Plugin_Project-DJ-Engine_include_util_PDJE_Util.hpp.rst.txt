@@ -4,7 +4,7 @@
 File PDJE_Util.hpp
 ==================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Util.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/PDJE_Util.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\PDJE_Util.hpp``)
 -------------------------------------------------------------------------------
 
 
@@ -30,31 +30,31 @@ Includes
 --------
 
 
-- ``util/ai/AI.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_ai_AI.hpp`)
+- ``util/ai/AI.hpp``
 
-- ``util/common/Result.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Result.hpp`)
+- ``util/common/Result.hpp``
 
-- ``util/common/Status.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Status.hpp`)
+- ``util/common/Status.hpp``
 
-- ``util/common/StatusCode.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_StatusCode.hpp`)
+- ``util/common/StatusCode.hpp``
 
-- ``util/db/BackendConcept.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_BackendConcept.hpp`)
+- ``util/db/BackendConcept.hpp``
 
-- ``util/db/Database.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_Database.hpp`)
+- ``util/db/Database.hpp``
 
-- ``util/db/DbTypes.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_DbTypes.hpp`)
+- ``util/db/DbTypes.hpp``
 
-- ``util/db/keyvalue/Database.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_keyvalue_Database.hpp`)
+- ``util/db/keyvalue/Database.hpp``
 
-- ``util/db/nearest/Index.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest_Index.hpp`)
+- ``util/db/nearest/Index.hpp``
 
-- ``util/db/relational/Database.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational_Database.hpp`)
+- ``util/db/relational/Database.hpp``
 
-- ``util/function/FunctionContext.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_FunctionContext.hpp`)
+- ``util/function/FunctionContext.hpp``
 
-- ``util/function/scalar/Clamp.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_scalar_Clamp.hpp`)
+- ``util/function/scalar/Clamp.hpp``
 
-- ``util/function/text/Slugify.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_text_Slugify.hpp`)
+- ``util/function/text/Slugify.hpp``
 
 
 

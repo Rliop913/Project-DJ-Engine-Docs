@@ -4,7 +4,7 @@
 File trackDB.cpp
 ================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_db>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\db``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File trackDB.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/db/trackDB.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\db\trackDB.cpp``)
 --------------------------------------------------------------------------------
 
 

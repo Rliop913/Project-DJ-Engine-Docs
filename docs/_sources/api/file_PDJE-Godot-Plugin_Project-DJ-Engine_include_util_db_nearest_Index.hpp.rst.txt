@@ -4,7 +4,7 @@
 File Index.hpp
 ==============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\nearest``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Index.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/nearest/Index.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\nearest\Index.hpp``)
 --------------------------------------------------------------------------------------
 
 
@@ -30,7 +30,7 @@ Includes
 --------
 
 
-- ``util/db/nearest/BackendConcept.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_nearest_BackendConcept.hpp`)
+- ``util/db/nearest/BackendConcept.hpp``
 
 - ``utility``
 

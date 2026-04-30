@@ -25,6 +25,16 @@
             "srcs/Judge_Engine.rst",
             "srcs/PDJE_For_AI_Agents.rst"
           ]
+        },
+        {
+          "globs": [
+            "PDJE-Godot-Plugin/Wrapper_Includes/util/**"
+          ],
+          "docs": [
+            "srcs/Util_Engine.rst",
+            "srcs/Developer_Onboarding.rst",
+            "srcs/PDJE_For_AI_Agents.rst"
+          ]
         }
       ]
     },

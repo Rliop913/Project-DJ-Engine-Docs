@@ -4,7 +4,7 @@
 File Atomic_Double_Buffer.hpp
 =============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global_DataLines>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\DataLines``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Atomic_Double_Buffer.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/DataLines/Atomic_Double_Buffer.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\DataLines\Atomic_Double_Buffer.hpp``)
 ------------------------------------------------------------------------------------------------------
 
 

@@ -4,7 +4,7 @@
 File DbTypes.hpp
 ================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File DbTypes.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/DbTypes.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\DbTypes.hpp``)
 --------------------------------------------------------------------------------
 
 

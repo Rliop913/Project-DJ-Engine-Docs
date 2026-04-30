@@ -19,7 +19,8 @@ PDJE is organized around four integration surfaces:
   timing-sensitive note matching built on synchronized input and audio clocks.
 - `PDJE_UTIL`
   reusable utility code for status/result transport, DB wrappers, image/WebP
-  helpers, and STFT/backend-loader utilities.
+  helpers, STFT/backend-loader utilities, and AI helpers such as ONNX Runtime
+  session ownership and Beat This beat/downbeat detection.
 
 Choose Your Starting Path
 -------------------------
@@ -36,6 +37,8 @@ Choose Your Starting Path
   :doc:`Editor_Format` after :doc:`Editor_Workflows`.
 - If you need non-C++ bindings, read :doc:`Core_Engine` first, then use the
   wrapper notes there to distinguish SWIG bindings from Godot-facing wrappers.
+- If you need AI helper APIs, ONNX Runtime model execution, or Beat This
+  beat/downbeat detection, read :doc:`Util_Engine`.
 
 How To Read This Project
 ------------------------
@@ -78,6 +81,9 @@ Current build facts from the source tree:
   enables doctest-based unit tests and CTest registration.
 - `PDJE_DEV_TEST`
   enables legacy/manual developer test executables.
+- ONNX Runtime is part of the maintained utility dependency surface for
+  `PDJE_UTIL::ai`; Beat This detection also requires a valid `.onnx` model path
+  in the current checkout or wrapper call.
 
 Practical meaning:
 
@@ -106,7 +112,7 @@ Project Mental Model
   lives under `include/judge/` and exposes `include/judge/PDJE_Judge.hpp`.
 - **Utility**
   lives under `include/util/` and exposes `include/util/PDJE_Util.hpp`, with
-  direct-include extensions for image/WebP and STFT helper headers.
+  direct-include extensions for image/WebP, STFT, and AI helper headers.
 - **Global shared infrastructure**
   lives under `include/global/` and provides data lines, clocks, crypto, RAII,
   and logging helpers used across modules.
@@ -153,6 +159,19 @@ Audio timing terms:
   means how often the audio backend asks for more audio.
 - `microsecond`
   is the fine-grained timing unit used for synchronized input/audio judgment.
+
+AI and music-analysis terms:
+
+- `ONNX model`
+  means a model file loaded through the utility AI surface; availability and
+  deployment path depend on the current checkout and build configuration.
+- `Beat This`
+  means the Beat This beat/downbeat detection pipeline exposed through
+  `PDJE_UTIL::ai::BeatThisDetector` and the Godot Beat This wrapper classes.
+- `beat/downbeat timestamp`
+  means a detected musical beat or downbeat position reported in seconds.
+- `log-mel spectrogram`
+  means the frontend representation produced before Beat This ONNX inference.
 
 Input terms:
 
@@ -231,6 +250,8 @@ here:
   `include/judge/`
 - Utility layer:
   `include/util/`
+- Utility AI layer:
+  `include/util/ai/`
 - Shared infrastructure:
   `include/global/`
 - Tests:

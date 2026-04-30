@@ -4,7 +4,7 @@
 File audioRender.hpp
 ====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File audioRender.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/audioRender.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\audioRender.hpp``)
 ---------------------------------------------------------------------------------------------
 
 

@@ -4,7 +4,7 @@
 File WaylandInputCore.cpp
 =========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux_wayland_things>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_things``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux_wayland_things>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux\wayland_things``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaylandInputCore.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/wayland_things/WaylandInputCore.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux\wayland_things\WaylandInputCore.cpp``)
 ------------------------------------------------------------------------------------------------------------------------
 
 

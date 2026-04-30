@@ -4,7 +4,7 @@
 File music_to_waveform_webp.cpp
 ===============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/tests``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\tests``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File music_to_waveform_webp.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/music_to_waveform_webp.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\tests\music_to_waveform_webp.cpp``)
 ---------------------------------------------------------------------------------------------
 
 
@@ -54,7 +54,7 @@ Includes
 
 - ``string``
 
-- ``util/function/image/WaveformWebp.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebp.hpp`)
+- ``util/function/image/WaveformWebp.hpp``
 
 - ``vector``
 

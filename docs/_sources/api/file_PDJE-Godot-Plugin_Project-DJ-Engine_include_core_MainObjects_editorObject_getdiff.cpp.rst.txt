@@ -4,7 +4,7 @@
 File getdiff.cpp
 ================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_editorObject>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/editorObject``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_editorObject>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\editorObject``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File getdiff.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/editorObject/getdiff.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\editorObject\getdiff.cpp``)
 ------------------------------------------------------------------------------------------------------
 
 

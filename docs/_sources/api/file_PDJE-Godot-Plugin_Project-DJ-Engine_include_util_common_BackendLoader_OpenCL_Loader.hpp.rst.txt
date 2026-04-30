@@ -4,7 +4,7 @@
 File OpenCL_Loader.hpp
 ======================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_BackendLoader>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_BackendLoader>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\common\BackendLoader``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File OpenCL_Loader.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/common/BackendLoader/OpenCL_Loader.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\common\BackendLoader\OpenCL_Loader.hpp``)
 --------------------------------------------------------------------------------------------------------
 
 

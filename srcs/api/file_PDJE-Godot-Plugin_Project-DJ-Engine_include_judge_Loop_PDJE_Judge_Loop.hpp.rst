@@ -4,7 +4,7 @@
 File PDJE_Judge_Loop.hpp
 ========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Loop>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\Loop``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Judge_Loop.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Loop/PDJE_Judge_Loop.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\Loop\PDJE_Judge_Loop.hpp``)
 -------------------------------------------------------------------------------------------
 
 

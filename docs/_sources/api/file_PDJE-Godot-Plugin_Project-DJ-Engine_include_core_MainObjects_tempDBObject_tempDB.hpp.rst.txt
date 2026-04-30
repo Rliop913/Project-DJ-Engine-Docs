@@ -4,7 +4,7 @@
 File tempDB.hpp
 ===============
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_MainObjects_tempDBObject>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\tempDBObject``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -18,7 +18,7 @@ Defines a temporary database for managing project data.
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/MainObjects/tempDBObject/tempDB.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\MainObjects\tempDBObject\tempDB.hpp``)
 -----------------------------------------------------------------------------------------------------
 
 

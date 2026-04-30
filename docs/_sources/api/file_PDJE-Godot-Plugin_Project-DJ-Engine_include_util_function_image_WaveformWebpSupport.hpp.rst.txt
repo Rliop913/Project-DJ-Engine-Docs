@@ -4,7 +4,7 @@
 File WaveformWebpSupport.hpp
 ============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaveformWebpSupport.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpSupport.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image\WaveformWebpSupport.hpp``)
 --------------------------------------------------------------------------------------------------------
 
 
@@ -42,9 +42,9 @@ Includes
 
 - ``string``
 
-- ``util/common/Status.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_common_Status.hpp`)
+- ``util/common/Status.hpp``
 
-- ``util/function/image/WaveformWebpInternal.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpInternal.hpp`)
+- ``util/function/image/WaveformWebpInternal.hpp``
 
 
 

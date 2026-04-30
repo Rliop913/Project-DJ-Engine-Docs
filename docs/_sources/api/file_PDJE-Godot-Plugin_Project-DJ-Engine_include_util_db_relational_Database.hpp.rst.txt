@@ -4,7 +4,7 @@
 File Database.hpp
 =================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/relational``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\relational``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Database.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/db/relational/Database.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\db\relational\Database.hpp``)
 --------------------------------------------------------------------------------------------
 
 
@@ -30,7 +30,7 @@ Includes
 --------
 
 
-- ``util/db/relational/BackendConcept.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_db_relational_BackendConcept.hpp`)
+- ``util/db/relational/BackendConcept.hpp``
 
 - ``utility``
 

@@ -4,7 +4,7 @@
 File WaveformWebp.cpp
 =====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaveformWebp.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebp.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image\WaveformWebp.cpp``)
 -------------------------------------------------------------------------------------------------
 
 
@@ -30,9 +30,9 @@ Includes
 --------
 
 
-- ``util/function/image/WaveformWebp.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebp.hpp`)
+- ``util/function/image/WaveformWebp.hpp``
 
-- ``util/function/image/WaveformWebpEncoder.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpEncoder.hpp`)
+- ``util/function/image/WaveformWebpEncoder.hpp``
 
 
 

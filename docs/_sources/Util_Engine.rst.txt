@@ -12,6 +12,15 @@ Generated API pages under :doc:`/api/api_root` remain useful for symbol lookup,
 but this guide is the recommended starting point for the maintained utility
 surface and the intended consumption boundaries.
 
+How to read the examples:
+
+- C++ snippets show the core call shape and the expected `Result<T>` or
+  `Status` checks; they are not full standalone sample projects.
+- Godot snippets use the wrapper class and method names exactly as bound by the
+  extension layer.
+- Paths, model files, PCM buffers, and cache directories are placeholders that
+  must be replaced with checkout- or application-specific values.
+
 Public Consumption Units
 ------------------------
 
@@ -20,7 +29,7 @@ units:
 
 - `PDJE_UTIL`
   base interface target for the utility include tree and the umbrella header
-  path
+  path, including the maintained AI/ONNX Runtime utility implementation
 - `PDJE_UTIL_DB`
   aggregate database target that wires the SQLite, RocksDB, and Annoy utility
   backends
@@ -58,6 +67,8 @@ umbrella header:
 - `util/function/image/WebpWriter.hpp`
 - `util/function/image/WaveformWebp.hpp`
 - `util/function/stft/STFT_Parallel.hpp`
+- `util/ai/AI.hpp`
+- `util/ai/beat_this/BeatThis.hpp`
 - `util/common/BackendLoader/OpenCL_Loader.hpp`
 - `util/common/BackendLoader/PDJE_Parallel_Runtime_Loader.hpp`
 
@@ -97,7 +108,7 @@ as:
 - `out_of_range`
 - `internal_error`
 
-Typical usage looks like this:
+Typical usage checks the status before consuming the value:
 
 .. code-block:: c++
 
@@ -113,6 +124,21 @@ Typical usage looks like this:
    }
 
    std::cout << clamped.value() << std::endl;
+
+The same status pattern applies to `Result<void>`:
+
+.. code-block:: c++
+
+   #include "util/PDJE_Util.hpp"
+
+   PDJE_UTIL::common::Result<void> stored =
+       PDJE_UTIL::common::Result<void>::success();
+
+   if (!stored.ok()) {
+       const auto &status = stored.status();
+       std::cerr << "utility operation failed: "
+                 << status.message << std::endl;
+   }
 
 Database Wrappers
 -----------------
@@ -179,14 +205,22 @@ RocksDB key-value example:
 
    auto opened = Db::open(cfg);
    if (!opened.ok()) {
+       std::cerr << opened.status().message << std::endl;
        return;
    }
 
    auto db = std::move(opened.value());
-   (void)db.put_text("artist", "RLIOP913");
+   auto stored = db.put_text("artist", "RLIOP913");
+   if (!stored.ok()) {
+       std::cerr << stored.status().message << std::endl;
+       return;
+   }
+
    auto artist = db.get_text("artist");
    if (artist.ok()) {
        std::cout << artist.value() << std::endl;
+   } else {
+       std::cerr << artist.status().message << std::endl;
    }
 
 SQLite relational example:
@@ -206,6 +240,7 @@ SQLite relational example:
 
    auto opened = Db::open(cfg);
    if (!opened.ok()) {
+       std::cerr << opened.status().message << std::endl;
        return;
    }
 
@@ -219,9 +254,90 @@ SQLite relational example:
                       PDJE_UTIL::db::relational::Value{ PDJE_UTIL::db::Text{"left"} } });
    (void)db.commit();
 
+   auto rows = db.query("SELECT lane FROM notes WHERE id = ?1;",
+                        { PDJE_UTIL::db::relational::Value{ std::int64_t{1} } });
+   if (rows.ok() && !rows.value().rows.empty()) {
+       const auto *lane = rows.value().rows.front().find("lane");
+       if (lane != nullptr) {
+           std::cout << std::get<PDJE_UTIL::db::Text>(lane->storage)
+                     << std::endl;
+       }
+   }
+
 Annoy nearest-neighbor follows the same open/use/close shape, but its payloads
 are `db::nearest::Item`, `SearchHit`, and `SearchOptions` rather than text or
 SQL values.
+
+Annoy nearest-neighbor example:
+
+.. code-block:: c++
+
+   #include "util/db/backends/AnnoyBackend.hpp"
+   #include "util/db/nearest/Index.hpp"
+
+   using Index = PDJE_UTIL::db::nearest::NearestNeighborIndex<
+       PDJE_UTIL::db::backends::AnnoyBackend>;
+
+   PDJE_UTIL::db::backends::AnnoyConfig cfg{
+       .root_path = "tmp/example-annoy",
+       .open_options = { .create_if_missing = true },
+       .dimension = 3,
+       .trees = 10
+   };
+
+   auto opened = Index::open(cfg);
+   if (!opened.ok()) {
+       std::cerr << opened.status().message << std::endl;
+       return;
+   }
+
+   auto index = std::move(opened.value());
+   (void)index.upsert_item(
+       { .id = "track-a",
+         .embedding = { 0.9f, 0.1f, 0.0f },
+         .text_payload = PDJE_UTIL::db::Text{ "high-energy intro" } });
+
+   const std::vector<float> query{ 1.0f, 0.0f, 0.0f };
+   auto hits = index.search(query, { .limit = 3, .search_k = -1 });
+   if (hits.ok()) {
+       for (const auto &hit : hits.value()) {
+           std::cout << hit.id << " distance=" << hit.distance << std::endl;
+       }
+   }
+
+Godot DB wrapper examples:
+
+.. code-block:: gdscript
+
+   var kv := PDJE_KeyValueDB.new()
+   if kv.Open("user://pdje-cache/kv", true):
+       kv.PutText("artist", "RLIOP913")
+       print(kv.GetText("artist"))
+       kv.Close()
+
+.. code-block:: gdscript
+
+   var sql := PDJE_RelationalDB.new()
+   if sql.Open("user://pdje-cache/library.sqlite3", true):
+       sql.Execute("CREATE TABLE IF NOT EXISTS notes(id INTEGER, lane TEXT)")
+       sql.Execute("INSERT INTO notes(id, lane) VALUES(?1, ?2)", [1, "left"])
+       for row in sql.Query("SELECT lane FROM notes WHERE id = ?1", [1]):
+           print(row.values)
+       sql.Close()
+
+.. code-block:: gdscript
+
+   var vectors := PDJE_VectorDB.new()
+   if vectors.Open("user://pdje-cache/vectors", 3, 10, false, true):
+       var item := PDJE_VectorItem.new()
+       item.id = "track-a"
+       item.embedding = PackedFloat32Array([0.9, 0.1, 0.0])
+       item.text_payload = "high-energy intro"
+       vectors.UpsertItem(item)
+
+       for hit in vectors.Search(PackedFloat32Array([1.0, 0.0, 0.0]), 3):
+           print(hit.id, " ", hit.distance)
+       vectors.Close()
 
 Function Helpers
 ----------------
@@ -243,16 +359,28 @@ helpers.
 - `CacheContext` exists as a lightweight movable handle; the shipped inline
   helpers shown here do not require a populated cache context
 
-Example:
+Clamp and slug examples:
 
 .. code-block:: c++
 
    #include "util/PDJE_Util.hpp"
 
+   auto gain = PDJE_UTIL::function::clamp(
+       { .value = 1.35, .min_value = 0.0, .max_value = 1.0 });
+   if (gain.ok()) {
+       std::cout << "normalized gain: " << gain.value() << std::endl;
+   }
+
    auto slug = PDJE_UTIL::function::slugify(
        { .input = "Project DJ Engine", .separator = '-' });
    if (slug.ok()) {
        std::cout << slug.value() << std::endl; // "project-dj-engine"
+   }
+
+   auto invalid = PDJE_UTIL::function::slugify(
+       { .input = "Project DJ Engine", .separator = 'x' });
+   if (!invalid.ok()) {
+       std::cerr << invalid.status().message << std::endl;
    }
 
 Image Helpers
@@ -284,7 +412,7 @@ Current source-backed behavior:
 - writes encoded bytes to disk with `write_webp(...)`
 - validates `compression_level` in the `[-1, 9]` range before encoding
 
-Minimal example:
+Encode and write example:
 
 .. code-block:: c++
 
@@ -301,6 +429,26 @@ Minimal example:
                  .stride = 0,
                  .pixel_format = PDJE_UTIL::function::image::RasterPixelFormat::rgba8,
              } });
+
+   if (!encoded.ok()) {
+       std::cerr << encoded.status().message << std::endl;
+       return;
+   }
+
+   auto written = PDJE_UTIL::function::image::write_webp(
+       { .image =
+             {
+                 .pixels = rgba,
+                 .width = 1,
+                 .height = 1,
+                 .stride = 0,
+                 .pixel_format = PDJE_UTIL::function::image::RasterPixelFormat::rgba8,
+             },
+         .output_path = "tmp/red-pixel.webp",
+         .compression_level = 1 });
+   if (!written.ok()) {
+       std::cerr << written.status().message << std::endl;
+   }
 
 Waveform WebP generation:
 
@@ -352,6 +500,14 @@ Example:
 
    const auto &batch = waveform.value();
    // batch[channel][image] -> encoded WebP bytes
+   for (std::size_t channel = 0; channel < batch.size(); ++channel) {
+       for (std::size_t image = 0; image < batch[channel].size(); ++image) {
+           std::cout << "channel " << channel
+                     << ", image " << image
+                     << ", bytes " << batch[channel][image].size()
+                     << std::endl;
+       }
+   }
 
 Signal / STFT Helpers
 ~~~~~~~~~~~~~~~~~~~~~
@@ -427,6 +583,51 @@ Example:
        0.5f,
        post);
 
+   if (!real_out.empty()) {
+       std::cout << "first bin: " << real_out.front() << std::endl;
+   }
+
+Godot MIR wrapper examples:
+
+.. code-block:: gdscript
+
+   var mir := PDJE_MIR.new()
+   var pcm := PackedFloat32Array()
+   pcm.resize(1024)
+
+   var stft_frames := mir.STFT_PCM_DATA(
+       pcm,
+       1,
+       PDJE_MIR.HANNING,
+       10,
+       0.5,
+       true,
+       true,
+       true,
+       true,
+       true,
+       true)
+   for frame in stft_frames:
+       print(frame.real.size(), " ", frame.imag.size())
+
+.. code-block:: gdscript
+
+   var mir := PDJE_MIR.new()
+   var cache_db := PDJE_KeyValueDB.new()
+   cache_db.Open("user://pdje-cache/waveforms", true)
+
+   var images := mir.SoundToWaveform(
+       $PDJE_Wrapper,
+       cache_db,
+       "music-title",
+       "composer",
+       128.0,
+       256,
+       4096,
+       256)
+   for webp_bytes in images:
+       print(webp_bytes.size())
+
 If you need to probe runtime availability directly, the loader entrypoint lives
 in:
 
@@ -443,5 +644,169 @@ And the capability query is:
 AI Namespace
 ------------
 
-`PDJE_UTIL::ai` currently exists as a placeholder namespace only. The current
-header set does not define public AI utility functions inside it.
+`PDJE_UTIL::ai` is an active utility surface in the current source tree. It
+owns a small generic ONNX Runtime facade and the Beat This beat/downbeat
+detection pipeline used by the wrapper layer.
+
+The stable public headers are direct includes:
+
+.. code-block:: c++
+
+   #include "util/ai/AI.hpp"
+   #include "util/ai/beat_this/BeatThis.hpp"
+
+The generic ONNX Runtime facade is intentionally small:
+
+- `OnnxSessionOptions`
+  controls thread counts and graph optimization level.
+- `FloatTensor`
+  carries a dense float tensor as `shape` plus flattened `values`.
+- `NamedFloatTensor`
+  pairs a model input or output name with a `FloatTensor`.
+- `OnnxSession`
+  owns an ONNX Runtime session, exposes model input/output names, and runs
+  named float tensors through the loaded model.
+
+This generic tensor/session API is a native utility surface. It is not exposed
+directly as the current Godot-facing API.
+
+Native ONNX session shape:
+
+.. code-block:: c++
+
+   #include <array>
+   #include "util/ai/AI.hpp"
+
+   PDJE_UTIL::ai::OnnxSession session(
+       "path/to/model.onnx",
+       { .intra_op_num_threads = 1,
+         .inter_op_num_threads = 1,
+         .optimization_level =
+             PDJE_UTIL::ai::OnnxOptimizationLevel::EXTENDED });
+
+   PDJE_UTIL::ai::NamedFloatTensor input{
+       .name = session.input_name(0),
+       .tensor =
+           {
+               .shape = { 1, 4 },
+               .values = { 0.0f, 0.25f, 0.5f, 1.0f },
+           },
+   };
+
+   std::array<PDJE_UTIL::ai::NamedFloatTensor, 1> inputs{ input };
+   auto outputs = session.run(inputs);
+   for (const auto &output : outputs) {
+       std::cout << output.name
+                 << " values=" << output.tensor.values.size()
+                 << std::endl;
+   }
+
+Beat This Detection
+~~~~~~~~~~~~~~~~~~~
+
+Beat This is exposed through the native convenience type
+`PDJE_UTIL::ai::BeatThisDetector`.
+
+Current public types:
+
+- `BeatThisFrontendConfig`
+  configures the frontend sample rate, FFT size, hop length, mel-bin count,
+  padding, mel range, mel formula, normalization, and window function.
+- `BeatDetectionResult`
+  returns sorted beat and downbeat timestamps in seconds.
+- `BeatThisDetector`
+  owns the configured model/session/frontend pipeline and runs detection from
+  mono PCM.
+
+The source-backed flow is:
+
+1. accept mono PCM samples plus the input sample rate
+2. resample and prepare the waveform for the Beat This frontend
+3. compute a log-mel spectrogram with the PDJE STFT/mel helpers
+4. run ONNX inference against the Beat This model
+5. post-process logits into beat and downbeat timestamps
+
+Minimal native shape:
+
+.. code-block:: c++
+
+   #include "util/ai/beat_this/BeatThis.hpp"
+
+   std::vector<float> mono_pcm = /* mono samples */;
+   PDJE_UTIL::ai::BeatThisDetector detector("path/to/model.onnx");
+   auto result = detector.detect(mono_pcm, 44100);
+
+   // result.beats and result.downbeats are timestamps in seconds.
+   for (double beat_seconds : result.beats) {
+       std::cout << beat_seconds << std::endl;
+   }
+
+The default native detector constructor uses the build-configured Beat This
+model path when one is available. Do not describe model packaging or runtime
+deployment as universal; verify the current checkout and build configuration
+before making distribution claims.
+
+Godot Wrapper Surface
+~~~~~~~~~~~~~~~~~~~~~
+
+The Godot wrapper exposes Beat This through wrapper-owned Godot classes:
+
+- `PDJE_AI`
+  a `Node` facade with `CreateBeatThisDetector(model_path)`.
+- `PDJE_BeatThisDetector`
+  a `RefCounted` handle that owns a native
+  `PDJE_UTIL::ai::BeatThisDetector`.
+- `PDJE_BeatThisResult`
+  a `RefCounted` result object with `beats` and `downbeats`
+  `PackedFloat64Array` properties.
+
+Wrapper initialization validates that the model path is non-empty, exists,
+points to a regular file, and has the `.onnx` extension before constructing the
+native detector.
+
+`PDJE_BeatThisDetector.DetectPCM(pcm, channel_count, sample_rate)` accepts
+interleaved `PackedFloat32Array` audio, validates the channel count, sample
+rate, and frame alignment, downmixes the input to mono, and returns beat and
+downbeat timestamps in seconds.
+
+`PDJE_BeatThisDetector.DetectMusic(core_api, music_title, composer, bpm)` follows
+the existing MIR-style wrapper route: it requires an initialized
+`PDJE_Wrapper`, searches music through the core engine, requests mono PCM from
+the matched music data, and runs Beat This against the core decoder sample
+rate.
+
+The wrapper reports failures with null `Ref<PDJE_BeatThisResult>` values plus
+method-level diagnostic errors. It does not expose raw ONNX Runtime sessions,
+tensors, or model IO to Godot scripts.
+
+Godot AI wrapper examples:
+
+.. code-block:: gdscript
+
+   var ai := PDJE_AI.new()
+   var detector := ai.CreateBeatThisDetector("res://models/beat_this.onnx")
+   if detector == null:
+       return
+
+   var interleaved_pcm := PackedFloat32Array()
+   interleaved_pcm.resize(44100)
+   var result := detector.DetectPCM(interleaved_pcm, 1, 44100)
+   if result != null:
+       print(result.beats)
+       print(result.downbeats)
+
+.. code-block:: gdscript
+
+   var ai := PDJE_AI.new()
+   var detector := ai.CreateBeatThisDetector("res://models/beat_this.onnx")
+   if detector == null:
+       return
+
+   var result := detector.DetectMusic(
+       $PDJE_Wrapper,
+       "music-title",
+       "composer",
+       128.0)
+   if result != null:
+       for downbeat in result.downbeats:
+           print(downbeat)

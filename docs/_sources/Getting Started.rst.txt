@@ -23,7 +23,8 @@ Documentation Map
 - :doc:`Judge_Engine` covers `PDJE_JUDGE::JUDGE`, `Judge_Init`, and the
   note-matching pipeline.
 - :doc:`Util_Engine` covers the current `PDJE_UTIL` surface, including status
-  types, DB wrappers, image/WebP helpers, and STFT/backend-loader utilities.
+  types, DB wrappers, image/WebP helpers, STFT/backend-loader utilities, and
+  AI helpers for ONNX Runtime plus Beat This beat/downbeat detection.
 - :doc:`Data_Lines` explains the zero-copy data-line structs shared between
   modules.
 - :doc:`Editor_Format` describes the editor-facing JSON and binary data shapes.
@@ -60,6 +61,9 @@ Binding Notes
 - `Data_Lines` explains which live structs are directly readable in native C++
   and which wrapper paths only expose opaque handles or higher-level helper
   objects.
+- `Util_Engine` explains the native `PDJE_UTIL::ai` surface and the Godot
+  wrapper classes for Beat This. Use that page before assuming generic ONNX
+  sessions are exposed directly to Godot.
 
 .. toctree::
    :maxdepth: 1

@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists\css\tree_view.css?v=a885cde7" />
       <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
 
   
@@ -19,8 +19,8 @@
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=fd6eb6e6"></script>
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+      <script src="_static/collapsible-lists\js\CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists\js\apply-collapsible-lists.js?v=660e4f45"></script>
       <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -128,7 +128,8 @@ low-latency keyboard, mouse, and MIDI ingestion.</p></li>
 timing-sensitive note matching built on synchronized input and audio clocks.</p></li>
 <li><p><cite>PDJE_UTIL</cite>
 reusable utility code for status/result transport, DB wrappers, image/WebP
-helpers, and STFT/backend-loader utilities.</p></li>
+helpers, STFT/backend-loader utilities, and AI helpers such as ONNX Runtime
+session ownership and Beat This beat/downbeat detection.</p></li>
 </ul>
 </section>
 <section id="choose-your-starting-path">
@@ -146,6 +147,8 @@ the entrypoints, then move to <a class="reference internal" href="Editor_Workflo
 <a class="reference internal" href="Editor_Format.html"><span class="doc">Editor_Format</span></a> after <a class="reference internal" href="Editor_Workflows.html"><span class="doc">Editor_Workflows</span></a>.</p></li>
 <li><p>If you need non-C++ bindings, read <a class="reference internal" href="Core_Engine.html"><span class="doc">Core_Engine</span></a> first, then use the
 wrapper notes there to distinguish SWIG bindings from Godot-facing wrappers.</p></li>
+<li><p>If you need AI helper APIs, ONNX Runtime model execution, or Beat This
+beat/downbeat detection, read <a class="reference internal" href="Util_Engine.html"><span class="doc">Util_Engine</span></a>.</p></li>
 </ul>
 </section>
 <section id="how-to-read-this-project">
@@ -187,6 +190,9 @@ enables the SWIG wrapper targets.</p></li>
 enables doctest-based unit tests and CTest registration.</p></li>
 <li><p><cite>PDJE_DEV_TEST</cite>
 enables legacy/manual developer test executables.</p></li>
+<li><p>ONNX Runtime is part of the maintained utility dependency surface for
+<cite>PDJE_UTIL::ai</cite>; Beat This detection also requires a valid <cite>.onnx</cite> model path
+in the current checkout or wrapper call.</p></li>
 </ul>
 <p>Practical meaning:</p>
 <ul class="simple">
@@ -216,7 +222,7 @@ lives under <cite>include/input/</cite> and exposes <cite>include/input/PDJE_Inp
 lives under <cite>include/judge/</cite> and exposes <cite>include/judge/PDJE_Judge.hpp</cite>.</p></li>
 <li><p><strong>Utility</strong>
 lives under <cite>include/util/</cite> and exposes <cite>include/util/PDJE_Util.hpp</cite>, with
-direct-include extensions for image/WebP and STFT helper headers.</p></li>
+direct-include extensions for image/WebP, STFT, and AI helper headers.</p></li>
 <li><p><strong>Global shared infrastructure</strong>
 lives under <cite>include/global/</cite> and provides data lines, clocks, crypto, RAII,
 and logging helpers used across modules.</p></li>
@@ -262,6 +268,19 @@ controls how frame positions map to time.</p></li>
 means how often the audio backend asks for more audio.</p></li>
 <li><p><cite>microsecond</cite>
 is the fine-grained timing unit used for synchronized input/audio judgment.</p></li>
+</ul>
+<p>AI and music-analysis terms:</p>
+<ul class="simple">
+<li><p><cite>ONNX model</cite>
+means a model file loaded through the utility AI surface; availability and
+deployment path depend on the current checkout and build configuration.</p></li>
+<li><p><cite>Beat This</cite>
+means the Beat This beat/downbeat detection pipeline exposed through
+<cite>PDJE_UTIL::ai::BeatThisDetector</cite> and the Godot Beat This wrapper classes.</p></li>
+<li><p><cite>beat/downbeat timestamp</cite>
+means a detected musical beat or downbeat position reported in seconds.</p></li>
+<li><p><cite>log-mel spectrogram</cite>
+means the frontend representation produced before Beat This ONNX inference.</p></li>
 </ul>
 <p>Input terms:</p>
 <ul class="simple">
@@ -340,6 +359,8 @@ here:</p>
 <cite>include/judge/</cite></p></li>
 <li><p>Utility layer:
 <cite>include/util/</cite></p></li>
+<li><p>Utility AI layer:
+<cite>include/util/ai/</cite></p></li>
 <li><p>Shared infrastructure:
 <cite>include/global/</cite></p></li>
 <li><p>Tests:

@@ -24,6 +24,9 @@ This is not:
 - a repo-editing workflow guide
 - a guide for using an AI feature inside PDJE
 
+Here, "AI agent" means an external assistant reading and explaining the project.
+It is separate from PDJE's own `PDJE_UTIL::ai` feature surface.
+
 Project Facts Safe To State
 ---------------------------
 
@@ -48,6 +51,11 @@ they are backed by the current source tree and hand-written docs:
 - SWIG bindings exist in-tree for the core/editor-oriented surface.
 - The current tree documents Linux and Windows input paths; macOS input is not
   implemented in-tree.
+- The current tree contains a maintained `PDJE_UTIL::ai` surface with a generic
+  ONNX Runtime facade and Beat This beat/downbeat detection.
+- The Godot wrapper exposes Beat This through `PDJE_AI`,
+  `PDJE_BeatThisDetector`, and `PDJE_BeatThisResult`; it does not expose the
+  generic ONNX session/tensor API directly to Godot scripts.
 
 Claims That Must Be Qualified Or Verified
 -----------------------------------------
@@ -62,6 +70,8 @@ An AI agent should qualify or verify these before stating them as facts:
 - exact semantics of overload-heavy editor history APIs beyond what the current
   hand-written docs state
 - platform support claims not directly backed by the current tree
+- Beat This model availability, exact model packaging paths, and ONNX Runtime
+  deployment status outside the current checkout/build configuration
 
 When uncertain, use wording such as:
 
@@ -110,6 +120,12 @@ Canonical Terminology
 - `Godot wrapper`
   refers to the older Godot-facing wrapper path and naming style such as
   `PDJE_Wrapper`, `PDJE_Input_Module`, and `PDJE_Judge_Module`.
+- `PDJE_UTIL::ai`
+  refers to PDJE's native utility AI namespace, not to this AI-agent guidance
+  page.
+- `Beat This`
+  refers to the beat/downbeat detection pipeline exposed through
+  `PDJE_UTIL::ai::BeatThisDetector` and wrapper Beat This classes.
 
 Architecture Cheat Sheet
 ------------------------
@@ -137,6 +153,11 @@ Architecture Cheat Sheet
   entrypoint `include/util/PDJE_Util.hpp`
   direct headers `include/util/function/image/` and
   `include/util/function/stft/` for non-umbrella APIs
+- User wants Beat This or ONNX Runtime helper APIs:
+  module `PDJE_UTIL::ai`
+  doc :doc:`Util_Engine`
+  entrypoints `include/util/ai/AI.hpp` and
+  `include/util/ai/beat_this/BeatThis.hpp`
 - User wants editor data format details:
   doc :doc:`Editor_Format`
 - User wants live shared state details:
@@ -223,12 +244,30 @@ Where do editor/data format details live?
 - If the user is really asking about lifecycle or mutation order rather than
   file shapes, route back to :doc:`Editor_Workflows`.
 
+How do I use Beat This or PDJE AI utilities?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Route to :doc:`Util_Engine`.
+- For native C++, describe `PDJE_UTIL::ai::OnnxSession` as the generic ONNX
+  facade and `PDJE_UTIL::ai::BeatThisDetector` as the Beat This convenience
+  detector.
+- For Godot, describe `PDJE_AI.CreateBeatThisDetector()`,
+  `PDJE_BeatThisDetector.DetectPCM()`, `DetectMusic()`, and
+  `PDJE_BeatThisResult` beat/downbeat arrays.
+- Qualify model path and runtime deployment details unless verified in the
+  current checkout and build.
+
 Anti-Hallucination Rules
 ------------------------
 
 - Do not invent SWIG wrapper coverage for `PDJE_Input` or `PDJE_JUDGE::JUDGE`.
 - Do not describe the utility layer as roadmap-only; the current tree contains
   active `PDJE_UTIL` code and CMake targets.
+- Do not describe `PDJE_UTIL::ai` as placeholder-only; the current tree
+  contains ONNX Runtime and Beat This utility code.
+- Do not conflate this AI-agent guide with PDJE's own AI utility namespace.
+- Do not claim the Godot wrapper exposes arbitrary ONNX Runtime sessions or
+  tensors; the current wrapper exposes Beat This detection.
 - Do not treat a local `bind_tempdir` checkout as if it were managed by this
   repository or guaranteed to match the current in-repo utility headers.
 - Do not describe editor as only `InitEditor()` plus `render()`. The public
@@ -271,6 +310,9 @@ Known Confusion Traps
   include tests and legacy symbols because Doxygen scans broadly.
 - external or older built docs
   may preserve examples that no longer match current recommended workflow.
+- `AI agent` vs `PDJE_UTIL::ai`
+  the former is an external assistant role; the latter is PDJE's native utility
+  AI namespace.
 
 Answer Skeletons
 ----------------
@@ -286,6 +328,13 @@ Wrapper question:
 - "PDJE currently has in-tree SWIG outputs for Python and C# on the
   core/editor-oriented surface. The older docs also reference a Godot-facing
   wrapper path, which is a separate integration style."
+
+Beat This question:
+
+- "Based on the current source tree, Beat This lives under `PDJE_UTIL::ai`.
+  Native callers use `BeatThisDetector` with mono PCM and an input sample rate;
+  Godot callers use `PDJE_AI` and `PDJE_BeatThisDetector`. Verify model path
+  and runtime deployment details in the current checkout."
 
 macOS input question:
 
@@ -325,6 +374,8 @@ Prefer cautious wording when:
 - a user asks about history or time-travel semantics
 - a user asks about overload-specific editor behavior
 - a user asks what stays project-local versus what is pushed to the root DB
+- a user asks where the Beat This model is packaged or how ONNX Runtime is
+  deployed in a release/prebuilt
 
 Prefer routing users to these sources:
 
@@ -336,6 +387,7 @@ Prefer routing users to these sources:
 - :doc:`Data_Lines`
 - :doc:`Editor_Format`
 - :doc:`FX_ARGS`
+- :doc:`Util_Engine`
 - :doc:`/api/api_root`
 
 When necessary, point to source entrypoints directly:
@@ -345,3 +397,5 @@ When necessary, point to source entrypoints directly:
 - `include/input/PDJE_Input.hpp`
 - `include/judge/PDJE_Judge.hpp`
 - `include/util/PDJE_Util.hpp`
+- `include/util/ai/AI.hpp`
+- `include/util/ai/beat_this/BeatThis.hpp`

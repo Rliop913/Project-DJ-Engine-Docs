@@ -4,7 +4,7 @@
 File BackendLess.cpp
 ====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_stft>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_stft>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\stft``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File BackendLess.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/stft/BackendLess.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\stft\BackendLess.cpp``)
 -----------------------------------------------------------------------------------------------
 
 

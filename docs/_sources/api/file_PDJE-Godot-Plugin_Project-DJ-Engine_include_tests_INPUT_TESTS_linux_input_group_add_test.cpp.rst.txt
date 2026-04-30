@@ -4,7 +4,7 @@
 File linux_input_group_add_test.cpp
 ===================================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_INPUT_TESTS>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/INPUT_TESTS``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_tests_INPUT_TESTS>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\tests\INPUT_TESTS``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File linux_input_group_add_test.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/tests/INPUT_TESTS/linux_input_group_add_test.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\tests\INPUT_TESTS\linux_input_group_add_test.cpp``)
 -------------------------------------------------------------------------------------------------------------
 
 

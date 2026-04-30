@@ -4,7 +4,7 @@
 File WaveformWebpRasterizer.cpp
 ===============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File WaveformWebpRasterizer.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/util/function/image/WaveformWebpRasterizer.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\util\function\image\WaveformWebpRasterizer.cpp``)
 -----------------------------------------------------------------------------------------------------------
 
 
@@ -36,11 +36,11 @@ Includes
 
 - ``span``
 
-- ``util/function/image/WaveformWebpRasterizer.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpRasterizer.hpp`)
+- ``util/function/image/WaveformWebpRasterizer.hpp``
 
-- ``util/function/image/WaveformWebpSupport.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WaveformWebpSupport.hpp`)
+- ``util/function/image/WaveformWebpSupport.hpp``
 
-- ``util/function/image/WebpWriter.hpp`` (:ref:`file_PDJE-Godot-Plugin_Project-DJ-Engine_include_util_function_image_WebpWriter.hpp`)
+- ``util/function/image/WebpWriter.hpp``
 
 - ``utility``
 

@@ -4,7 +4,7 @@
 File Type_FX_TRANCE.cpp
 =======================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine_MixTypes>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MixTypes``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_audioRender_MixMachine_MixTypes>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\MixMachine\MixTypes``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File Type_FX_TRANCE.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/audioRender/MixMachine/MixTypes/Type_FX_TRANCE.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\audioRender\MixMachine\MixTypes\Type_FX_TRANCE.cpp``)
 --------------------------------------------------------------------------------------------------------------------
 
 

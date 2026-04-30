@@ -4,7 +4,7 @@
 File trackLinter.cpp
 ====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_pdjeLinter>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/pdjeLinter``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_pdjeLinter>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor\pdjeLinter``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File trackLinter.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/pdjeLinter/trackLinter.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor\pdjeLinter\trackLinter.cpp``)
 ---------------------------------------------------------------------------------------------------
 
 

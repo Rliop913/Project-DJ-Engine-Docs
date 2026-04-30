@@ -4,7 +4,7 @@
 File PDJE_Judge_Init.hpp
 ========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_Init>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\Init``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_Judge_Init.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/Init/PDJE_Judge_Init.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\Init\PDJE_Judge_Init.hpp``)
 -------------------------------------------------------------------------------------------
 
 

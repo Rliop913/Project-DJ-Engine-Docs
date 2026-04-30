@@ -4,7 +4,7 @@
 File PDJE_MIDI.hpp
 ==================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_midi>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/midi``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_midi>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\midi``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_MIDI.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/midi/PDJE_MIDI.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\midi\PDJE_MIDI.hpp``)
 -------------------------------------------------------------------------------------
 
 

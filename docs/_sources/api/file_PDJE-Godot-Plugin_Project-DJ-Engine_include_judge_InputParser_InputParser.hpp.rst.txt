@@ -4,7 +4,7 @@
 File InputParser.hpp
 ====================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_InputParser>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/InputParser``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_judge_InputParser>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\InputParser``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File InputParser.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/judge/InputParser/InputParser.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\judge\InputParser\InputParser.hpp``)
 ----------------------------------------------------------------------------------------------
 
 
@@ -77,9 +77,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_namespacePDJE__JUDGE_1aa614512ba31f8521b7f0d2f648c52415`
-
 - :ref:`exhale_function_namespacePDJE__JUDGE_1a1e9928aafb8a97a2cd5dde1c2179e218`
+
+- :ref:`exhale_function_namespacePDJE__JUDGE_1aa614512ba31f8521b7f0d2f648c52415`
 
 
 Typedefs

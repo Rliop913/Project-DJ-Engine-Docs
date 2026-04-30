@@ -4,7 +4,7 @@
 File PDJE_OBJ_SETTER.hpp
 ========================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_global>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File PDJE_OBJ_SETTER.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/global/PDJE_OBJ_SETTER.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\global\PDJE_OBJ_SETTER.hpp``)
 ---------------------------------------------------------------------------------------
 
 

@@ -4,7 +4,7 @@
 File rtkitcodes.hpp
 ===================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_input_DefaultDevs_linux>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File rtkitcodes.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/input/DefaultDevs/linux/rtkitcodes.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\input\DefaultDevs\linux\rtkitcodes.hpp``)
 ---------------------------------------------------------------------------------------------------
 
 

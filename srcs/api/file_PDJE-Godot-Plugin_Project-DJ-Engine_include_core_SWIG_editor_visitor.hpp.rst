@@ -4,7 +4,7 @@
 File SWIG_editor_visitor.hpp
 ============================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File SWIG_editor_visitor.hpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/SWIG_editor_visitor.hpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\SWIG_editor_visitor.hpp``)
 -----------------------------------------------------------------------------------------
 
 

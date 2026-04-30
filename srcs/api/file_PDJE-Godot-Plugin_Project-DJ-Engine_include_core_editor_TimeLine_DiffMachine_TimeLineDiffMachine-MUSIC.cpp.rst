@@ -4,7 +4,7 @@
 File TimeLineDiffMachine-MUSIC.cpp
 ==================================
 
-|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_DiffMachine>` (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/DiffMachine``)
+|exhale_lsh| :ref:`Parent directory <dir_PDJE-Godot-Plugin_Project-DJ-Engine_include_core_editor_TimeLine_DiffMachine>` (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor\TimeLine\DiffMachine``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File TimeLineDiffMachine-MUSIC.cpp
    :local:
    :backlinks: none
 
-Definition (``PDJE-Godot-Plugin/Project-DJ-Engine/include/core/editor/TimeLine/DiffMachine/TimeLineDiffMachine-MUSIC.cpp``)
+Definition (``PDJE-Godot-Plugin\Project-DJ-Engine\include\core\editor\TimeLine\DiffMachine\TimeLineDiffMachine-MUSIC.cpp``)
 ---------------------------------------------------------------------------------------------------------------------------
 
 
