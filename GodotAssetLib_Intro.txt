@@ -1,0 +1,202 @@
+Project DJ Godot
+
+Project-DJ-Engine (PDJE) is designed for indie developers who want to take
+rhythm games seriously, and for teams that want DJing to be a deeply
+integrated core mechanic, not just a visual concept or UI gimmick.
+
+Instead of hiring a dedicated audio programmer and building a custom audio
+engine from scratch, you can start from PDJE, a production-oriented soft
+real-time C++ engine, and spend more of your time and budget on game design,
+charting, UX, and content.
+
+What the PDJE Modules Provide
+
+- Core module:
+  Gives you broad control over music and track playback. You can search and
+  load music, start and stop playback, change playback position, and adjust BPM
+  or playback tempo without changing pitch through WSOLA-based time stretching.
+  In hybrid/manual playback, each loaded music item can receive real-time FX
+  such as Filter, EQ, Echo, Distortion, Flanger, Phaser, Panner, Trance, Roll,
+  and Compressor, making it possible to build DJ-style transitions, live remix
+  mechanics, and music-reactive gameplay.
+
+- Core module - Editor:
+  Adds an authoring workflow for building the content your rhythm/DJ game needs.
+  You can register music metadata, create mix timelines, automate BPM changes
+  and FX events, author note chart data for gameplay judgement, preview edited
+  results, and prepare finished track/music data for use by the game. It is
+  meant to help teams build and iterate on mixsets and charts without treating
+  every change as a one-off code task.
+
+- Input module:
+  Provides low-latency keyboard, mouse, and MIDI ingestion for rhythm-game
+  controls. It can discover and select devices, preserve high-resolution input
+  timing, and treat multiple connected keyboards or mice as separate input
+  sources instead of collapsing them into one generic device. This lets you
+  design gameplay gimmicks around multi-keyboard or multi-mouse setups,
+  device-specific lanes, separated player roles, or arcade-style controller
+  layouts.
+
+- Judge module:
+  Turns synchronized music timing, note chart data, and player input into
+  gameplay judgement events. It lets you map keyboard, mouse, or MIDI input to
+  gameplay rails/lanes, apply microsecond-oriented timing windows and offsets,
+  and drive hit/miss feedback, scoring, combo, visual effects, or other
+  rhythm-game reactions from accurate timing results.
+
+- Util module:
+  Provides supporting tools for content, analysis, and runtime helpers. It can
+  help with database/cache style workflows, waveform and WebP generation for
+  music visualization, STFT/MIR-based music analysis, OpenCL-backed computation
+  with CPU fallback, and AI-assisted beat/downbeat detection through Beat This.
+  These utilities are intended to support richer music UI, analysis-driven
+  effects, and faster content workflows around the main engine.
+
+Under the hood, PDJE is a C++ project that simultaneously acts as:
+
+- a real-time DJ engine capable of live-style mixing
+- an editor where you can author mixsets and note data (note charts)
+- a central database for managing music tracks, mixsets, and note chart data
+- a renderer that can pre-render edited mixsets into audio, so they can be
+  played back without real-time performance degradation
+- a low-level input layer that reads input devices as directly as the OS allows
+  for shipping games, then feeds those inputs into a real-time judgement system
+  for rhythm-game mechanics
+
+Prebuilt Binaries and Godot Integration
+
+Project DJ Engine treats Godot as a first-class deployment target.
+
+This Godot asset is built around prebuilt binaries of:
+
+- the core Project-DJ-Engine (PDJE)
+- the PDJE Godot wrapper
+- the Project DJ Godot integration layer
+
+These binaries are produced by a CI/CD pipeline directly from the upstream
+repositories. When the engine and wrapper code are updated, new binaries are
+built and published.
+
+By using this asset, you can access the latest PDJE + Godot integration without
+compiling C++ yourself. You only need to keep the prebuilt binaries up to date
+with the provided update script.
+
+Required First Step: Update_Project_DJ_Godot
+
+After installing this asset, run the Update_Project_DJ_Godot script at least
+once before using the plugin in your project.
+
+This first update run is required. It pulls the latest prebuilt binaries and
+related files from the linked repositories, resolves Git LFS-backed assets, and
+keeps your local copy in sync with the rolling-release pipeline.
+
+Requirements: Git and Git LFS.
+
+If they are not installed, the script will attempt to install them
+automatically. On Windows, you may be prompted for administrator rights.
+
+Examples:
+
+On Linux:
+
+bash Update_Project_DJ_Godot.sh
+
+On Windows:
+
+.\Update_Project_DJ_Godot.bat
+
+This project is under active development and updated frequently. For the best
+experience, run the update script once immediately after installation, and then
+run it regularly to stay current.
+
+Agent-Driven Development Support
+
+This asset includes ProjectDJGodot_Agent_Docs, a documentation and harness
+directory for agentic coding workflows with Project DJ Godot.
+
+ProjectDJGodot_Agent_Docs is written for coding agents and AI-assisted
+development tools that help users build Godot 4 projects through the PDJE
+GDExtension API. It gives agents a structured reading order for the core,
+input, judge, utility, packaging, troubleshooting, and report-template
+materials.
+
+This makes Project DJ Godot easier to use in agent-driven development
+workflows. An agent can inspect the harness to avoid guessing Godot class names,
+wrapper boundaries, failure conventions, packaging requirements, and the
+recommended input-judge-timeline flow.
+
+The harness is also useful when preparing human-reviewed bug reports or feature
+requests for Discord or GitHub Issues. It is intended to support developers,
+not to replace human review of generated reports or code changes.
+
+Documents
+
+Official Documentation
+
+The official PDJE documentation explains engine concepts, architecture, and
+APIs, including how the Godot integration is structured. It also covers topics
+such as beat-synchronous timing, mixset authoring, note-chart data handling,
+input, judge integration, utility APIs, and AI-assisted music analysis features.
+
+Official docs:
+https://rliop913.github.io/Project-DJ-Engine/
+
+AskToPDJE (Code/Docs Q&A Helper)
+
+AskToPDJE is a helper tool that lets you ask questions about the PDJE / Project
+DJ Godot codebase and documentation.
+
+It is designed to answer questions like:
+
+- what a specific node or module does
+- where a particular setting comes from
+- how to extend or modify the input-judge-timeline flow
+- how a PDJE or Project DJ Godot API should be used from a project
+
+By using AskToPDJE, you can explore the engine and integration layer more
+quickly without manually searching through the entire codebase.
+
+AskToPDJE:
+https://github.com/Rliop913/AskToPDJE
+
+Community and Feedback (Discord / GitHub Issues)
+
+A dedicated Project DJ Engine Discord server is available for users and
+developers.
+
+You can use the Discord server to:
+
+- propose interface/API changes
+- give usability feedback and improvement requests
+- ask for help when integrating PDJE or Project DJ Godot into your game
+- discuss agent-driven development workflows and report drafts
+
+Official Discord:
+https://discord.gg/2Pwju7xhmS
+
+For more formal bug reports or feature requests, please open a GitHub Issue on
+the corresponding repository. Feedback from Discord and GitHub Issues is
+collected together and used to prioritize future changes to the engine,
+wrapper, and Godot integration.
+
+Getting Started (GAME_TEMPLATE)
+
+Under the examples/ directory, you will find:
+
+examples/GAME_TEMPLATE.tscn
+
+This scene is a minimal game template that wires together PDJE Core, input
+handling, and the Judge module integration.
+
+To start your own project:
+
+1. Install this asset.
+2. Run Update_Project_DJ_Godot at least once.
+3. Copy examples/GAME_TEMPLATE.tscn into your game's scene tree.
+4. Rename and modify it to match your project's structure.
+5. Extend the template with your own note charts, visual assets, scoring, and
+   feedback logic.
+
+By starting from GAME_TEMPLATE.tscn, you can jump directly into actual
+rhythm-game and DJ-game design instead of spending time on boilerplate
+integration.
